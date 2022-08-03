@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:bLY6Z2s3yGd3SayAy89Iuu2YjYCgrbALaASE/j8a"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:mm2WCH36/3dX9Pmrih2+UXWDwrvf3+nTAMWGOh0Y"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VC0tTfnWcibO58kqVP33vq02xeVE5A9/YXWrNWd7noGcxGGyLuh19Ub/"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:H8CyhOOJr/yq68plthchrdb69wsskqn0GTId29adfOU3YJRzewtda8I8"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -117,7 +117,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;SAPABAP1&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rZP9doC9UYeTTTGFlNnVHG1KQDXLIzZKhb/oCnlfV8DcpM6pRdij1Q=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jJL7YpFohUdgSUfaWtkY0wxZi5P/QFaFqWieSsFH8KXshhXkpiyAPg=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
@@ -138,13 +138,13 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;31015&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;SAPABAP1&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qlWzAfaBc/R2MnfjYSSLeTUrAqaKokGZ5UogEBBrsA8KN/MWMV8/LQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:A9OWkKDIQ8cpk5zp0o3ovs0tDyNPGSQ9mJX6DJaJqW/YNBq+xF3PpQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_FatturatoLordo_B"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT K.KNUMV, K.KPOSN,'Prezzo' AS TipoCondizione,KWERT&#13;&#10;FROM &#13;&#10;(select KONV.KNUMV,STUNR, KPOSN,KWERT&#13;&#10;FROM KONV&#13;&#10;&#9;&#9;&#9;&#9;INNER join&#13;&#10;&#9;&#9;&#9;&#9;(&#13;&#10;&#9;&#9;&#9;&#9;&#9;SELECT KNUMV, POSNR&#13;&#10;&#9;&#9;&#9;&#9;&#9;FROM VBRK&#13;&#10;&#9;&#9;&#9;&#9;&#9;INNER join&#9;&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;VBRP on&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9;&#9;&#9;&#9;&#9;where YEAR(VBRK.ERDAT) &gt;= 2019&#13;&#10;&#9;&#9;&#9;) VBRK_P ON&#13;&#10;KONV.KNUMV = VBRK_P.KNUMV&#13;&#10;AND&#13;&#10;KONV.KPOSN = VBRK_P.POSNR&#13;&#10;WHERE KOAID = 'B'  AND KINAK = ''&#13;&#10;) K&#9;INNER JOIN &#13;&#10;&#9;&#9;&#9;&#9;&#9;(&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;SELECT  KNUMV, KPOSN, MAX(STUNR) AS MSTUNR&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;FROM KONV&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;WHERE KOAID = 'B'  AND KINAK = ''&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;GROUP BY KNUMV, KPOSN&#13;&#10;&#9;&#9;&#9;&#9;&#9;) KMAX on&#13;&#10;K.KNUMV = KMAX.KNUMV&#13;&#10;AND&#13;&#10;K.KPOSN = KMAX.KPOSN&#13;&#10;AND&#13;&#10;K.STUNR = KMAX.MSTUNR&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT K.KNUMV, K.KPOSN,'Prezzo' AS TipoCondizione,KWERT&#13;&#10;FROM &#13;&#10;(select KONV.KNUMV,STUNR, KPOSN,KWERT&#13;&#10;FROM KONV&#13;&#10;&#9;&#9;&#9;&#9;INNER join&#13;&#10;&#9;&#9;&#9;&#9;(&#13;&#10;&#9;&#9;&#9;&#9;&#9;SELECT KNUMV, POSNR&#13;&#10;&#9;&#9;&#9;&#9;&#9;FROM VBRK&#13;&#10;&#9;&#9;&#9;&#9;&#9;INNER join&#9;&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;VBRP on&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9;&#9;&#9;&#9;&#9;where YEAR(VBRK.ERDAT) &gt;= 2019 AND FKART IN (' F2', 'FX', 'ZGEP', 'ZPDV')&#13;&#10;&#9;&#9;&#9;) VBRK_P ON&#13;&#10;KONV.KNUMV = VBRK_P.KNUMV&#13;&#10;AND&#13;&#10;KONV.KPOSN = VBRK_P.POSNR&#13;&#10;WHERE KOAID = 'B'  AND KINAK = ''&#13;&#10;) K&#9;INNER JOIN &#13;&#10;&#9;&#9;&#9;&#9;&#9;(&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;SELECT  KNUMV, KPOSN, MAX(STUNR) AS MSTUNR&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;FROM KONV&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;WHERE KOAID = 'B'  AND KINAK = ''&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;GROUP BY KNUMV, KPOSN&#13;&#10;&#9;&#9;&#9;&#9;&#9;) KMAX on&#13;&#10;K.KNUMV = KMAX.KNUMV&#13;&#10;AND&#13;&#10;K.KPOSN = KMAX.KPOSN&#13;&#10;AND&#13;&#10;K.STUNR = KMAX.MSTUNR&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;currentschema=SAPABAP1&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
@@ -184,7 +184,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;ODS&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;TalendUser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:l9FVHslkqUQ5Ln5UWdPR1jqpfTn/UrsPZ8DG8sFwS5tAR4UdzL2EsKAtf21E3No="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:P0sSTAV8ICCd8rBMX5RVM+QsMChwZZWDCXTRW2wApiT8YOowulF03Q3OLG7Z01c="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FatturatoLordo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -263,7 +263,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPHana&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ODS&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;TalendUser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tuTxUsiI18F3n2hVCnhiZSvJxLW4svWyiKXpLzGCUJtMyC3PVpA+QLh8SyAxTKs="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6SIBTNFCZQ7hITgL7ePFNjGKXLmTA071N45i4MYdxwUBmL/n6O/kOQvX8ueNBag="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -296,7 +296,7 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;31015&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;SAPABAP1&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:1iUSAuNZ4uLOwko2vvPkhbObSpzOqvRhb5Q20za8r5VHQFFoLPFQ3A=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4DQRiYpV6DlAyIFYt7Bvsd5kMq5zhkhapTp+C5/egA9QC6OCtYwTDw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_FatturatoLordo_A"/>
@@ -341,7 +341,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;ODS&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;TalendUser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YwQeYRj+DfJ/dhiHE8Mab9u5n6fMoPv6OTp+kqzZmAG4kUst4wcJ3QOWY5lWqxw="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Nth4FN1FbAE8s4nkEDNlOU8cDArfpJrRfTI2Uq21qvqLZQtoUxv8Pal2XWTkbB8="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FatturatoLordo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -409,6 +409,296 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHANA"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;VSAP-HET&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPABAP1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:n/k9HG79owBSFdjChYsFNlDUO91Au1d8sP/hn+oRNUn3xYmt9oSdmw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_OmaggiVendite_A"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;KONV.KNUMV,&#13;&#10;&#9;KONV.KPOSN,&#13;&#10;&#9;'SCONTO'  AS TIPOCONDIZIONE,&#13;&#10;&#9; SUM(KONV.KWERT) AS KWERT&#13;&#10;FROM &#13;&#10;&#9;KONV&#13;&#10;INNER JOIN&#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;POSNR&#13;&#10;&#9; FROM &#13;&#10;&#9;&#9;VBRK&#13;&#10;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;VBRP ON&#9;VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;YEAR(VBRK.ERDAT) &gt;= 2019 AND &#13;&#10;&#9;&#9;KSCHL = 'Z100' AND &#13;&#10;&#9;&#9;FKART IN ('F2', 'FX', 'ZGEP', 'ZPDV')) VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND KONV.KPOSN = VBRK_P.POSNR&#13;&#10;WHERE &#13;&#10;&#9;KOAID = 'A' &#13;&#10;GROUP BY &#13;&#10;&#9;KONV.KNUMV,&#13;&#10;&#9;KONV.KPOSN&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="KONV_OmaggiVendite_A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_3"/>
+  </node>
+  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_4"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHANA"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;VSAP-HET&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPABAP1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qy1adbvF0LY4/fGyZutOqLIADMgcfsrtNjsvkAlEgOFYokOWt/cZ/w=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_OmaggiVendite_B"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;K.KNUMV, &#13;&#10;&#9;K.KPOSN,&#13;&#10;&#9; 'PREZZO' AS TIPOCONDIZIONE,&#13;&#10;&#9;K.KWERT&#13;&#10;FROM &#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KONV.KNUMV,&#13;&#10;&#9;&#9;KONV.STUNR, &#13;&#10;&#9;&#9;KONV.KPOSN,&#13;&#10;&#9;&#9;KONV.KWERT&#13;&#10;&#9; FROM &#13;&#10;&#9;    KONV&#13;&#10;&#9; INNER JOIN&#13;&#10;&#9;&#9;(&#13;&#10;&#9;&#9; SELECT &#13;&#10;&#9;&#9;&#9;VBRK.KNUMV, &#13;&#10;&#9;&#9;&#9;VBRP.POSNR&#13;&#10;&#9;&#9; FROM &#13;&#10;&#9;&#9;&#9;VBRK&#13;&#10;&#9;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;&#9;VBRP ON VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9;&#9; WHERE &#13;&#10;&#9;&#9;&#9;YEAR(VBRK.ERDAT) &gt;= 2019 AND &#13;&#10;&#9;&#9;&#9;FKART IN ('F2', 'FX', 'ZGEP', 'ZPDV')) AS VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;&#9;KONV.KPOSN = VBRK_P.POSNR&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'B' AND &#13;&#10;&#9;&#9;KSCHL = 'Z100'&#13;&#10;&#9;) K&#9;&#13;&#10;INNER JOIN &#13;&#10;&#9;(&#13;&#10;&#9; SELECT  &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;KPOSN, &#13;&#10;&#9;&#9;MAX(STUNR) AS MSTUNR&#13;&#10;&#9; FROM &#13;&#10;&#9;&#9;KONVV&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'B' AND &#13;&#10;&#9;&#9;KSCHL = 'Z100'&#13;&#10;     GROUP BY &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;KPOSN) KMAX ON K.KNUMV = KMAX.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;   K.KPOSN = KMAX.KPOSN AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;   K.STUNR = KMAX.MSTUNR&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="KONV_OmaggiVendite_B"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_4"/>
+  </node>
+  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_5"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHANA"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;VSAP-HET&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPABAP1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yPM1FZHHc5fSTwuJvzsB4Dic6entjcCCYKVbcZjUVUtlsiqtT83uwQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_ResiCliente_A"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;KONV.KNUMV,&#13;&#10;&#9;KONV.KPOSN,&#13;&#10;&#9;'Sconto' AS TIPOCONDIZIONE,&#13;&#10;&#9; SUM(KONV.KWERT) AS KWERT &#13;&#10;FROM &#13;&#10;&#9;KONV&#13;&#10;INNER JOIN&#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;POSNR&#13;&#10;&#9; FROM &#13;&#10;&#9;&#9;VBRK&#13;&#10;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;VBRP ON&#9;VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;YEAR(VBRK.ERDAT) &gt;= 2019 AND &#13;&#10;&#9;&#9;FKART = 'RE') VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND KONV.KPOSN = VBRK_P.POSNR&#13;&#10;WHERE &#13;&#10;&#9;KOAID = 'A' AND&#13;&#10;    KINAK = ''&#13;&#10;GROUP BY &#13;&#10;&#9;KONV.KNUMV,&#13;&#10;&#9;KONV.KPOSN&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="KONV_ResiCliente_A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_5"/>
+  </node>
+  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_6"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHANA"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;VSAP-HET&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPABAP1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:WvYJ6rqyJbIoSulPI2GNNme/WQNNNfBYLa53OWqt+DqiIRur18fTkg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_ResiCliente_B"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;K.KNUMV, &#13;&#10;&#9;K.KPOSN,&#13;&#10;&#9;   'Prezzo' AS TIPOCONDIZIONE,&#13;&#10;&#9;K.KWERT&#13;&#10;FROM &#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KONV.KNUMV,&#13;&#10;&#9;&#9;KONV.STUNR, &#13;&#10;&#9;&#9;KONV.KPOSN,&#13;&#10;&#9;&#9;KONV.KWERT&#13;&#10;&#9; FROM &#13;&#10;&#9;    KONV&#13;&#10;&#9; INNER JOIN&#13;&#10;&#9;&#9;(&#13;&#10;&#9;&#9; SELECT &#13;&#10;&#9;&#9;&#9;VBRK.KNUMV, &#13;&#10;&#9;&#9;&#9;VBRP.POSNR&#13;&#10;&#9;&#9; FROM &#13;&#10;&#9;&#9;&#9;VBRK&#13;&#10;&#9;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;&#9;VBRP ON VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9;&#9; WHERE &#13;&#10;&#9;&#9;&#9;YEAR(VBRK.ERDAT) &gt;= 2019 AND &#13;&#10;&#9;&#9;&#9;FKART = 'RE') AS VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;   KONV.KPOSN = VBRK_P.POSNR&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'B' AND &#13;&#10;&#9;&#9;KINAK = ''&#13;&#10;&#9;) K&#9;&#13;&#10;INNER JOIN &#13;&#10;&#9;(&#13;&#10;&#9; SELECT  &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;KPOSN, &#13;&#10;&#9;&#9;MAX(STUNR) AS MSTUNR&#13;&#10;&#9; FROM &#13;&#10;&#9;&#9;KONV&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'B' AND &#13;&#10;&#9;&#9;KINAK = ''&#13;&#10;     GROUP BY &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;KPOSN) KMAX ON K.KNUMV = KMAX.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;   K.KPOSN = KMAX.KPOSN AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;       K.STUNR = KMAX.MSTUNR&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="KONV_ResiCliente_B"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_6"/>
+  </node>
+  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_7"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHANA"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;VSAP-HET&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPABAP1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wMxf5sVfVs0Ad6gWY1yLoYidFxdjfvmvk67F1nFiBXgT9CKLNVLqLw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_ScontiResi_A"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;KONV.KNUMV,&#13;&#10;&#9;KONV.KPOSN,&#13;&#10;&#9;'Sconto'  AS TIPOCONDIZIONE,&#13;&#10;&#9; SUM(KONV.KWERT) AS KWERT&#13;&#10;FROM &#13;&#10;&#9;KONV&#13;&#10;INNER JOIN&#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;POSNR&#13;&#10;&#9; FROM &#13;&#10;&#9;&#9;VBRK&#13;&#10;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;VBRP ON&#9;VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;YEAR(VBRK.ERDAT) &gt;= 2019 AND &#13;&#10;&#9;&#9;KSTAT = '' AND &#13;&#10;&#9;&#9;FKART = 'RE') VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND KONV.KPOSN = VBRK_P.POSNR&#13;&#10;WHERE &#13;&#10;&#9;KOAID = 'A' &#13;&#10;GROUP BY &#13;&#10;&#9;KONV.KNUMV,&#13;&#10;&#9;KONV.KPOSN&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="KONV_ScontiResi_A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_7"/>
+  </node>
+  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_8"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHANA"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;VSAP-HET&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPABAP1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JduOWViriFUXv5F0I0sVw2BKvYu7GZdMgz74ePp91Eo49s+aMBVyuQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_ScontiResi_B"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;K.KNUMV, &#13;&#10;&#9;K.KPOSN,&#13;&#10;&#9; 'Prezzo' AS TIPOCONDIZIONE,&#13;&#10;&#9;K.KWERT&#13;&#10;FROM &#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KONV.KNUMV,&#13;&#10;&#9;&#9;KONV.STUNR, &#13;&#10;&#9;&#9;KONV.KPOSN,&#13;&#10;&#9;&#9;KONV.KWERT&#13;&#10;&#9; FROM &#13;&#10;&#9;    KONV&#13;&#10;&#9; INNER JOIN&#13;&#10;&#9;&#9;(&#13;&#10;&#9;&#9; SELECT &#13;&#10;&#9;&#9;&#9;VBRK.KNUMV, &#13;&#10;&#9;&#9;&#9;VBRP.POSNR&#13;&#10;&#9;&#9; FROM &#13;&#10;&#9;&#9;&#9;VBRK&#13;&#10;&#9;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;&#9;VBRP ON VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9;&#9; WHERE &#13;&#10;&#9;&#9;&#9;YEAR(VBRK.ERDAT) &gt;= 2019 AND &#13;&#10;&#9;&#9;&#9;FKART = 'RE') AS VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;KONV.KPOSN = VBRK_P.POSNR&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'B' AND &#13;&#10;&#9;&#9;KSTAT = ''&#13;&#10;&#9;) K&#9;&#13;&#10;INNER JOIN &#13;&#10;&#9;(&#13;&#10;&#9; SELECT  &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;KPOSN, &#13;&#10;&#9;&#9;MAX(STUNR) AS MSTUNR&#13;&#10;&#9; FROM &#13;&#10;&#9;&#9;KONVV&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'B' AND &#13;&#10;&#9;&#9;KSTAT = ''&#13;&#10;     GROUP BY &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;KPOSN) KMAX ON K.KNUMV = KMAX.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;  K.KPOSN = KMAX.KPOSN AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;  K.STUNR = KMAX.MSTUNR&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="KONV_ScontiResi_B"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_8"/>
+  </node>
+  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="832">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_9"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHANA"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;VSAP-HET&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPABAP1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sl9WeNTZ/hzbSCeL4g2B7B4jX7PshVHxo0I0Egw5H7m2NL90RZNJhA=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_ScontiVendite_A"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;KONV.KNUMV,&#13;&#10;&#9;KONV.KPOSN,&#13;&#10;&#9;'Sconto'  AS TIPOCONDIZIONE,&#13;&#10;&#9; SUM(KONV.KWERT) AS KWERT&#13;&#10;FROM &#13;&#10;&#9;KONV&#13;&#10;INNER JOIN&#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;POSNR&#13;&#10;&#9; FROM &#13;&#10;&#9;&#9;VBRK&#13;&#10;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;VBRP ON&#9;VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;YEAR(VBRK.ERDAT) &gt;= 2019 AND &#13;&#10;&#9;&#9;KSTAT = '' AND &#13;&#10;&#9;&#9;FKART IN ('F2', 'FX', 'ZGEP', 'ZPDV')) VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND KONV.KPOSN = VBRK_P.POSNR&#13;&#10;WHERE &#13;&#10;&#9;KOAID = 'A' &#13;&#10;GROUP BY &#13;&#10;&#9;KONV.KNUMV,&#13;&#10;&#9;KONV.KPOSN&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="KONV_ScontiVendite_A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_9"/>
+  </node>
+  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="832">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_10"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHANA"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;VSAP-HET&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPABAP1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vb4gPSbpN2//yjxEtPEzx/GS7mXWzLxZJ00bO2bfXtNY60LTtypi9Q=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_ScontiVendite_B"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;K.KNUMV, &#13;&#10;&#9;K.KPOSN,&#13;&#10;&#9; 'Prezzo' AS TIPOCONDIZIONE,&#13;&#10;&#9;K.KWERT&#13;&#10;FROM &#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KONV.KNUMV,&#13;&#10;&#9;&#9;KONV.STUNR, &#13;&#10;&#9;&#9;KONV.KPOSN,&#13;&#10;&#9;&#9;KONV.KWERT&#13;&#10;&#9; FROM &#13;&#10;&#9;    KONV&#13;&#10;&#9; INNER JOIN&#13;&#10;&#9;&#9;(&#13;&#10;&#9;&#9; SELECT &#13;&#10;&#9;&#9;&#9;VBRK.KNUMV, &#13;&#10;&#9;&#9;&#9;VBRP.POSNR&#13;&#10;&#9;&#9; FROM &#13;&#10;&#9;&#9;&#9;VBRK&#13;&#10;&#9;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;&#9;VBRP ON VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9;&#9; WHERE &#13;&#10;&#9;&#9;&#9;YEAR(VBRK.ERDAT) &gt;= 2019 AND &#13;&#10;&#9;&#9;&#9;FKART IN ('F2', 'FX', 'ZGEP', 'ZPDV')) AS VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;KONV.KPOSN = VBRK_P.POSNR&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'B' AND &#13;&#10;&#9;&#9;KSTAT = ''&#13;&#10;&#9;) K&#9;&#13;&#10;INNER JOIN &#13;&#10;&#9;(&#13;&#10;&#9; SELECT  &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;KPOSN, &#13;&#10;&#9;&#9;MAX(STUNR) AS MSTUNR&#13;&#10;&#9; FROM &#13;&#10;&#9;&#9;KONVV&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'B' AND &#13;&#10;&#9;&#9;KSTAT = ''&#13;&#10;     GROUP BY &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;KPOSN) KMAX ON K.KNUMV = KMAX.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;  K.KPOSN = KMAX.KPOSN AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;  K.STUNR = KMAX.MSTUNR&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="KONV_ScontiVendite_B"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_10"/>
+  </node>
+  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_11"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHANA"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;VSAP-HET&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPABAP1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EdmtDKmM4N62+CmRxJzgMGXntXMJN37NRhln7tNl6zbvc1Gu5psjRw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_FatturatoCMV"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;KONV.KNUMV,&#13;&#10;&#9;KONV.KPOSN,&#13;&#10;&#9;KONV.KWERT&#13;&#10;FROM &#13;&#10;&#9;KONV&#13;&#10;INNER JOIN&#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;POSNR&#13;&#10;&#9; FROM &#13;&#10;&#9;&#9;VBRK&#13;&#10;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;VBRP ON&#9;VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;YEAR(VBRK.ERDAT) &gt;= 2019 AND &#13;&#10;&#9;&#9;KSCL = 'ZCST') VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND KONV.KPOSN = VBRK_P.POSNR&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="KONV_FatturatoCMV"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_11"/>
+  </node>
+  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_12"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHANA"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;VSAP-HET&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPABAP1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:88MtzNOrXf0SmY4AmB1Buhi1GXKRGroH9Q/Fu9TfTrGgM5jlXCmBaA=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_FatturatoMediaMobile"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;KONV.KNUMV,&#13;&#10;&#9;KONV.KPOSN,&#13;&#10;&#9;KONV.KWERT&#13;&#10;FROM &#13;&#10;&#9;KONV&#13;&#10;INNER JOIN&#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KNUMV, &#13;&#10;&#9;&#9;POSNR&#13;&#10;&#9; FROM &#13;&#10;&#9;&#9;VBRK&#13;&#10;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;VBRP ON&#9;VBRK.VBELN = VBRP.VBELN&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;YEAR(VBRK.ERDAT) &gt;= 2019 AND &#13;&#10;&#9;&#9;KSCL = 'VPRS') VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND KONV.KPOSN = VBRK_P.POSNR&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="KONV_FatturatoMediaMobile"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_12"/>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBConnection_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
@@ -452,13 +742,63 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7173b271-2274-4340-8a4f-1c57bc288fa9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vgegDO0ZYOtXHg3Q513T/J8r4b0wgrARaQ2TmXcZMFyxWeLjGioos+R4QLvLcESwCM9pErkefta9&#13;
-Hx+V6Z681g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_350ae64b-bbf2-4017-a73d-030341d43129"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>In1gJyLPdbfZDuXkLLgS1bMSWyPyfvnBfw4d5ggbJtfliWMzZ7zWvL6F1O0ES9/O4O488TbubEzW&#13;
-nGLKf+e9Fw==</DigestValue></Reference></SignedInfo><SignatureValue>hxY8XEACyk1kdUmoEfCEnVvZPO7/3alMi+tcMUfW80+ibraHwwOFvgYhj5ZWodJk23Ox6y3MEC1A&#13;
-VmsxN2Py0cY+0BCaVMtgbDPPFxOyNzUCUT7p437/kv5mzlq8rEScW4j6IUGi4cqKeKKc1G58A949&#13;
-oKX5bEscBbWcoxdrypv1f5MEfZNlJOT2LWHqPTvYIWuX9hhN2bmNIt/pCaj4+4rsc2HMaiDddjCT&#13;
-8OOwsp8xeUKvU4msOralcAok4kbL88j+TmcvOAhjJSzzok0MBVYt+JBwguNqqq6SuGpnohynzxUS&#13;
-a0hoKQTxzG2SrGFYpAn2oYZ2XsCUPjLh1I9uEA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_7"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_8"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_9"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_10"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_11"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_12"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6bd9fe21-ad26-4354-818b-e2cdf4a99fc9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0qaHJSHah7zKdDbNdYNd+QAX+9rEQtgVSZ5xiIK3SSREZM2SAs8qRwBlBgr9NjAFTFEORPhelsCn&#13;
+7WWlzHk48Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5ee71679-264f-47de-b8b2-5f2426dc9823"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>feI0m2gKXRkSsSX7p8yobCFWrdPHxjYU7eHhHLpk+b6Uplxz/rqpo+RWC+LY1EQQSNZc1pPa25vF&#13;
+tFLYchrY/w==</DigestValue></Reference></SignedInfo><SignatureValue>AK5a7AwyzX1eC7PcW6bnq6tI5H0uKyN/CToCI8fuk1gK94e/cZm4S6YQ9p211XmL842Qi8nwGKl7&#13;
+OOxgk78Sg+W7mV6WzoyVjO00NNEEsRIWhNO7Zmyf9LApgS2bApZ6W/46/QyjXoHQ3SU4SjF5/iML&#13;
+lO2fNEFGJ8WvYo/yUFa/TZAxpYIWyC1eeq6Sn0bOw0rPaEuUieXT57JcE8bMTHMwGM95HBTaiHuf&#13;
+EH+K02hIWLwOyquQ0ikMAQNcmQpWwtR46Rt86e9ao26tBe65TYPVyehvy+vEZYWQeBqqvCxbwh3/&#13;
+7PpgAqMqUufjY8ALDBFttOEVx+XQwtk6OEWXXg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -480,4 +820,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_350ae64b-bbf2-4017-a73d-030341d43129" Target="#_7173b271-2274-4340-8a4f-1c57bc288fa9"><Timestamp>2022-08-03 12:35:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5ee71679-264f-47de-b8b2-5f2426dc9823" Target="#_6bd9fe21-ad26-4354-818b-e2cdf4a99fc9"><Timestamp>2022-08-03 14:52:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
