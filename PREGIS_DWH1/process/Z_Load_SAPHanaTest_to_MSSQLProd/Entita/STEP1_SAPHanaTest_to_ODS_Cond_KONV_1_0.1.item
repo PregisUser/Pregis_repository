@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:lBHZf/dnM7zkpzsQmQuezkhkPvJ6pqe03AF2oWe9"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:QGtW3J7/gU3izCZ57P8sZ3FAFLdinsU9dLy5FmNo"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6imOgs1D4mOcBYyReuAJXlVJ+D4qt/71IV95AWYsavOpAM5tzw590rbo"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:urfhhbte5yu1m1prCbgcmNJk5/y7yOYga+CoqTila67uBZMz/Bd2yCka"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -119,7 +119,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPHana&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ODS&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;TalendUser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oU3xHkh67eNvTl2PPsujPpDvhqk7bDJF7UOlnEo88Q9wRzO/SCizY+jxavs="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AeB37Xe4ez1OdnbDUGAZQYXMk74+1OOrhmPSZB+JS3Wk3Vi1z9QU7NvDNf8="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -136,7 +136,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_13"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
     <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
@@ -146,13 +145,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:g7aRKBHBuep2ssP7p/1/qMFMNA8lUaflnX1fmKtb"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cw7kMF0v6Rq+izQ/bOpZ2wd5aiyrLWAOmw8tjmne"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT Delta_SAP &#13;&#10;  FROM Excel.DeltaLoadVariables &#13;&#10;  WHERE Active = 1 AND Tipo = 'M' AND Tabella = 'VBRK'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT Delta_SAP &#13;&#10;  FROM Excel.DeltaLoadVariables &#13;&#10;  WHERE Active = 1 AND Tipo = 'M' AND Tabella = 'KONV'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -173,7 +172,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -202,7 +200,6 @@
   </node>
   <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="3" offsetLabelY="10" posX="448" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;DeltaVariable&quot;"/>
       <elementValue elementRef="VALUE" value="row13.Delta_SAP"/>
@@ -219,7 +216,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBCommit_1"/>
   </node>
-  <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
+  <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBSP_1"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -231,7 +228,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:s4kuJ/sfTeKBTF9t7if7Eey+Qj2kfR7U9M9n5GmR"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Vnv4OxjnHSf1hEQ7FqHwO5feQI0Tvr7MX3GhOtjq"/>
     <elementParameter field="TEXT" name="SP_NAME" value="&quot;usp_delete_KONV_1&quot;"/>
     <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RETURN" show="false" value=""/>
@@ -256,7 +253,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;SAPABAP1&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ihY/3QTI/idZg+k1dhfKCTi+UgV3DXK/qqh7DnT0eLkm6Vejh7NMKg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gXr/z3Xsy+O2OJFuu1xAi9HOfxJpW1/ugZ4urZlgcNyO9vuGZS8e0w=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
@@ -267,7 +264,6 @@
   </node>
   <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_5"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -277,13 +273,13 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;31015&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;SAPABAP1&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:P8H5+j432XtYz+RZqTKH5UnsTkBkMO83NCgIR37y2b1OIK4k48+XZw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LouN0H4hV91xe+hPAORTp9G2q5qEpNSxfBLBp42G1eF1WYvtntMfTg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_Omaggi_Vendite_ZOMA_A"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;K.KNUMV, &#13;&#10;&#9;K.KPOSN,&#13;&#10;&#9;K.VBELN,&#13;&#10;  &#9;K.FKDAT,&#13;&#10;&#9;'PREZZO' AS TIPOCONDIZIONE,&#13;&#10;&#9;K.KWERT&#13;&#10;FROM &#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KONV.KNUMV,&#13;&#10;&#9;&#9;KONV.STUNR, &#13;&#10;&#9;&#9;KONV.KPOSN,&#13;&#10;&#9;&#9;KONV.KWERT,&#13;&#10;&#9;&#9;VBRK_P.VBELN,&#13;&#10;&#9;&#9;VBRK_P.FKDAT&#13;&#10;&#9; FROM &#13;&#10;&#9;    KONV&#13;&#10;&#9; INNER JOIN&#13;&#10;&#9;&#9;(&#13;&#10;&#9;&#9; SELECT &#13;&#10;&#9;&#9;&#9;VBRK.KNUMV, &#13;&#10;&#9;&#9;&#9;VBRP.POSNR,&#13;&#10;&#9;&#9;&#9;VBRK.VBELN,&#13;&#10;&#9;&#9;&#9;VBRK.FKDAT&#13;&#10;&#9;&#9; FROM &#13;&#10;&#9;&#9;&#9;VBRK&#13;&#10;&#9;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;&#9;VBRP ON VBRK.VBELN = VBRP.VBELN &#13;&#10;&#9;&#9; WHERE &#13;&#10;&#9;&#9;&#9;YEAR(VBRK.FKDAT) &gt;= 2019 AND PSTYV = 'ZOMA' AND&#13;&#10;&#9;&#9;&#9;FKART IN ('F2', 'FX', 'ZGEP', 'ZPDV')) AS VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;&#9;KONV.KPOSN = VBRK_P.POSNR&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'A' AND &#13;&#10;&#9;&#9;KSCHL = 'Z100'&#13;&#10;&#9;) K&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;K.KNUMV, &#13;&#10;&#9;K.KPOSN,&#13;&#10;&#9;K.VBELN,&#13;&#10;  &#9;K.FKDAT,&#13;&#10;&#9;'PREZZO' AS TIPOCONDIZIONE,&#13;&#10;&#9;K.KWERT&#13;&#10;FROM &#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KONV.KNUMV,&#13;&#10;&#9;&#9;KONV.STUNR, &#13;&#10;&#9;&#9;KONV.KPOSN,&#13;&#10;&#9;&#9;KONV.KWERT,&#13;&#10;&#9;&#9;VBRK_P.VBELN,&#13;&#10;&#9;&#9;VBRK_P.FKDAT&#13;&#10;&#9; FROM &#13;&#10;&#9;    KONV&#13;&#10;&#9; INNER JOIN&#13;&#10;&#9;&#9;(&#13;&#10;&#9;&#9; SELECT &#13;&#10;&#9;&#9;&#9;VBRK.KNUMV, &#13;&#10;&#9;&#9;&#9;VBRP.POSNR,&#13;&#10;&#9;&#9;&#9;VBRK.VBELN,&#13;&#10;&#9;&#9;&#9;VBRK.FKDAT&#13;&#10;&#9;&#9; FROM &#13;&#10;&#9;&#9;&#9;VBRK&#13;&#10;&#9;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;&#9;VBRP ON VBRK.VBELN = VBRP.VBELN &#13;&#10;&#9;&#9; WHERE &#13;&#10;&#9;&#9;&#9;YEAR(VBRK.FKDAT) &gt;= 2019 AND PSTYV = 'ZOMA' AND&#13;&#10;&#9;&#9;&#9;FKART IN ('F2', 'FX', 'ZGEP', 'ZPDV') AND FKSTO != 'X') AS VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;&#9;KONV.KPOSN = VBRK_P.POSNR&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'A' AND &#13;&#10;&#9;&#9;KSCHL = 'Z100'&#13;&#10;&#9;) K&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;currentschema=SAPABAP1&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
@@ -317,7 +313,6 @@
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="MSSQL_PROP"/>
@@ -327,7 +322,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:QIAXrTKe+fjaJkyspOmls6vLNe74NNM7cyfUuBaH"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5d54ZGoou1LigOBaX0hIfVW55oBTstI+69cuotw9"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;KONV_OmaggiVendite_ZOMA_A&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -411,7 +406,6 @@
   </node>
   <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_6"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -421,13 +415,13 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;31015&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;SAPABAP1&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:QaSF7I3PUWnxplN9R9w0xy7uu+9BP6jLXWn2yNQxngaAQX8cmJphBQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:QbKxVT8dECWYmfz6sBgv3csPw83Si0zUibR8b3VVhsn+Xn5G3bPacQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;KONV_OmaggiVendite_ZOMI_A&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_Omaggi_Vendite_ZOMI_A"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;K.KNUMV, &#13;&#10;&#9;K.KPOSN,&#13;&#10;&#9;K.VBELN,&#13;&#10;  &#9;K.FKDAT,&#13;&#10;&#9;'PREZZO' AS TIPOCONDIZIONE,&#13;&#10;&#9;K.KWERT&#13;&#10;FROM &#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KONV.KNUMV,&#13;&#10;&#9;&#9;KONV.STUNR, &#13;&#10;&#9;&#9;KONV.KPOSN,&#13;&#10;&#9;&#9;KONV.KWERT,&#13;&#10;&#9;&#9;VBRK_P.VBELN,&#13;&#10;&#9;&#9;VBRK_P.FKDAT&#13;&#10;&#9; FROM &#13;&#10;&#9;    KONV&#13;&#10;&#9; INNER JOIN&#13;&#10;&#9;&#9;(&#13;&#10;&#9;&#9; SELECT &#13;&#10;&#9;&#9;&#9;VBRK.KNUMV, &#13;&#10;&#9;&#9;&#9;VBRP.POSNR,&#13;&#10;&#9;&#9;&#9;VBRK.VBELN,&#13;&#10;&#9;&#9;&#9;VBRK.FKDAT&#13;&#10;&#9;&#9; FROM &#13;&#10;&#9;&#9;&#9;VBRK&#13;&#10;&#9;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;&#9;VBRP ON VBRK.VBELN = VBRP.VBELN &#13;&#10;&#9;&#9; WHERE &#13;&#10;&#9;&#9;&#9;YEAR(VBRK.FKDAT) &gt;= 2019 AND PSTYV = 'ZOMI' AND&#13;&#10;&#9;&#9;&#9;FKART IN ('F2', 'FX', 'ZGEP', 'ZPDV')) AS VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;&#9;KONV.KPOSN = VBRK_P.POSNR&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'A' AND &#13;&#10;&#9;&#9;KSCHL = 'Z100'&#13;&#10;&#9;) K&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;&#9;K.KNUMV, &#13;&#10;&#9;K.KPOSN,&#13;&#10;&#9;K.VBELN,&#13;&#10;  &#9;K.FKDAT,&#13;&#10;&#9;'PREZZO' AS TIPOCONDIZIONE,&#13;&#10;&#9;K.KWERT&#13;&#10;FROM &#13;&#10;&#9;(&#13;&#10;&#9; SELECT &#13;&#10;&#9;&#9;KONV.KNUMV,&#13;&#10;&#9;&#9;KONV.STUNR, &#13;&#10;&#9;&#9;KONV.KPOSN,&#13;&#10;&#9;&#9;KONV.KWERT,&#13;&#10;&#9;&#9;VBRK_P.VBELN,&#13;&#10;&#9;&#9;VBRK_P.FKDAT&#13;&#10;&#9; FROM &#13;&#10;&#9;    KONV&#13;&#10;&#9; INNER JOIN&#13;&#10;&#9;&#9;(&#13;&#10;&#9;&#9; SELECT &#13;&#10;&#9;&#9;&#9;VBRK.KNUMV, &#13;&#10;&#9;&#9;&#9;VBRP.POSNR,&#13;&#10;&#9;&#9;&#9;VBRK.VBELN,&#13;&#10;&#9;&#9;&#9;VBRK.FKDAT&#13;&#10;&#9;&#9; FROM &#13;&#10;&#9;&#9;&#9;VBRK&#13;&#10;&#9;&#9; INNER JOIN&#9;&#13;&#10;&#9;&#9;&#9;VBRP ON VBRK.VBELN = VBRP.VBELN &#13;&#10;&#9;&#9; WHERE &#13;&#10;&#9;&#9;&#9;YEAR(VBRK.FKDAT) &gt;= 2019 AND PSTYV = 'ZOMI' AND&#13;&#10;&#9;&#9;&#9;FKART IN ('F2', 'FX', 'ZGEP', 'ZPDV') AND FKSTO != 'X') AS VBRK_P ON KONV.KNUMV = VBRK_P.KNUMV AND &#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;&#9;&#9;&#9;KONV.KPOSN = VBRK_P.POSNR&#13;&#10;&#9; WHERE &#13;&#10;&#9;&#9;KOAID = 'A' AND &#13;&#10;&#9;&#9;KSCHL = 'Z100'&#13;&#10;&#9;) K&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;currentschema=SAPABAP1&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
@@ -461,7 +455,6 @@
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_6"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="MSSQL_PROP"/>
@@ -471,7 +464,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ioPWUNDPmvuZ14dAFdWF84vIFrEDkrklo8BdfWSJ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3FBxpGnmPQkCoYML6oCGS4+D07mfX7plxNPfG/bb"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;KONV_OmaggiVendite_ZOMI_A&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -555,6 +548,7 @@
   </node>
   <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -564,7 +558,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;31015&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;SAPABAP1&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ujn9JJLozUAFjqsM2ge47h8zSLVzdmUBZK3qrtu9ZdAuovCcOO89UQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6akGKu44PD64A3VoKuXvgAXwiQqgIAwZD34Zm26pirKc7jxuZLimbg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_iNnsELvEEeykWfjZAp25eA - KONV_FatturatoLordo_B"/>
@@ -604,6 +598,7 @@
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="MSSQL_PROP"/>
@@ -613,7 +608,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DM0EHZWW03Yo0O1cMJN67FYWT3f6ypjcYo10EY2P"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GdxzOSGPd5BN62yUTFXIDC+uvkqeDvDcoweVUhSy"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;KONV_FatturatoLordo_B&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -696,40 +691,38 @@
     </metadata>
   </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
   </connection>
   <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tDBInput_13" offsetLabelX="0" offsetLabelY="0" source="tDBInput_13" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row13"/>
   </connection>
   <connection connectorName="FLOW" label="Variable_ERDAT" lineStyle="0" metaname="Variable_ERDAT" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSetGlobalVar_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Variable_ERDAT"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tDBInput_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk12"/>
+  </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tDBOutput_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tDBInput_6">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk12"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tDBInput_6" offsetLabelX="0" offsetLabelY="0" source="tDBInput_6" target="tDBOutput_6">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBCommit_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
   </connection>
   <subjob>
@@ -773,13 +766,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9f29b31c-2fa2-486d-8a19-5396eff33a8f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wtl1uV1JAdGykP3AyPLTpjgd08LSPy3SoZLYJJYFrvVX757FVYgv3+j09rcJvccyVcIGhw3qky4E&#13;
-UxdFXm9pug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5c7ad6c4-f3b6-48a2-a7f8-fefda0e78211"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lsOk1AKxnCqHV7o3kYZ7IgQrUfyYdPKogbqVWmTcfWyQqSisjA/eCmJ17GvBkOu3mXBBNGaIPZ1w&#13;
-13t90a9yYQ==</DigestValue></Reference></SignedInfo><SignatureValue>Uzo7HUGnk3KIteoXyzKJUFWB4Xye8kECCE4Ih58qWOfeM5lRiQ+ViLDUFz3nuk3kqDTjnomWBkHQ&#13;
-0wvt09R/0k4wiOVHWV8hg0HPsK0nGp+MzBOVU1FnRRc9rBwjusog1FunP6+Npk9GMW4AQvALU/Qw&#13;
-kgYD3Yddr0lewXS7OAa6lP+98Zr3FZvCGxY5XzbYSdbOY9CqBvmP39T79+4h0S4Wrwm+kke+4aIF&#13;
-cISrGEeL+dJdagMz72oeUz91rOmwgaE4a5pTYkSWgFlNTt6ZZ/fddmlKnbDP7PjfP/4xORBMc1dX&#13;
-IoYjrXGoCBJzgaaerxAfM/Q/fdE3aOxZqKom7A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4f9cb9ae-cc0f-4da3-b897-d0ebcd4444fa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LUPZxlm9M4wON3eM1i032gB/Mj6pk0dngtDe2X92XP7BABno/QyQdI2eWXk8rE82gdCu2ziJPl8f&#13;
+Cg29zbwhBg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_46053a12-5ae3-448b-9ce9-ae46fcebfbaa"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>q0GGWdcToyRsO8zfMMnXGZVvUSwi1EnWFUc23vt83yDqAxe6fFG0fHfzSD+AkW+qmF0AZ1G07eM0&#13;
+taxhMe8WGw==</DigestValue></Reference></SignedInfo><SignatureValue>bB6GA4arYjhL9gc+RtFBs6QdMeta+OeG+STO+y5KeZ08hMZ7JYMyAE0dIuw42LOzL/a08Go8y5ws&#13;
+ZSB1pIP1FGPcOZQv+juBF6Gkuk+tfoP6O+H5oGne/tT4cH0MFezMIxzUX8GkkTjuLPrPaJnbQjPo&#13;
+lNXInqLWcj1IM6uYboFNDJxu2iy3OPGbEzwN3pVLHI1vqpYhcBMXkvCVEwixrhWK1REhu6iBkliD&#13;
+Nc+f+HjBAuMlEQ009Kk13HaRVl8y1aXmzVhW/vO9+AcGLK2F3Dusl9Lqg/etYva8Y0I3Kw3s246Z&#13;
+STAHzfvTdEbMYwFTrYI+bjoE4LjCk8Pj73GRkw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -801,4 +794,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5c7ad6c4-f3b6-48a2-a7f8-fefda0e78211" Target="#_9f29b31c-2fa2-486d-8a19-5396eff33a8f"><Timestamp>2022-11-07 10:53:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_46053a12-5ae3-448b-9ce9-ae46fcebfbaa" Target="#_4f9cb9ae-cc0f-4da3-b897-d0ebcd4444fa"><Timestamp>2022-11-09 11:36:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
