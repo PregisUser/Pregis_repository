@@ -62,8 +62,8 @@
       <query id="_6KUy8HuJEe2szJy1uMXFdA" label="MARC" value="SELECT *&#13;&#10;FROM MARC" xmi:id="_6KUy8XuJEe2szJy1uMXFdA"/>
       <query id="_c6d1ELEUEe2pWrCojT_USQ" label="KONP_CMA_Spedito" value="SELECT KONP.KNUMH, KBETR&#13;&#10;FROM KONP&#13;&#10;&#9;&#9;&#9;INNER join&#13;&#10;(&#13;&#10;SELECT KNUMH&#13;&#10;FROM A049&#13;&#10;WHERE KAPPL = 'M' AND EKORG = 'A200' AND KSCHL = 'MP01') A049 on&#13;&#10;KONP.KNUMH = A049.KNUMH" xmi:id="_c6d1EbEUEe2pWrCojT_USQ"/>
       <query id="_uOSGQLEUEe2pWrCojT_USQ" label="A049_Spedito_CMA" value="SELECT *&#13;&#10;FROM A049&#13;&#10;WHERE KAPPL = 'M' AND EKORG = 'A200' AND KSCHL = 'MP01'" xmi:id="_uOSGQbEUEe2pWrCojT_USQ"/>
-      <query id="_qzURQLjVEe2-tolcjfDorA" label="RC_LIKP" value="SELECT COUNT(*)&#13;&#10;FROM LIKP &#13;&#10;WHERE MONTH(ERDAT) IN (7,8) AND &#13;&#10;YEAR(ERDAT) = 2022&#13;&#10;" xmi:id="_qzURQbjVEe2-tolcjfDorA"/>
-      <query id="_xpYKILjVEe2-tolcjfDorA" label="RC_LIPS" value="SELECT COUNT(*)&#13;&#10;FROM LIPS&#13;&#10;WHERE VBELN IN (SELECT VBELN FROM LIKP WHERE MONTH(ERDAT) = 9 AND &#13;&#10;YEAR(ERDAT) = 2022)" xmi:id="_xpYKIbjVEe2-tolcjfDorA"/>
+      <query id="_qzURQLjVEe2-tolcjfDorA" label="RC_LIKP" value="SELECT COUNT(*)&#13;&#10;FROM LIKP &#13;&#10;WHERE MONTH(ERDAT) = 11 AND &#13;&#10;YEAR(ERDAT) = 2022" xmi:id="_qzURQbjVEe2-tolcjfDorA"/>
+      <query id="_xpYKILjVEe2-tolcjfDorA" label="RC_LIPS" value="SELECT COUNT(*)&#13;&#10;FROM LIPS&#13;&#10;WHERE VBELN IN (SELECT VBELN FROM LIKP WHERE MONTH(ERDAT) = 11 AND &#13;&#10;YEAR(ERDAT) = 2022)" xmi:id="_xpYKIbjVEe2-tolcjfDorA"/>
       <query id="_3_YC4LjVEe2-tolcjfDorA" label="RC_VBAP" value="SELECT COUNT(*)&#13;&#10; FROM VBAP WHERE MONTH(ERDAT) = 10 AND &#13;&#10;YEAR(ERDAT) = 2022" xmi:id="_3_YC4bjVEe2-tolcjfDorA"/>
       <query id="__e_2ILjVEe2-tolcjfDorA" label="RC_VBAK" value="SELECT COUNT(*)&#13;&#10; FROM VBAK WHERE MONTH(ERDAT) = 10 AND &#13;&#10;YEAR(ERDAT) = 2022" xmi:id="__e_2IbjVEe2-tolcjfDorA"/>
       <query id="_EcTdoLjWEe2-tolcjfDorA" label="S910_40" value="SELECT COUNT(*)&#13;&#10;FROM S910&#13;&#10;WHERE YEAR(SPTAG) = 2022 AND MONTH(SPTAG) IN (7,8)&#13;&#10;AND VTWEG = 40 AND KUNNR IN ('0000320911',&#13;&#10;'0000320910',&#13;&#10;'0000320909',&#13;&#10;'0000320894',&#13;&#10;'0000320893',&#13;&#10;'0000320892')&#13;&#10;" xmi:id="_EcTdobjWEe2-tolcjfDorA"/>
@@ -89,13 +89,13 @@
     <parameters key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value="" xmi:id="_HMeB8LzMEeykWfjZAp25eA"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Schema dataManager="_5IYOAMZAEeyyZZQHbxodHA" name="SAPABAP1" xmi:id="_cfk8oF-CEe2RrtK8Qs5Gsw"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b466f263-d8f1-4681-946e-930f7dd50c4e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZEAaXYdkYW7evd4n0tKbzWOACN3sIdUBRjyiOvDGGnIKS3h7i/eN+McNCC/Y3WIGP+JnUUTpoNAY&#13;
-KsXfMteo6w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_422ff762-c77c-4fc2-aa36-823786b9abd3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tBSIlxwPBtk3LTNQJrBUtUgpsFjHgH09yi81amtKlqWwVHXHSJLfn7Uys8dn1/XPlLnclTdoi7iP&#13;
-e8vuG93lkw==</DigestValue></Reference></SignedInfo><SignatureValue>AB2icp8ULiQOTWk2OE9YmsYdfe3SFTlrtlYo+0SXxCALUOXQWNZiu9ZCJ+whHmOKeLHbJqVZUfo1&#13;
-CQh/14XX90mNuYHdtY8r1niGuhpM5/TlcvdJZ/JMkhCxGPXKe2S/Vvl9zH1R12CcdLfRnoLMfJ8l&#13;
-Q84PpM6ZCxRGKgF4xKWEs+A+V86bQnyHB/857Xcv0oe2A8b7yis+FlG+Q8mE9/8ntdTJZz0vgag/&#13;
-NfTwh1S7ZG4OucIm2dycYWSbsKnx2UvZ2jr45P4hHNCFzbgpdwhxYp1sNIvONbFA+JM/OLWhnuJy&#13;
-n6EY69COVvtnrssc/6CfB/IzKqi+K3nxMkVIEQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fdd17099-40ee-4377-bf5a-6f7ead52a9cf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+Il/gSZna2DD2Dfwckhks0PBqqtFBB2XnYcp+G6Zc0X50ij9bcgrYXaHbqVTYzjDFYXcs6LJ0gru&#13;
+jTScjEb/7A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e85fabc9-9195-4a86-8bfc-c48c4a5a141a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zzCFQglsNSrvyz/4UmFhArSVflOX3Lw8j+SEM4bgR9rNNfKRaeFSRsX9iYl0AD8hScrqOkFHz8F9&#13;
+oymg6PnPPQ==</DigestValue></Reference></SignedInfo><SignatureValue>c+KmQzELHrg/kFwxSeuhZk14/LHqAiOqFLd26iOgvF6CaItqiZznqdY2hvGmyRvdCGQiUcu20eer&#13;
++hIwZpF+IReBdJqDsxpVBYEzugxdpzde9QGnnoWovW2b+UyyaTicNycu8IhtZi1GMYhRzVtJM1jQ&#13;
+RWQhg2naGFfJakiq6R5RugNSyqeVpuMZHDimD+i3dxSsN6GzSJkwYpEZkD9z3YHD5X86Aj6stgsu&#13;
+WpwinxH1AyZHfw1eHeunb54Tij8yzjhPJ5BFkcc1jOojZElzHdRMr+Ogj//RUuHzNxD34B2MkPr6&#13;
+M9Z/4jxz3Pm/kbpSe3fbfpt1kSzd0uiXP4LxaA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -117,4 +117,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_422ff762-c77c-4fc2-aa36-823786b9abd3" Target="#_b466f263-d8f1-4681-946e-930f7dd50c4e"><Timestamp>2023-03-07 08:46:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e85fabc9-9195-4a86-8bfc-c48c4a5a141a" Target="#_fdd17099-40ee-4377-bf5a-6f7ead52a9cf"><Timestamp>2023-03-08 08:33:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
