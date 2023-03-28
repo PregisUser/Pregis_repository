@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:2VB7Nncu+jkoWu1R7uFfmPQJdkQakCFGY9nh/58q"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:1fFmzrwdM2WJH32I15TCMlImZbRV3VQbKS/XbHZn"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FzlGJplVHp6eG2LHC0d048Y6s2omDynOhbyIXjMiWKizPj8TNHyIKuH1"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2fbyt+WoEnbGdZ3v39wdjA1Q99bdjtZvXocZqJZZ6Ofg6HuK2AZ1OYT7"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -119,7 +119,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;Excel&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ODS&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;TalendUser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZQbxtm61lAtCBwHaBwEE08sYovVhSgVA9JsR/+324YbblqN7wvFgA52YaCM="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ItfaTVzuK6eQID2zlH0jQxxMPsPm2oy09DDw33xNIOkiZQyd5labCnrIkig="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -140,7 +140,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_v56o4M10Ee2RtLsMFFY6oQ"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;E:/ExcelFiles/BudgetFatturato/BudgetConRisalita.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:VtBZn58mkm+4ptTm8gsu56l7K5I3+fiJ0zatVH8D"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:LFu1j2tARLZNTKjIfomv/50TOqcQ7asVGDmR5ZUj"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;BUDGET&quot;"/>
@@ -335,7 +335,7 @@
     <elementParameter field="TEXT" name="LABEL" value="BudgetConRisalita"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
-      <column comment="" key="false" length="10" name="Channel_account" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Channel_account" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Cod__divisione" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Cod__Coordinatore" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Capo_Area" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -369,7 +369,7 @@
       <column comment="" key="false" length="20" name="Marg_TOT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="10" name="Channel_account" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Channel_account" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Cod__divisione" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Cod__Coordinatore" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Capo_Area" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -416,7 +416,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:mIBDZHUcDlxTPgFfVolyfKbTjsNmoiA3tA2BqSTq"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TNVp6/J1e0qZxnPdmMOH0sX+6CLDBxd6IOIAfMJf"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;BudgetConRisalita&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -609,7 +609,7 @@
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tDBOutput_1">
-      <column comment="" key="false" length="10" name="Channel_account" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Channel_account" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Cod__divisione" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Cod__Coordinatore" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Capo_Area" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -643,7 +643,7 @@
       <column comment="" key="false" length="20" name="Marg_TOT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="10" name="Channel_account" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Channel_account" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Cod__divisione" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Cod__Coordinatore" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Capo_Area" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -696,13 +696,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_77cb3ebd-3a2e-43c9-8c99-5e52badf2b56"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rDp6C2jvXkC3NJQ4uR3VFBXP4GY4zMP4+WhcZBG0M7NdlbxM4Ht5pbHKD7kdtMvov+sNUt0iYjke&#13;
-qq24mBUneA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4dc7ae69-260f-4e6d-bc04-0cbd9517964f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>K8K7xEZuW/Br2VcMYdb9LLezOMKFB31h7i0r1YDYO7p+cMbZnvMvo/Ffxg+9N5IU2CMK3XrmznEy&#13;
-o1+jeBpzVg==</DigestValue></Reference></SignedInfo><SignatureValue>MAnZrmhPjC7Sg0wUXvMBKNiCogKNAvOMgLWvEOLoBK7kYhBH0dDaIDpkwCmH+kSEB7zgRJuSvr2L&#13;
-Jc8ecdhmmzhemt3vfftZksPR1vobBwSnqxfcnfwdRWyvFCdftT/Na00HgkkpyT4ahG6OdwfnL4pG&#13;
-qyq/vo2sBjujtNSphrM6gfmd2BKKE8BqyA/9IORM1QlflurptW2eKteJk7g39okJePSKtC9gpQV5&#13;
-s+kGSBrnof6RDiYFa7k4pMhXGEoDsTSAFmu/wSJddDVBMtD8bPjupuhy9XkzDI9QmjU/8bibAFyv&#13;
-U4JD8RNVUKaHv1px7VcAUhRuPF0kTahIDjJbKg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1e9da8c8-f6f7-4b06-be44-52c48e0b48b4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RXtZFxmqFzRdVtZZcqp5nbFQqSBTg+T46RVQREmcMYAEb8xh+KTKfBx8q58trnTbWa7tj9J9JYGg&#13;
+XlYtsH8N8Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c80cc225-e604-419d-83fb-83b09a441688"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>y1LDkU6k1VBL4Wtz+Pob+xdnOnGXuePZWRmuCxnD3oNT0io1Ri2z+SJ4EBXeY4omMd01/Q1oTht6&#13;
+2vA8QjB7Ew==</DigestValue></Reference></SignedInfo><SignatureValue>fqS/8tBHa1QzNUi98MBbqC21D9og1Fy3fSi3fA78j/kHsjW1KxMCc7Rdij/HGCED2xOvXHBp8pZ5&#13;
+zQUbFTUB7ToCOjWVjSm7oFLxuhepRjbh0ohMW4QkpRHBYhFgNBy2/kEY4DQ2TNrZQ2sy/SVWUw/o&#13;
+u/iNBIZhBEmvli1UolRuUaqBsEs+U8A5hHSkK+fa1oBFKIUYTAHL4bTEhnpau3SCw0MV93BQS7D0&#13;
+KGEH+M+l6yNufNjhX5+s+Xte+oRJ8CGzFcO3gsoDE8Cu0MhS/UVFbdpsY0PXBQfXIh4/a23LM0lL&#13;
+q42DpN72GleoaLsVPh5XigR8Qh/4bzpNpHiIwg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -724,4 +724,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4dc7ae69-260f-4e6d-bc04-0cbd9517964f" Target="#_77cb3ebd-3a2e-43c9-8c99-5e52badf2b56"><Timestamp>2023-03-28 14:33:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c80cc225-e604-419d-83fb-83b09a441688" Target="#_1e9da8c8-f6f7-4b06-be44-52c48e0b48b4"><Timestamp>2023-03-28 14:37:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
