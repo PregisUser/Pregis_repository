@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:f4UbWq5rwD6mfmRZQZORs8BU/u3sJwYlGOUudKyV"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:vZepA3FpXfc6N3c0TQEWI2m619Lkc9RlOCZ4C5rH"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bJ6nYSnR6zbmwH6q3cdOrp1DNi5BUCa67fzm9Hd/lWt+YGvdlIPyAP6P"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DaKx40SqfHMrhcExWgecdk1ym/xV4KkRz+KcFmnKeYNd6iBrR6m3LRlU"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -113,36 +113,12 @@
     <elementParameter field="TEXT" name="URL" value="&quot;https://api.powerbi.com/v1.0/myorg/datasets/035ecaf1-842d-4bea-8bd3-eb73307f17e4/refreshes&quot;"/>
     <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
     <elementParameter field="TABLE" name="HEADERS"/>
-    <elementParameter field="MEMO" name="BODY" value="&quot;{&#13;&#10;  &quot;type&quot;: &quot;full&quot;,&#13;&#10;  &quot;commitMode&quot;: &quot;transactional&quot;,&#13;&#10;  &quot;objects&quot;: [&#13;&#10;    {&#13;&#10;      &quot;table&quot;: &quot;vw_ExcutionsStats&quot;,&quot;vw_ExecutionError&quot;,&quot;DimDate&quot;,&quot;TalendJobMapping&quot;,&quot;Jobs&quot;,&quot;FolderMappaure&quot;&#13;&#10;    }&#13;&#10;  ],&#13;&#10;  &quot;applyRefreshPolicy&quot;: &quot;false&quot;&#13;&#10;}&quot;"/>
+    <elementParameter field="MEMO" name="BODY" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tREST_1">
       <column key="false" length="0" name="Body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="ERROR_CODE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out1" name="out1">
-      <column key="false" length="0" name="Body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="ERROR_CODE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1">
-        <nodes name="Body" outgoingConnections="//@node.1/@nodeData/@connections.0" type="id_String" xpath="row1/Body"/>
-        <nodes name="ERROR_CODE" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_Integer" xpath="row1/ERROR_CODE"/>
-      </inputTrees>
-      <outputTrees name="out1">
-        <nodes expression="row1.Body" incomingConnections="//@node.1/@nodeData/@connections.0" name="Body" type="id_String" xpath="out1/Body"/>
-        <nodes expression="row1.ERROR_CODE" incomingConnections="//@node.1/@nodeData/@connections.1" name="ERROR_CODE" type="id_Integer" xpath="out1/ERROR_CODE"/>
-      </outputTrees>
-      <varTables minimized="true" name="Var"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
-    </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
@@ -171,26 +147,22 @@
       <column defaultValue="" key="false" length="0" name="ERROR_CODE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tREST_1" offsetLabelX="0" offsetLabelY="0" source="tREST_1" target="tXMLMap_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tREST_1" offsetLabelX="0" offsetLabelY="0" source="tREST_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tREST_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_81db882c-eed3-46c5-a407-a384f594997e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nBzrrno4nRXfgoO2iodkeIqWZ7MWKIt/j4gOLFuN8dFeI+oDUbCWtMD5xvEgAhgJmPtsl2ymccjN&#13;
-pTShICSc3A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e2d9277a-11df-4ce0-9a7a-f79dd7897c12"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JTqbQeP+2kAVAk2W7SvFZD32XQ4/D7rXQK2UpUeWTwPkAhgeC7Qd0bEC6ldSqda0SfS9xHaY4fWG&#13;
-OqBGzgfgXw==</DigestValue></Reference></SignedInfo><SignatureValue>Il/bOUJvipaqSH8zrrtuOCOEbe0Y7DP9OP8PqX4Y27AVdBph6/RNgqq/Bv29I8f7SDzqL5GzC11v&#13;
-IC2h9grnmhcb53KTME+o983nks3EzCtAFEtnK2MNP0ONO+EyKvOlH8WddvvXCCDTGRLHfdLaK4N2&#13;
-AQ9vbW7uIEES7QT5dUzujAanM3RzeTUSfPR3tpJp2+8HK92paW5MJhfrIocCS34EqRAs4szZjuDd&#13;
-AYQhMuB2VdDbtYZMISxh0DZ8eE9ZRKElUaOZAhRkKdSj6ebDDnf6gOG4PkdwPHg/4K6f6bW6S4SF&#13;
-KsdIhlRklVsm9YV1BLAM0uhLhiWsW+yjOvsU4A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6720ab7d-8535-48fa-ab5b-e902d7a97b04"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gWRCL+GSeZtK0monX8G+uBzquB21lXe4N5F98AYeqYPE7KuNVIun6Az8SrJNY2Wbq/95BqnRFZZd&#13;
+Pd9DqW9uaQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_35db43f3-0c68-4ad3-a0ec-2b67918d3a5e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>36XhnQLzR+N8obTX89/3ysz89rZlX26lChIqBzZ7cTTyqm7kAIU11x3FirAg7Tif0TIC8vbLlaU1&#13;
+cNiMhPGwqA==</DigestValue></Reference></SignedInfo><SignatureValue>YX8FpeZxdc3DRIMyrm4KzZcuH1BNEMHYxYa50OHhrHAirUtnzX45DpmRl80sgw7dkCCRPUeQN1VT&#13;
+3klUmIpmutXNkT4REJFdd0i+bqOEG/DDdiEFWISY/IBA6Le6dewralX96mI5xqQ+woKuq5f2R9mS&#13;
+59EqZ2S1bTrAPyt2fhMuWY1t7v91TySW1hTA+TfiFBF3TF4annLA9OIYOvWIYfDd0qqt9+OmkT0n&#13;
+nvuw3RpaxXzrXqKMigVuh0GuGuC++1DnatbIRnCB2ogT3mfye2NQYau3zm2nHT+aUl9Vj4ruA1iJ&#13;
+4sGkuTZJ2EXF6Qi0pCjnEpZs7fF456BoeHjntg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -212,4 +184,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e2d9277a-11df-4ce0-9a7a-f79dd7897c12" Target="#_81db882c-eed3-46c5-a407-a384f594997e"><Timestamp>2023-10-02 09:04:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_35db43f3-0c68-4ad3-a0ec-2b67918d3a5e" Target="#_6720ab7d-8535-48fa-ab5b-e902d7a97b04"><Timestamp>2023-10-02 09:05:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
