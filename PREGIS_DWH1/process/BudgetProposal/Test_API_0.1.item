@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:uRxSSNm5ZUvIljf8tiuw4CbX8emlz3Wvigouhu4C"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:P4hKdwB1xKXbR5vMSuOlPxf6Myef+UKu7R3DnoZu"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JQVRAX7v1No7pY0aa7RNXZ84oRs+XCFFW5WDfkhm5s/U3fUgQCE/hbu6"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DhmJplaPueEZjZMFUPy9SfsCS9TNDtlstm/K7MC9ulihr1CgWwLRzYTF"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -111,7 +111,7 @@
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//access_token&#10;&#10;String accessToken = &quot;&quot;; // Dichiarazione esterna della variabile accessToken&#10;&#10;HttpClient client = HttpClients.createDefault();&#10;&#10;HttpPost httpPost = new HttpPost(https://login.microsoftonline.com/cc572706-b3d6-438f-90c5-0e359be525b4/oauth2/token);&#10;&#10;httpPost.addHeader(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;);&#10;&#10;String data = &quot;grant_type=client_credentials&amp;client_id=8608dc54-098f-4e4b-a2ae-9b5b2d7b0434&amp;client_secret=D5m8Q~A6nyl0eSimP4v4jT8UiLYYzIXMLgXHybjQ&amp;scope=https://analysis.windows.net/powerbi/api/.default&amp;resource=https://analysis.windows.net/powerbi/api&quot;;&#10;&#10;StringEntity stringEntity = new StringEntity(data);&#10;&#10;httpPost.setEntity(stringEntity);&#10;&#10;HttpResponse response = client.execute(httpPost);&#10;&#10;HttpEntity entity = response.getEntity();&#10;&#10;if (entity != null) {&#10;&#10;  String result = EntityUtils.toString(entity);&#10;&#10;  // Converte la stringa di risposta JSON in un oggetto JSONObject dalla libreria JSON Simple&#10;&#10;  org.json.simple.JSONObject jsonResponse = (org.json.simple.JSONObject) new JSONParser().parse(result);&#10;&#10;  // Estrai il valore &quot;access_token&quot; dal JSON&#10;&#10;  accessToken = (String) jsonResponse.get(&quot;access_token&quot;);&#10;&#10;  System.out.println(&quot;Access Token: &quot; + accessToken);&#10;&#10;}&#10;&#10;// Chiamata refresh&#10;if (!accessToken.isEmpty()) {&#10;    URL url = new URL(https://api.powerbi.com/v1.0/myorg/groups/7fe0310a-e755-48f9-9fb8-db36459653b7/datasets/035ecaf1-842d-4bea-8bd3-eb73307f17e4/refreshes);&#10;    HttpURLConnection connection = (HttpURLConnection) url.openConnection();&#10;    connection.setRequestMethod(&quot;POST&quot;);&#10;    connection.setRequestProperty(&quot;Accept&quot;, &quot;application/json&quot;);&#10;    connection.setRequestProperty(&quot;Authorization&quot;, &quot;Bearer &quot; + accessToken);&#10;&#10;    // Calcola la lunghezza del corpo della richiesta e imposta l'intestazione Content-Length&#10;    byte[] postData = data.getBytes(&quot;UTF-8&quot;);&#10;    int postDataLength = postData.length;&#10;    connection.setRequestProperty(&quot;Content-Length&quot;, Integer.toString(postDataLength));&#10;    connection.setDoOutput(true);&#10;&#10;    // Scrivi il corpo della richiesta&#10;    try (OutputStream os = connection.getOutputStream()) {&#10;        os.write(postData);&#10;    }&#10;&#10;    int responseCode = connection.getResponseCode();&#10;&#10;    if (responseCode == HttpURLConnection.HTTP_OK) {&#10;        // Ottieni l'input stream dalla connessione&#10;        InputStream inputStream = connection.getInputStream();&#10;        BufferedReader in = new BufferedReader(new InputStreamReader(inputStream));&#10;        String inputLine;&#10;        StringBuilder responseString = new StringBuilder();&#10;&#10;        while ((inputLine = in.readLine()) != null) {&#10;            responseString.append(inputLine);&#10;        }&#10;&#10;        in.close();&#10;        inputStream.close();&#10;&#10;        System.out.println(responseString.toString());&#10;    } else {&#10;        System.out.println(&quot;La richiesta ha restituito un codice di risposta: &quot; + responseCode);&#10;    }&#10;}  &#10;&#10;&#10;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import org.apache.http.HttpEntity;&#10;import org.apache.http.HttpResponse;&#10;import org.apache.http.client.HttpClient;&#10;import org.apache.http.client.methods.HttpPost;&#10;import org.apache.http.entity.StringEntity;&#10;import org.apache.http.impl.client.HttpClients;&#10;import org.apache.http.util.EntityUtils;&#10;import org.json.simple.JSONObject; // Importa la classe JSONObject dalla libreria JSON Simple &#10;import org.json.simple.parser.*;&#10;import org.json.simple.JSONArray;&#10;&#10;//&#10;import java.io.BufferedReader;&#10;import java.io.IOException;&#10;import java.io.InputStreamReader;&#10;import java.io.OutputStreamReader;&#10;import java.net.HttpURLConnection;&#10;import java.net.URL;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import org.apache.http.HttpEntity;&#10;import org.apache.http.HttpResponse;&#10;import org.apache.http.client.HttpClient;&#10;import org.apache.http.client.methods.HttpPost;&#10;import org.apache.http.entity.StringEntity;&#10;import org.apache.http.impl.client.HttpClients;&#10;import org.apache.http.util.EntityUtils;&#10;import org.json.simple.JSONObject; // Importa la classe JSONObject dalla libreria JSON Simple &#10;import org.json.simple.parser.*;&#10;import org.json.simple.JSONArray;&#10;&#10;//&#10;import java.io.BufferedReader;&#10;import java.io.IOException;&#10;import java.io.InputStreamReader;&#10;import java.io.OutputStreamReader;&#10;import java.net.HttpURLConnection;&#10;import java.net.URL;&#10;import javax.net.ssl.HttpsURLConnection;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
@@ -155,7 +155,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Io2T/u19aZCd657qbHbNYhOeoda0j+h5M5TtaBik"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:yIM9Z6c5buhcYIUBtabcCekPgclm6yINr6D/g6em"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -233,7 +233,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;BudgetProposal&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;DDS&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;TalendUser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ly4vShHhP9fiEepJP1Z/3InUxWujSiGG4yrddHWMuN7zPzQ17BtfoG5vzlM="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cov62P3chRnTdJwPwmgV+m00cJ1zI2Mfu99Rvi3KZPl7BCqMIDEkglSA/3A="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -297,13 +297,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d8823503-c98a-4018-9fe4-683cbdb8d9eb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2eo7SocHeqsV6i6Ymw/sC72HIpVZYZ32uWOV3PufYVct/8F+/XH1r41Mbjc5Eb1voKLArlL1dsST&#13;
-USvTkwi/Jg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d77e108c-fe93-4640-9279-d095df8f9f42"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yb8NKtRzdxF1RCahWZVQ81rXM1Z2GSH9RZ5TSehP74njJmC1FAQX6rL2qDvCaPUjEOSM0bNlLzDv&#13;
-ytpQzwb+NA==</DigestValue></Reference></SignedInfo><SignatureValue>Itvx//oZaFAC4SwpWVYTjKs9KD2sEawYsj0TrQGzgAemfWDygYLIKf2M+70+ogIiQ1V+hLTZqbJn&#13;
-CgVCqhZ3/KPb7Ft2pNswX8VcEukxhKYthY98jsn74UDiy+x8U8TVhTJPEhzjELxxzXy62TN0sjHJ&#13;
-H2LzadFktZbD6MFQCDWbPuBWNGK1j8boobGTKn0Zv7Lt/uxy7xyWG2bvF7WVBv6iyOj71OHZkLAc&#13;
-6wvYRz0vsoS0mSq076OFarZ3dlRbQt+oq2iR8SHrwez1NGhZUspncG5V9J4JPU3FG3BXNOcFZsi9&#13;
-1sDFnrTVCoiV9DPLFBGbLzzye0U21vqEkrnyhw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e8f0d3ca-1901-492d-bcd4-a456976db719"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cmSa8ZPBuCaMfd5e95pbYFtqgUUWjbqms3682P8f7OD6qZ9pyV7nXUyBh856p52paIzyIEE95Ar/&#13;
+mAef/MGoJg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f02fbc15-f2a0-4981-8e9d-aaaa39de5ee4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>e468X9HEC0VKTwqk4vD4wp73sMz73+AckFuFpRYjfrMMbShWoEgocBKhJiku0w6xDJvYJnP3PTqR&#13;
+2PvKIFpj5g==</DigestValue></Reference></SignedInfo><SignatureValue>dg0u3TJvizvRQkr/8ihKJlh9VRamjycymrsFhNjKHIOSaGLPlT9W7Wl9enLvGmnQelVbMbRg7/F9&#13;
+BZxmuLuCjtk7XBw3QetsUyaV3EjkgO597SJE6nJHVIR2oh8Q/PmvI81nGU5IQ6TP3QTmniFc872d&#13;
+Pt5TO/fEJtYovY/V5fnVir1wyemwXRgWGbYxvoxlSoEJAvXDlhK0aHuL6bpY6NStke5ZMZma6xWo&#13;
+jEaHV2Vr9kYYYdasGajM5ZiWGoFeVLA5uksAbEhXTHxhgl3BJCf9QColnfD1Wu2Q0VcOcqlpxFLb&#13;
+Mwmu9Z5kPG6x/dxqmYSicqF8KTqU0JPH5ZfElQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -325,4 +325,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d77e108c-fe93-4640-9279-d095df8f9f42" Target="#_d8823503-c98a-4018-9fe4-683cbdb8d9eb"><Timestamp>2023-10-11 08:25:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f02fbc15-f2a0-4981-8e9d-aaaa39de5ee4" Target="#_e8f0d3ca-1901-492d-bcd4-a456976db719"><Timestamp>2023-10-11 08:26:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
