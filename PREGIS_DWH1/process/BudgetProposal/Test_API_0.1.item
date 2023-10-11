@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:aabgyBxfKi5EeFJgplDPxxRHk1MTSEscqpN+zVmo"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:+k/Wny1KXkpQgkzlx0+zlxeNuTrWDv0a9fEdCgl3"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hUJfftwlOwJ8nzJKQytbl9yVxIBvTbA6L9HUw/Mjq3NRl9/S3PyQKq2S"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JAuWs/ndefDs3Qky8PyCEh58AiIPWpZhtbTE2vINKK+1xeOZMkft1HgA"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -108,249 +108,10 @@
     <routinesParameter id="_WX-HAMCWEeyX69HJLuOu2Q" name="TalendStringUtil"/>
     <routinesParameter id="_WX09EMCWEeyX69HJLuOu2Q" name="TalendString"/>
   </parameters>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
-    <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="grant_type"/>
-      <elementValue elementRef="VALUE" value="&quot;Client_credentials&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="client_id"/>
-      <elementValue elementRef="VALUE" value="&quot;8608dc54-098f-4e4b-a2ae-9b5b2d7b0434&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="client_secret"/>
-      <elementValue elementRef="VALUE" value="&quot;D5m8Q~A6nyl0eSimP4v4jT8UiLYYzIXMLgXHybjQ&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="scope"/>
-      <elementValue elementRef="VALUE" value="&quot;https://analysis.windows.net/powerbi/api/.default&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="resource"/>
-      <elementValue elementRef="VALUE" value="&quot;https://analysis.windows.net/powerbi/api&quot;"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
-    <elementParameter field="TABLE" name="INTABLE" show="false"/>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="-1" name="grant_type" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="client_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="client_secret" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="scope" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="resource" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out2" name="out2">
-      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column comment="" key="false" length="4098" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1">
-        <nodes name="grant_type" outgoingConnections="//@node.1/@nodeData/@connections.0" type="id_String" xpath="row1/grant_type"/>
-        <nodes name="client_id" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_String" xpath="row1/client_id"/>
-        <nodes name="client_secret" outgoingConnections="//@node.1/@nodeData/@connections.2" type="id_String" xpath="row1/client_secret"/>
-        <nodes name="scope" outgoingConnections="//@node.1/@nodeData/@connections.3" type="id_String" xpath="row1/scope"/>
-        <nodes name="resource" outgoingConnections="//@node.1/@nodeData/@connections.4" type="id_String" xpath="row1/resource"/>
-      </inputTrees>
-      <outputTrees activateCondensedTool="true" allInOne="true" name="out2">
-        <nodes expression="" name="body" pattern="" type="id_Document" xpath="out2/body">
-          <children expression="" loop="true" main="true" name="root" type="id_String" xpath="out2.body:/root" xsi:type="TalendXMLMap:OutputTreeNode">
-            <children expression="row1.grant_type" incomingConnections="//@node.1/@nodeData/@connections.0" name="grant_type" type="id_String" xpath="out2.body:/root/grant_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row1.client_id" incomingConnections="//@node.1/@nodeData/@connections.1" name="client_id" type="id_String" xpath="out2.body:/root/client_id" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row1.client_secret" incomingConnections="//@node.1/@nodeData/@connections.2" name="client_secret" type="id_String" xpath="out2.body:/root/client_secret" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row1.scope" incomingConnections="//@node.1/@nodeData/@connections.3" name="scope" type="id_String" xpath="out2.body:/root/scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row1.resource" incomingConnections="//@node.1/@nodeData/@connections.4" name="resource" type="id_String" xpath="out2.body:/root/resource" xsi:type="TalendXMLMap:OutputTreeNode"/>
-          </children>
-        </nodes>
-        <nodes expression="" name="string" pattern="" type="id_String" xpath="out2/string"/>
-      </outputTrees>
-      <varTables minimized="true" name="Var"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
-    </nodeData>
-  </node>
-  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="-45" offsetLabelY="0" posX="512" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;https://login.microsoftonline.com&quot;"/>
-    <elementParameter field="TEXT" name="PATH" value="&quot;/cc572706-b3d6-438f-90c5-0e359be525b4/oauth2/token&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
-    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/x-www-form-urlencoded"/>
-    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="*/*"/>
-    <elementParameter field="TABLE" name="QUERY"/>
-    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
-    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
-    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:Hd9peMJ9TD1ONUQi/LHw1/iKKm/hIdubzJF9Eg4MXFP3IXm/i9Q="/>
-    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
-    <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
-    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="LOG_MESSAGES" value="true"/>
-    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
-    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" show="false" value="false"/>
-    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
-    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" show="false" value="true"/>
-    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" show="false" value="false"/>
-    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
-    <elementParameter field="TABLE" name="HEADERS">
-      <elementValue elementRef="NAME" value="&quot;Content-Type&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;application/x-www-form-urlencoded&quot;"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
-    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
-    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
-    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
-    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
-    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
-    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
-    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
-    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
-    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:U5iuhWleLmIdo6t9F9BCAK+n5A688CG6IWq+qCOQ"/>
-    <elementParameter field="TEXT" name="ARRAY_KEYS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRESTClient_1">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="RESPONSE" name="RESPONSE">
-      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FAULT" name="FAULT">
-      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;HEADERS: &quot; + ((java.util.Map&lt;String,java.util.List&lt;String&gt;&gt;)globalMap.get(&quot;tRESTClient_1_HEADERS&quot;)) );&#10;&#10;System.out.println(&quot;CORRELATION_ID: &quot; + ((String)globalMap.get(&quot;tRESTClient_1_CORRELATION_ID&quot;)) );"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_2">
-      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="URL" value="https://api.powerbi.com/v1.0/myorg/groups/7fe0310a-e755-48f9-9fb8-db36459653b7/datasets/035ecaf1-842d-4bea-8bd3-eb73307f17e4/refreshes"/>
-    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
-    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml"/>
-    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/xml"/>
-    <elementParameter field="TABLE" name="QUERY"/>
-    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
-    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
-    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="OAUTH2_BEARER"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:wTmnPOTsMCeUQr8sEXNMG0fedxvmMGSfbmvFMER2AX6nZ8wvOq4="/>
-    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL2FuYWx5c2lzLndpbmRvd3MubmV0L3Bvd2VyYmkvYXBpIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvY2M1NzI3MDYtYjNkNi00MzhmLTkwYzUtMGUzNTliZTUyNWI0LyIsImlhdCI6MTY5Njk1MjEzNCwibmJmIjoxNjk2OTUyMTM0LCJleHAiOjE2OTY5NTYwMzQsImFpbyI6IkUyRmdZTmlzVWgzd0xQeGozUnBmWTFubTA2NDhBQT09IiwiYXBwaWQiOiI4NjA4ZGM1NC0wOThmLTRlNGItYTJhZS05YjViMmQ3YjA0MzQiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jYzU3MjcwNi1iM2Q2LTQzOGYtOTBjNS0wZTM1OWJlNTI1YjQvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJkNjQ2NzJkMy01NzVhLTQ3MWMtOGM1Mi04ZTNjZDRlNjY1YmMiLCJyaCI6IjAuQVM4QUJpZFh6TmF6ajBPUXhRNDFtLVVsdEFrQUFBQUFBQUFBd0FBQUFBQUFBQUN3QUFBLiIsInN1YiI6ImQ2NDY3MmQzLTU3NWEtNDcxYy04YzUyLThlM2NkNGU2NjViYyIsInRpZCI6ImNjNTcyNzA2LWIzZDYtNDM4Zi05MGM1LTBlMzU5YmU1MjViNCIsInV0aSI6IkdnNTBaTl80VmtpQ0V5OWJYaUtmQUEiLCJ2ZXIiOiIxLjAifQ.lH7Danv9UpoZ1ArvgpDNuSf1FPl5k5V4EnIo_VPCpWyBroQ52Kma54n9CrVqNPsnlZcWXUQp78j77PNp3O_4ygT3A99vCu4CJFq1AymijUfw5P9ZVkUvHrHdet5Ws0hZEkAyH56OvrzZAD2-FMeh45xuywAYxJg69VTIrtKixfQGmPqR4aTDsg6VVOaJR3JUP2jkrE5DB7a7dvpLmGh8W_SuvX8JxsUXPIGIF_y94dYZ8CvWjBxIGWYr4PyOjIRCs8zsjeNw9wzbrJ8iKc538MZx_oe0-ycrK2KoIl-nCKvGFp9L6xScUd0Rtz99vgd4ANb1Tqf_uyPYmjFQp3Ae_A&quot;;"/>
-    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
-    <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
-    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
-    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
-    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" show="false" value="false"/>
-    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
-    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
-    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" show="false" value="false"/>
-    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" show="false" value="false"/>
-    <elementParameter field="TABLE" name="HEADERS"/>
-    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
-    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
-    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
-    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
-    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
-    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
-    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
-    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
-    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
-    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:0ME39hcsKXiMCubnq7YjNqgkvVY68GHk2zI38Vu+"/>
-    <elementParameter field="TEXT" name="ARRAY_KEYS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRESTClient_2">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="RESPONSE" name="RESPONSE">
-      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FAULT" name="FAULT">
-      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="statusCode"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="string"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_2">
-      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="288">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;&#10;        try {&#10;&#10;            HttpClient client = HttpClients.createDefault();&#10;&#10; &#10;&#10;&#9;&#9;&#9;HttpPost httpPost = new HttpPost(&quot;https://login.microsoftonline.com/cc572706-b3d6-438f-90c5-0e359be525b4/oauth2/token&quot;);&#10;&#10; &#10;&#10;            httpPost.addHeader(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;);&#10; &#10;&#10;            String data = &quot;grant_type=client_credentials&amp;client_id=8608dc54-098f-4e4b-a2ae-9b5b2d7b0434&amp;client_secret=D5m8Q~A6nyl0eSimP4v4jT8UiLYYzIXMLgXHybjQ&amp;scope=https://analysis.windows.net/powerbi/api/.default&amp;resource=https://analysis.windows.net/powerbi/api&quot;;&#10;&#10;            StringEntity stringEntity = new StringEntity(data);&#10;&#10;            httpPost.setEntity(stringEntity);&#10;&#10; &#10;&#10;            HttpResponse response = client.execute(httpPost);&#10;&#10;            HttpEntity entity = response.getEntity();&#10;&#10; &#10;&#10;            if (entity != null) {&#10;&#10;                String result = EntityUtils.toString(entity);&#10;&#10; &#10;&#10;                // Converte la stringa di risposta JSON in un oggetto JSONObject dalla libreria JSON Simple&#10;&#10;                org.json.simple.JSONObject jsonResponse = (org.json.simple.JSONObject) new JSONParser().parse(result);&#10;&#10; &#10;&#10;                // Estrai il valore &quot;access_token&quot; dal JSON&#10;&#10;                String accessToken = (String) jsonResponse.get(&quot;access_token&quot;);&#10;&#10; &#10;&#10;                System.out.println(&quot;Access Token: &quot; + accessToken);&#10;&#10;            }&#10;&#10;        } catch (Exception e) {&#10;&#10;            e.printStackTrace();&#10;&#10;        }&#10;&#10;    "/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import org.apache.http.HttpEntity;&#10;&#10;import org.apache.http.HttpResponse;&#10;&#10;import org.apache.http.client.HttpClient;&#10;&#10;import org.apache.http.client.methods.HttpPost;&#10;&#10;import org.apache.http.entity.StringEntity;&#10;&#10;import org.apache.http.impl.client.HttpClients;&#10;&#10;import org.apache.http.util.EntityUtils;&#10;&#10;import org.json.simple.JSONObject; // Importa la classe JSONObject dalla libreria JSON Simple &#10;import org.json.simple.parser.*;&#10;import org.json.simple.JSONArray;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;&#10;        try {&#10;    // estrazione token    &#10;&#10;            HttpClient client = HttpClients.createDefault();&#10;&#10; &#10;&#10;&#9;&#9;&#9;HttpPost httpPost = new HttpPost(&quot;https://login.microsoftonline.com/cc572706-b3d6-438f-90c5-0e359be525b4/oauth2/token&quot;);&#10;&#10; &#10;&#10;            httpPost.addHeader(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;);&#10; &#10;&#10;            String data = &quot;grant_type=client_credentials&amp;client_id=8608dc54-098f-4e4b-a2ae-9b5b2d7b0434&amp;client_secret=D5m8Q~A6nyl0eSimP4v4jT8UiLYYzIXMLgXHybjQ&amp;scope=https://analysis.windows.net/powerbi/api/.default&amp;resource=https://analysis.windows.net/powerbi/api&quot;;&#10;&#10;            StringEntity stringEntity = new StringEntity(data);&#10;&#10;            httpPost.setEntity(stringEntity);&#10;   &#10;&#10; &#10;&#10;            HttpResponse response = client.execute(httpPost);&#10;&#10;            HttpEntity entity = response.getEntity();&#10;&#10; &#10;&#10;            if (entity != null) {&#10;&#10;                String result = EntityUtils.toString(entity);&#10;&#10; &#10;&#10;                // Converte la stringa di risposta JSON in un oggetto JSONObject dalla libreria JSON Simple&#10;&#10;                org.json.simple.JSONObject jsonResponse = (org.json.simple.JSONObject) new JSONParser().parse(result);&#10;&#10; &#10;&#10;                // Estrai il valore &quot;access_token&quot; dal JSON&#10;&#10;                String accessToken = (String) jsonResponse.get(&quot;access_token&quot;);&#10;&#10; &#10;&#10;                System.out.println(&quot;Access Token: &quot; + accessToken);&#10;&#10;            }&#10;&#10;        } catch (Exception e) {&#10;&#10;            e.printStackTrace();&#10;&#10;        }&#10;&#10;    // chiamata refresh&#10;    try {&#10;&#10;            // URL della richiesta           &#10;&#9;&#9;&#9;URL url = new URL(&quot;https://api.powerbi.com/v1.0/myorg/groups/7fe0310a-e755-48f9-9fb8-db36459653b7/datasets/035ecaf1-842d-4bea-8bd3-eb73307f17e4/refreshes&quot;);&#10;&#10;&#10;            // Apre una connessione HttpURLConnection            &#10;&#9;&#9;&#9;HttpURLConnection connection = (HttpURLConnection) url.openConnection();&#10;&#10;            connection.setRequestMethod(&quot;POST&quot;);&#10;&#10;&#10;            // Imposta l'intestazione &quot;Accept&quot;            &#10;&#9;&#9;&#9;connection.setRequestProperty(&quot;Accept&quot;, &quot;application/json&quot;);&#10;&#10;&#10;            // Imposta l'intestazione &quot;Authorization&quot; con il token Bearer            &#10;&#9;&#9;&#9;connection.setRequestProperty(&quot;Authorization&quot;, &quot;Bearer &quot; + accessToken);&#10;&#10;&#10;            // Ottiene la risposta            int responseCode = connection.getResponseCode();&#10;&#10;            if (responseCode == HttpURLConnection.HTTP_OK) {&#10;&#10;                BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));&#10;&#10;                String inputLine;                StringBuilder response = new StringBuilder();&#10;&#10;&#10;                while ((inputLine = in.readLine()) != null) {&#10;&#10;                    response.append(inputLine);&#10;&#10;                }&#10;&#10;                in.close();&#10;&#10;&#10;                // Stampa la risposta&#10;&#10;                System.out.println(response.toString());&#10;&#10;            } else {&#10;&#10;                System.out.println(&quot;La richiesta ha restituito un codice di risposta: &quot; + responseCode);&#10;&#10;            }&#10;&#10;        } catch (IOException e) {&#10;&#10;            e.printStackTrace();&#10;&#10;        }&#10;    "/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import org.apache.http.HttpEntity;&#10;&#10;import org.apache.http.HttpResponse;&#10;&#10;import org.apache.http.client.HttpClient;&#10;&#10;import org.apache.http.client.methods.HttpPost;&#10;&#10;import org.apache.http.entity.StringEntity;&#10;&#10;import org.apache.http.impl.client.HttpClients;&#10;&#10;import org.apache.http.util.EntityUtils;&#10;&#10;import org.json.simple.JSONObject; // Importa la classe JSONObject dalla libreria JSON Simple &#10;import org.json.simple.parser.*;&#10;import org.json.simple.JSONArray;&#10;&#10;//&#10;import java.io.BufferedReader;&#10;import java.io.IOException;&#10;import java.io.InputStreamReader;&#10;import java.net.HttpURLConnection;&#10;import java.net.URL;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
@@ -382,67 +143,38 @@
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="statusCode"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="string"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:o+s49dYkygFWzT2FF7Bzpw7+o6Hm4gpcEItvQ3ef"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select id, name from employee&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
-      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="tDBInput_1"/>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tXMLMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTClient_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
-  </connection>
-  <connection connectorName="RESPONSE" label="row2" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_1" target="tJava_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
-  </connection>
-  <connection connectorName="RESPONSE" label="row3" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_2" target="tLogRow_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
-  </connection>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
@@ -469,17 +201,17 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a465d6be-8316-46d4-a000-7d7b2bc7ec9b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>diFlAUBzZ9N9qtFapX+h8QobV4fLClYNxV+QRS+kkCAPg6CB/XB5yvgtJuFVgex2+CrSftgBf6cd&#13;
-+w/1dUXaJA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_88c7b239-67e2-4734-a683-dd34bd58641b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yHcnDV+UJzJokh6pRrjEiEE9jABHeSZb6ydWve7kuzhYXmuE7Kd5I8YHk3wZ3XmPjUiIFcQA3liD&#13;
-Q3WkmQBBQA==</DigestValue></Reference></SignedInfo><SignatureValue>CSasb8OnvITRnPl9zK5LWu98o+3FA7d0czAUf1/buLChUT5r2WKIKjyehtQZJ07xb1LknSNwPUSh&#13;
-Ie7YePYzoW5fYpZ7gs70fZy+90l9vi2rey3fK3/DZADr/Itz6VK9+4Es/hBB5+fhGNXBd0E00ADS&#13;
-W6f4o3cSJKF5HZXtdDgHtmiYiUQUkyXBTH/K2QlJEoLrirLK34VAye+2lMc+1Y9H4Rl0T7yYHpMn&#13;
-ZNsWaayYcVWriyaGZX6h84+T3HTYBFQqhNyLTotH36TwBpJmhLvv58um0xKXeaRvh0exDw13p2Bf&#13;
-fyF5xCkIIm9UGmOUsULW8oHZvQFucK5qXcV/gA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f075af9d-43f0-40cb-bb04-e45681e3c4b3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5w/VnuZPVNvkIyYupbvrR9+2/yGj6Yn+xUJEjpkLCuTAxcJ6rNYx2RAvgSGt9arYOcCZ6+ec5iWn&#13;
+n76TkM0Zbg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_291d2776-3956-458a-a366-e5beeffd093d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AmIXfSc0tROlMy8ClemNnRsK53QE7w/HiUATaBn2wtFPKU9PO98G12gyp2aFZqG0Q+QrqME5FHWO&#13;
+BC9vvM0Q8g==</DigestValue></Reference></SignedInfo><SignatureValue>nB39/EObyBdJm4EEIoqCmxob1C/enceZR1KhPMN6wAN/BEtLQojjP7PZNQClRNnahvibNHM/PxYl&#13;
+Wg0sfXxQHQd2vHpq8xIUA7aMy9Yl3oR4mUVSMf66Q2Bvuq5MV9kSMD2KFBj6pP2s2eCF6YBMNGBg&#13;
+KgpAbCTwf7KK4jAVERZqHtmCvZkssNHW5cXUViDx/UDj3vOWyBJQH73NKbAObQJOPsHheu8+1t3A&#13;
+DK4jF8T0uZcL4o3RDeVMVIVYZsaFdP2KqtgOHh7HhNruWoJefXnTxUUSjXwTBwIronAj4wRWqlx6&#13;
+vdNJUvO9Ug0UIaT2IJ75IjSmo1A058Nl1Uu8Sw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -501,4 +233,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_88c7b239-67e2-4734-a683-dd34bd58641b" Target="#_a465d6be-8316-46d4-a000-7d7b2bc7ec9b"><Timestamp>2023-10-11 07:14:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_291d2776-3956-458a-a366-e5beeffd093d" Target="#_f075af9d-43f0-40cb-bb04-e45681e3c4b3"><Timestamp>2023-10-11 07:22:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
