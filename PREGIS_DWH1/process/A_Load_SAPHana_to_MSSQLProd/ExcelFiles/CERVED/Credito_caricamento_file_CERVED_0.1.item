@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Setw4KxwwNQm5KxQRzIasC+3jdigVW5ybcFReUWf"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:VdFkhCTw1bdHIxjFB7swYWa1/iQJFv6vEMoVO/QL"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Rx9d7sLMOORqLS6oCLAMMksVzeqsu8mPuLAqLd+m5tHsQU3vISUL9+46"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:su4WsE0fCUj0CjqYoeY2GOnA+woEhFXNa1W4/A4fjHEvDbCRKL01FAOL"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -119,7 +119,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;Excel&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ODS&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;TalendUser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JBlMAXd2kmQXgVHqyy6ZLMGjUghyOrOPky+kpMf9nxdustjuihaQz9dN/U4="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RHpOorjvF7ruL6U+np7AJd6j0ScnaQu7PyEsoIJV5U8Ai+tYEtZmgxjANQY="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -145,7 +145,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rVQJnxVcNvGGBi1GZxeaggSUQEGqiRgiXqjt0if5"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HJd3cdrCDEy/PYLd8t8gPviTAdwbwv51aNcPQdEr"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -198,7 +198,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:oTOA76XNAGM752NOfOcn4Hu5NUvGMhFqoT/EXLzh"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:+5cTMUT4O3D/t+mjzMIkA8FQ/EUOUIrB1MfhLaoS"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;Estrazione_24032024&quot;"/>
@@ -500,7 +500,147 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="224">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j36uACF8Ee-c18XOD0oaQw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="CERVED_output">
+      <column comment="" key="false" length="255" name="CD_RICHIESTA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ID_CERVED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RIFERIMENTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="COD__CLIENTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SRC_RAGIONE_SOCIALE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SRC_CODICE_FISCALE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SRC_PARTITA_IVA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SRC_INDIRIZZO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SRC_CAP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SRC_LOCALITA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SRC_PROVINCIA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RAGIONE_SOCIALE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CD_NATURA_GIURIDICA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CODICE_FISCALE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="PARTITA_IVA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CLASSE_RISCHIO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="DESCRIZIONE_CLASSE_RISCHIO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="FIDO_CERTIFICATO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="VALUTAZIONE_TEMPI_PAGAMENTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="DATA_SCADENZA_MONITORAGGIO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ESPOSIZIONE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="PEC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="DATA_INIZIO_ATTIVITA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CAPITALE_SOCIALE_VERSATO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CGS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="DESCRIZIONE_CGS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CODICE_ATECO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="DATA_COSTITUZIONE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="DATA_STATO_ATTIVITA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="STATO_ATTIVITA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CD_NATURA_GIURIDICA1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RICAVI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="UTILE_PERDITA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="PATRIMONIO_NETTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="PASSIVO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CAPITALE_INVESTITO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SCORE_IMMOBILIARE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="FileName" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;)) " name="var1" type="id_String"/>
+      </varTables>
+      <outputTables name="CERVED_output" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.CD_RICHIESTA " name="CD_RICHIESTA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ID_CERVED " name="ID_CERVED" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.RIFERIMENTO " name="RIFERIMENTO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.COD__CLIENTE " name="COD__CLIENTE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SRC_RAGIONE_SOCIALE " name="SRC_RAGIONE_SOCIALE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SRC_CODICE_FISCALE " name="SRC_CODICE_FISCALE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SRC_PARTITA_IVA " name="SRC_PARTITA_IVA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SRC_INDIRIZZO " name="SRC_INDIRIZZO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SRC_CAP " name="SRC_CAP" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.SRC_LOCALITA " name="SRC_LOCALITA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SRC_PROVINCIA " name="SRC_PROVINCIA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.RAGIONE_SOCIALE " name="RAGIONE_SOCIALE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CD_NATURA_GIURIDICA " name="CD_NATURA_GIURIDICA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CODICE_FISCALE " name="CODICE_FISCALE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.PARTITA_IVA " name="PARTITA_IVA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CLASSE_RISCHIO " name="CLASSE_RISCHIO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DESCRIZIONE_CLASSE_RISCHIO " name="DESCRIZIONE_CLASSE_RISCHIO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.FIDO_CERTIFICATO " name="FIDO_CERTIFICATO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.VALUTAZIONE_TEMPI_PAGAMENTO " name="VALUTAZIONE_TEMPI_PAGAMENTO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DATA_SCADENZA_MONITORAGGIO " name="DATA_SCADENZA_MONITORAGGIO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ESPOSIZIONE " name="ESPOSIZIONE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.PEC " name="PEC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DATA_INIZIO_ATTIVITA " name="DATA_INIZIO_ATTIVITA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CAPITALE_SOCIALE_VERSATO " name="CAPITALE_SOCIALE_VERSATO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CGS " name="CGS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DESCRIZIONE_CGS " name="DESCRIZIONE_CGS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CODICE_ATECO " name="CODICE_ATECO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DATA_COSTITUZIONE " name="DATA_COSTITUZIONE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DATA_STATO_ATTIVITA " name="DATA_STATO_ATTIVITA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.STATO_ATTIVITA " name="STATO_ATTIVITA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CD_NATURA_GIURIDICA1 " name="CD_NATURA_GIURIDICA1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.RICAVI " name="RICAVI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.UTILE_PERDITA " name="UTILE_PERDITA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.PATRIMONIO_NETTO " name="PATRIMONIO_NETTO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.PASSIVO " name="PASSIVO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CAPITALE_INVESTITO " name="CAPITALE_INVESTITO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SCORE_IMMOBILIARE " name="SCORE_IMMOBILIARE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.var1 " name="FileName" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="CD_RICHIESTA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ID_CERVED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RIFERIMENTO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="COD__CLIENTE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SRC_RAGIONE_SOCIALE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SRC_CODICE_FISCALE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SRC_PARTITA_IVA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SRC_INDIRIZZO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SRC_CAP" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="SRC_LOCALITA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SRC_PROVINCIA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RAGIONE_SOCIALE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CD_NATURA_GIURIDICA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CODICE_FISCALE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PARTITA_IVA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CLASSE_RISCHIO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DESCRIZIONE_CLASSE_RISCHIO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIDO_CERTIFICATO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="VALUTAZIONE_TEMPI_PAGAMENTO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATA_SCADENZA_MONITORAGGIO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ESPOSIZIONE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PEC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATA_INIZIO_ATTIVITA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CAPITALE_SOCIALE_VERSATO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CGS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DESCRIZIONE_CGS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CODICE_ATECO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATA_COSTITUZIONE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATA_STATO_ATTIVITA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="STATO_ATTIVITA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CD_NATURA_GIURIDICA1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RICAVI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UTILE_PERDITA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PATRIMONIO_NETTO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PASSIVO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CAPITALE_INVESTITO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SCORE_IMMOBILIARE" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
@@ -511,7 +651,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:PWbdb17UWDzMjp9NY83t8wLz32yIkCg/irr0jZjm"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fXeF+AuvlXwFKpjc9rwSiG3MAGe8/ENKbw6FlyC3"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Credito_CERVED&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -820,9 +960,13 @@
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="CERVED_output" lineStyle="0" metaname="CERVED_output" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CERVED_output"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
@@ -839,13 +983,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4cb2ca43-b5c3-46cc-9da1-3e83ee0d438b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hRI81MqYTyCGE+KCBD+xpFkroWGGnqTuN1pOwQIOJGFIt/qcEHYMQXpjkzVo8f4v6sOQEX27hkJg&#13;
-nkiXK9c1mQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2106485d-dbd0-4288-8ec1-18ac034750de"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VwlGDC3Up6B+iXc6QYHf8AjOCKpSzddFTO6ZpTthGxRV2uiBtB04x77zm1y05aak8i0RgpHjvO4r&#13;
-VjzdWiGC4A==</DigestValue></Reference></SignedInfo><SignatureValue>fs+OyzUcxATjrvskM8zU1DqgqrjsGQre7ynorJN4jgWU3ZbKzR5MYJptyMqed2v+Qz2DZqUt1izH&#13;
-7xKvJc1vVusk1ffgJX5o/yOKtg1/9blXrZnz6ZeHhFNOYVFCwGdUO8tJUrSI8c1arGxvS579S3Y3&#13;
-Aq6AWfWXJfcajVj8ugW3ORQWojAfddyPMLN/5T3I4GwhFgLwg/JHXo0cfm/SZwKWzz18/48+DwFY&#13;
-JVP/0cazxFoPB2XmAJjxKvE8qJPRBjGzqmyVo1KbcT7K2iSFI6jKnQzOU6YWcVieXxE195EbUHb0&#13;
-H7PmXJhbUWFZ5Kj5jaTMA86HmpU3y2Z6ObMurQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_67902942-b725-4044-831a-38e75c14d815"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4CO8c2WtSwZyrl//0bx5a2J4Srn1mCZD9bMhN0Gb94E/037VO62xiNk6laTtcERbVKvgxWZNH0z4&#13;
+edm6hP+kYA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_67f9caef-fca7-40e0-ba1c-9948b1405097"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aiXJS0vogz5UmT8K2aA0K+5QGnMFFlTPjzJ69yHE+05zOoPpmQsr+p7ZxMmmFQ/To+VBUJlsBWP5&#13;
+goPbsnY9vg==</DigestValue></Reference></SignedInfo><SignatureValue>E9FK75hk/ZZ3LeO/WCat0Zlj5XShARSguwbTNh5+PdcJF/6p8b50oqJZgwSkvgA0sF6PX3fQ/SJP&#13;
+al3A9HtIFJ7DscREN94MyZ4aqkS84dC2BYHXbyZrUiHbclD0K0ICHRwBcYr22rueIcG+puOrNVk3&#13;
+JdR8JifxB3a7biXa9Ht7LzCHK9aBqkeeT0RHtlYyC7ubuLhSKp+O15hPInm+IQX2iu7H7EHViLCV&#13;
+cyQD6kvIXf97UwlNilYfiVGGiiBJLKTtzgb610SOoXXOK6Sx9t6RhUk4JCsPz+M3ceeEd4Dxs9EC&#13;
+5za/mtnR/NgALiHUk+HwDa4QWBvimj7IVoc7Mw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -867,4 +1011,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2106485d-dbd0-4288-8ec1-18ac034750de" Target="#_4cb2ca43-b5c3-46cc-9da1-3e83ee0d438b"><Timestamp>2024-06-03 08:00:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_67f9caef-fca7-40e0-ba1c-9948b1405097" Target="#_67902942-b725-4044-831a-38e75c14d815"><Timestamp>2024-06-03 08:03:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
