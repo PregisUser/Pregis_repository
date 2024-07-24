@@ -1,10 +1,261 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendMetadata:SAPConnection xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xmi="http://www.omg.org/XMI" Client="200" Host="192.168.100.152" Language="EN" Password="enc:system.encryption.key.v1:zoIw5ReRJ/GGIukgd0/s5tTIOXdRt46Akz+A9vGfRDGkpfMY" SystemNumber="01" Username="ztest" jcoVersion="SAP2" xmi:id="_ImauYEnOEe-VRqFTsZyu7A" xmi:version="2.0"><Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a9a4009e-ec12-4e09-80f7-6cf691306d35"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Rf16n9XTHUuzyda6l1KCxGStwu01nmiWZvgOmUlichq58R04htQkUEFoQiO6DcuK7iylxLlIg8zB&#13;
-VlXfG4aIRg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_019563d3-5416-4cdb-9742-1fa2810ffdfc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FrWdPX4bcFwpZAlEOasfTmJ46Fm9o2lBeZ2bREcj7b4C7J3XseCd18/unGXA/Ll+2UCwoqQFLOfO&#13;
-FiqEN0Vf9g==</DigestValue></Reference></SignedInfo><SignatureValue>Vnlp7M0dphNxzy/W+yg+G5pZfXPyl6MYDU2PVJrD6qGkydl2AWi6ownV70qymg7OuaghMb406yU5&#13;
-J8lyAcKWpMdYFIhSwCMV/yXs7fyMnV1mOuErssRJ9JXX955ewvx/csPLtWdVWnpftZDLQ48zV6D1&#13;
-7TWQamJAUmoco/bpmaTdgzJCMWRlUX6ELl1sapLTaYmv3zMzN/1geeAn/xXKlIodV45lU6V5LFNh&#13;
-7ntKouNg5mMtLjGrj4UBHIcf/ufUUN4eYDJOpOVCuQqUruFQBQd+ytDQuVz+q0/QA6DwDVfTsYx4&#13;
-wby3HXkrzU5NA+bAESjyg/1j+JXZjum8vqw00A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.foundation.businessinformation="http:///orgomg/cwm/foundation/businessinformation.ecore" xmi:version="2.0">
+  <TalendMetadata:SAPConnection Client="200" Host="192.168.100.152" Language="EN" Password="enc:system.encryption.key.v1:zoIw5ReRJ/GGIukgd0/s5tTIOXdRt46Akz+A9vGfRDGkpfMY" SystemNumber="01" Username="ztest" jcoVersion="SAP2" xmi:id="_ImauYEnOEe-VRqFTsZyu7A">
+    <Funtions asXmlSchema="true" connection="_ImauYEnOEe-VRqFTsZyu7A" description="_h-YLMEnQEe-gk4uAo-zqmg" id="_gTKloEnQEe-gk4uAo-zqmg" label="Z_BAPI_AR_ACC_GETOPENITEMS" name="Z_BAPI_AR_ACC_GETOPENITEMS" xmi:id="_h-YKQEnQEe-gk4uAo-zqmg">
+      <paramData xmi:id="_h-YKQUnQEe-gk4uAo-zqmg">
+        <inputRoot name="Input" xmi:id="_h-YKQknQEe-gk4uAo-zqmg">
+          <children length="4" name="COMPANYCODE" tableResideInTables="false" type="string" xmi:id="_h-YKQ0nQEe-gk4uAo-zqmg"/>
+          <children name="KEYDATE" tableResideInTables="false" type="date" xmi:id="_h-YKREnQEe-gk4uAo-zqmg"/>
+          <children name="LINEITEMS" type="table" xmi:id="_h-YKRUnQEe-gk4uAo-zqmg">
+            <children length="4" name="COMP_CODE" tableResideInTables="false" type="string" xmi:id="_h-YKRknQEe-gk4uAo-zqmg"/>
+            <children length="10" name="CUSTOMER" tableResideInTables="false" type="string" xmi:id="_h-YKR0nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="SP_GL_IND" tableResideInTables="false" type="string" xmi:id="_h-YKSEnQEe-gk4uAo-zqmg"/>
+            <children name="CLEAR_DATE" tableResideInTables="false" type="date" xmi:id="_h-YKSUnQEe-gk4uAo-zqmg"/>
+            <children length="10" name="CLR_DOC_NO" tableResideInTables="false" type="string" xmi:id="_h-YKSknQEe-gk4uAo-zqmg"/>
+            <children length="18" name="ALLOC_NMBR" tableResideInTables="false" type="string" xmi:id="_h-YKS0nQEe-gk4uAo-zqmg"/>
+            <children name="FISC_YEAR" tableResideInTables="false" type="long" xmi:id="_h-YKTEnQEe-gk4uAo-zqmg"/>
+            <children length="10" name="DOC_NO" tableResideInTables="false" type="string" xmi:id="_h-YKTUnQEe-gk4uAo-zqmg"/>
+            <children name="ITEM_NUM" tableResideInTables="false" type="long" xmi:id="_h-YKTknQEe-gk4uAo-zqmg"/>
+            <children name="PSTNG_DATE" tableResideInTables="false" type="date" xmi:id="_h-YKT0nQEe-gk4uAo-zqmg"/>
+            <children name="DOC_DATE" tableResideInTables="false" type="date" xmi:id="_h-YKUEnQEe-gk4uAo-zqmg"/>
+            <children name="ENTRY_DATE" tableResideInTables="false" type="date" xmi:id="_h-YKUUnQEe-gk4uAo-zqmg"/>
+            <children length="5" name="CURRENCY" tableResideInTables="false" type="string" xmi:id="_h-YKUknQEe-gk4uAo-zqmg"/>
+            <children length="5" name="LOC_CURRCY" tableResideInTables="false" type="string" xmi:id="_h-YKU0nQEe-gk4uAo-zqmg"/>
+            <children length="16" name="REF_DOC_NO" tableResideInTables="false" type="string" xmi:id="_h-YKVEnQEe-gk4uAo-zqmg"/>
+            <children length="2" name="DOC_TYPE" tableResideInTables="false" type="string" xmi:id="_h-YKVUnQEe-gk4uAo-zqmg"/>
+            <children name="FIS_PERIOD" tableResideInTables="false" type="long" xmi:id="_h-YKVknQEe-gk4uAo-zqmg"/>
+            <children length="2" name="POST_KEY" tableResideInTables="false" type="string" xmi:id="_h-YKV0nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="DB_CR_IND" tableResideInTables="false" type="string" xmi:id="_h-YKWEnQEe-gk4uAo-zqmg"/>
+            <children length="4" name="BUS_AREA" tableResideInTables="false" type="string" xmi:id="_h-YKWUnQEe-gk4uAo-zqmg"/>
+            <children length="2" name="TAX_CODE" tableResideInTables="false" type="string" xmi:id="_h-YKWknQEe-gk4uAo-zqmg"/>
+            <children name="LC_AMOUNT" tableResideInTables="false" type="decimal" xmi:id="_h-YKW0nQEe-gk4uAo-zqmg"/>
+            <children name="AMT_DOCCUR" tableResideInTables="false" type="decimal" xmi:id="_h-YKXEnQEe-gk4uAo-zqmg"/>
+            <children name="LC_TAX" tableResideInTables="false" type="decimal" xmi:id="_h-YKXUnQEe-gk4uAo-zqmg"/>
+            <children name="TX_DOC_CUR" tableResideInTables="false" type="decimal" xmi:id="_h-YKXknQEe-gk4uAo-zqmg"/>
+            <children length="50" name="ITEM_TEXT" tableResideInTables="false" type="string" xmi:id="_h-YKX0nQEe-gk4uAo-zqmg"/>
+            <children length="10" name="BRANCH" tableResideInTables="false" type="string" xmi:id="_h-YKYEnQEe-gk4uAo-zqmg"/>
+            <children name="BLINE_DATE" tableResideInTables="false" type="date" xmi:id="_h-YKYUnQEe-gk4uAo-zqmg"/>
+            <children length="4" name="PMNTTRMS" tableResideInTables="false" type="string" xmi:id="_h-YKYknQEe-gk4uAo-zqmg"/>
+            <children name="DSCT_DAYS1" tableResideInTables="false" type="decimal" xmi:id="_h-YKY0nQEe-gk4uAo-zqmg"/>
+            <children name="DSCT_DAYS2" tableResideInTables="false" type="decimal" xmi:id="_h-YKZEnQEe-gk4uAo-zqmg"/>
+            <children name="NETTERMS" tableResideInTables="false" type="decimal" xmi:id="_h-YKZUnQEe-gk4uAo-zqmg"/>
+            <children name="DSCT_PCT1" tableResideInTables="false" type="decimal" xmi:id="_h-YKZknQEe-gk4uAo-zqmg"/>
+            <children name="DSCT_PCT2" tableResideInTables="false" type="decimal" xmi:id="_h-YKZ0nQEe-gk4uAo-zqmg"/>
+            <children name="DISC_BASE" tableResideInTables="false" type="decimal" xmi:id="_h-YKaEnQEe-gk4uAo-zqmg"/>
+            <children name="DSC_AMT_LC" tableResideInTables="false" type="decimal" xmi:id="_h-YKaUnQEe-gk4uAo-zqmg"/>
+            <children name="DSC_AMT_DC" tableResideInTables="false" type="decimal" xmi:id="_h-YKaknQEe-gk4uAo-zqmg"/>
+            <children length="1" name="PYMT_METH" tableResideInTables="false" type="string" xmi:id="_h-YKa0nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="PMNT_BLOCK" tableResideInTables="false" type="string" xmi:id="_h-YKbEnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="FIXEDTERMS" tableResideInTables="false" type="string" xmi:id="_h-YKbUnQEe-gk4uAo-zqmg"/>
+            <children length="10" name="INV_REF" tableResideInTables="false" type="string" xmi:id="_h-YKbknQEe-gk4uAo-zqmg"/>
+            <children name="INV_YEAR" tableResideInTables="false" type="long" xmi:id="_h-YKb0nQEe-gk4uAo-zqmg"/>
+            <children name="INV_ITEM" tableResideInTables="false" type="long" xmi:id="_h-YKcEnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="DUNN_BLOCK" tableResideInTables="false" type="string" xmi:id="_h-YKcUnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="DUNN_KEY" tableResideInTables="false" type="string" xmi:id="_h-YKcknQEe-gk4uAo-zqmg"/>
+            <children name="LAST_DUNN" tableResideInTables="false" type="date" xmi:id="_h-YKc0nQEe-gk4uAo-zqmg"/>
+            <children name="DUNN_LEVEL" tableResideInTables="false" type="long" xmi:id="_h-YKdEnQEe-gk4uAo-zqmg"/>
+            <children length="2" name="DUNN_AREA" tableResideInTables="false" type="string" xmi:id="_h-YKdUnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="DOC_STATUS" tableResideInTables="false" type="string" xmi:id="_h-YKdknQEe-gk4uAo-zqmg"/>
+            <children length="1" name="NXT_DOCTYP" tableResideInTables="false" type="string" xmi:id="_h-YKd0nQEe-gk4uAo-zqmg"/>
+            <children length="20" name="VAT_REG_NO" tableResideInTables="false" type="string" xmi:id="_h-YKeEnQEe-gk4uAo-zqmg"/>
+            <children length="3" name="REASON_CDE" tableResideInTables="false" type="string" xmi:id="_h-YKeUnQEe-gk4uAo-zqmg"/>
+            <children length="2" name="PMTMTHSUPL" tableResideInTables="false" type="string" xmi:id="_h-YKeknQEe-gk4uAo-zqmg"/>
+            <children length="12" name="REF_KEY_1" tableResideInTables="false" type="string" xmi:id="_h-YKe0nQEe-gk4uAo-zqmg"/>
+            <children length="12" name="REF_KEY_2" tableResideInTables="false" type="string" xmi:id="_h-YKfEnQEe-gk4uAo-zqmg"/>
+            <children length="5" name="T_CURRENCY" tableResideInTables="false" type="string" xmi:id="_h-YKfUnQEe-gk4uAo-zqmg"/>
+            <children name="AMOUNT" tableResideInTables="false" type="decimal" xmi:id="_h-YKfknQEe-gk4uAo-zqmg"/>
+            <children name="NET_AMOUNT" tableResideInTables="false" type="decimal" xmi:id="_h-YKf0nQEe-gk4uAo-zqmg"/>
+            <children length="35" name="NAME" tableResideInTables="false" type="string" xmi:id="_h-YKgEnQEe-gk4uAo-zqmg"/>
+            <children length="35" name="NAME_2" tableResideInTables="false" type="string" xmi:id="_h-YKgUnQEe-gk4uAo-zqmg"/>
+            <children length="35" name="NAME_3" tableResideInTables="false" type="string" xmi:id="_h-YKgknQEe-gk4uAo-zqmg"/>
+            <children length="35" name="NAME_4" tableResideInTables="false" type="string" xmi:id="_h-YKg0nQEe-gk4uAo-zqmg"/>
+            <children length="10" name="POSTL_CODE" tableResideInTables="false" type="string" xmi:id="_h-YKhEnQEe-gk4uAo-zqmg"/>
+            <children length="35" name="CITY" tableResideInTables="false" type="string" xmi:id="_h-YKhUnQEe-gk4uAo-zqmg"/>
+            <children length="3" name="COUNTRY" tableResideInTables="false" type="string" xmi:id="_h-YKhknQEe-gk4uAo-zqmg"/>
+            <children length="35" name="STREET" tableResideInTables="false" type="string" xmi:id="_h-YKh0nQEe-gk4uAo-zqmg"/>
+            <children length="10" name="PO_BOX" tableResideInTables="false" type="string" xmi:id="_h-YKiEnQEe-gk4uAo-zqmg"/>
+            <children length="10" name="POBX_PCD" tableResideInTables="false" type="string" xmi:id="_h-YKiUnQEe-gk4uAo-zqmg"/>
+            <children length="16" name="POBK_CURAC" tableResideInTables="false" type="string" xmi:id="_h-YKiknQEe-gk4uAo-zqmg"/>
+            <children length="18" name="BANK_ACCT" tableResideInTables="false" type="string" xmi:id="_h-YKi0nQEe-gk4uAo-zqmg"/>
+            <children length="15" name="BANK_KEY" tableResideInTables="false" type="string" xmi:id="_h-YKjEnQEe-gk4uAo-zqmg"/>
+            <children length="3" name="BANK_CTRY" tableResideInTables="false" type="string" xmi:id="_h-YKjUnQEe-gk4uAo-zqmg"/>
+            <children length="16" name="TAX_NO_1" tableResideInTables="false" type="string" xmi:id="_h-YKjknQEe-gk4uAo-zqmg"/>
+            <children length="11" name="TAX_NO_2" tableResideInTables="false" type="string" xmi:id="_h-YKj0nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="TAX" tableResideInTables="false" type="string" xmi:id="_h-YKkEnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="EQUAL_TAX" tableResideInTables="false" type="string" xmi:id="_h-YKkUnQEe-gk4uAo-zqmg"/>
+            <children length="3" name="REGION" tableResideInTables="false" type="string" xmi:id="_h-YKkknQEe-gk4uAo-zqmg"/>
+            <children length="2" name="CTRL_KEY" tableResideInTables="false" type="string" xmi:id="_h-YKk0nQEe-gk4uAo-zqmg"/>
+            <children length="2" name="INSTR_KEY" tableResideInTables="false" type="string" xmi:id="_h-YKlEnQEe-gk4uAo-zqmg"/>
+            <children length="16" name="PAYEE_CODE" tableResideInTables="false" type="string" xmi:id="_h-YKlUnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="LANGU" tableResideInTables="false" type="string" xmi:id="_h-YKlknQEe-gk4uAo-zqmg"/>
+            <children name="BILL_LIFE" tableResideInTables="false" type="decimal" xmi:id="_h-YKl0nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="BE_TAXCODE" tableResideInTables="false" type="string" xmi:id="_h-YKmEnQEe-gk4uAo-zqmg"/>
+            <children name="BILLTAX_LC" tableResideInTables="false" type="decimal" xmi:id="_h-YKmUnQEe-gk4uAo-zqmg"/>
+            <children name="BILLTAX_FC" tableResideInTables="false" type="decimal" xmi:id="_h-YKmknQEe-gk4uAo-zqmg"/>
+            <children name="LC_COL_CHG" tableResideInTables="false" type="decimal" xmi:id="_h-YKm0nQEe-gk4uAo-zqmg"/>
+            <children name="COLL_CHARG" tableResideInTables="false" type="decimal" xmi:id="_h-YKnEnQEe-gk4uAo-zqmg"/>
+            <children length="2" name="CHGS_TX_CD" tableResideInTables="false" type="string" xmi:id="_h-YKnUnQEe-gk4uAo-zqmg"/>
+            <children name="ISSUE_DATE" tableResideInTables="false" type="date" xmi:id="_h-YKnknQEe-gk4uAo-zqmg"/>
+            <children name="USAGEDATE" tableResideInTables="false" type="date" xmi:id="_h-YKn0nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="BILL_USAGE" tableResideInTables="false" type="string" xmi:id="_h-YKoEnQEe-gk4uAo-zqmg"/>
+            <children length="60" name="DOMICILE" tableResideInTables="false" type="string" xmi:id="_h-YKoUnQEe-gk4uAo-zqmg"/>
+            <children length="30" name="DRAWER" tableResideInTables="false" type="string" xmi:id="_h-YKoknQEe-gk4uAo-zqmg"/>
+            <children length="60" name="CTRBNK_LOC" tableResideInTables="false" type="string" xmi:id="_h-YKo0nQEe-gk4uAo-zqmg"/>
+            <children length="30" name="DRAW_CITY1" tableResideInTables="false" type="string" xmi:id="_h-YKpEnQEe-gk4uAo-zqmg"/>
+            <children length="30" name="DRAWEE" tableResideInTables="false" type="string" xmi:id="_h-YKpUnQEe-gk4uAo-zqmg"/>
+            <children length="30" name="DRAW_CITY2" tableResideInTables="false" type="string" xmi:id="_h-YKpknQEe-gk4uAo-zqmg"/>
+            <children name="DISCT_DAYS" tableResideInTables="false" type="decimal" xmi:id="_h-YKp0nQEe-gk4uAo-zqmg"/>
+            <children name="DISCT_RATE" tableResideInTables="false" type="decimal" xmi:id="_h-YKqEnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="ACCEPTED" tableResideInTables="false" type="string" xmi:id="_h-YKqUnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="BILLSTATUS" tableResideInTables="false" type="string" xmi:id="_h-YKqknQEe-gk4uAo-zqmg"/>
+            <children length="1" name="PRTEST_IND" tableResideInTables="false" type="string" xmi:id="_h-YKq0nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="BE_DEMAND" tableResideInTables="false" type="string" xmi:id="_h-YKrEnQEe-gk4uAo-zqmg"/>
+            <children length="5" name="OBJ_TYPE" tableResideInTables="false" type="string" xmi:id="_h-YKrUnQEe-gk4uAo-zqmg"/>
+            <children length="10" name="REF_DOC" tableResideInTables="false" type="string" xmi:id="_h-YKrknQEe-gk4uAo-zqmg"/>
+            <children length="10" name="REF_ORG_UN" tableResideInTables="false" type="string" xmi:id="_h-YKr0nQEe-gk4uAo-zqmg"/>
+            <children length="10" name="REVERSAL_DOC" tableResideInTables="false" type="string" xmi:id="_h-YKsEnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="SP_GL_TYPE" tableResideInTables="false" type="string" xmi:id="_h-YKsUnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="NEG_POSTNG" tableResideInTables="false" type="string" xmi:id="_h-YKsknQEe-gk4uAo-zqmg"/>
+            <children length="35" name="REF_DOC_NO_LONG" tableResideInTables="false" type="string" xmi:id="_h-YKs0nQEe-gk4uAo-zqmg"/>
+            <children length="10" name="BILL_DOC" tableResideInTables="false" type="string" xmi:id="_h-YKtEnQEe-gk4uAo-zqmg"/>
+          </children>
+        </inputRoot>
+        <outputRoot name="Output" xmi:id="_h-YKtUnQEe-gk4uAo-zqmg">
+          <children name="RETURN" tableResideInTables="false" type="structure" xmi:id="_h-YKtknQEe-gk4uAo-zqmg">
+            <children length="1" name="TYPE" tableResideInTables="false" type="string" xmi:id="_h-YKt0nQEe-gk4uAo-zqmg"/>
+            <children length="5" name="CODE" tableResideInTables="false" type="string" xmi:id="_h-YKuEnQEe-gk4uAo-zqmg"/>
+            <children length="220" name="MESSAGE" tableResideInTables="false" type="string" xmi:id="_h-YKuUnQEe-gk4uAo-zqmg"/>
+            <children length="20" name="LOG_NO" tableResideInTables="false" type="string" xmi:id="_h-YKuknQEe-gk4uAo-zqmg"/>
+            <children name="LOG_MSG_NO" tableResideInTables="false" type="long" xmi:id="_h-YKu0nQEe-gk4uAo-zqmg"/>
+            <children length="50" name="MESSAGE_V1" tableResideInTables="false" type="string" xmi:id="_h-YKvEnQEe-gk4uAo-zqmg"/>
+            <children length="50" name="MESSAGE_V2" tableResideInTables="false" type="string" xmi:id="_h-YKvUnQEe-gk4uAo-zqmg"/>
+            <children length="50" name="MESSAGE_V3" tableResideInTables="false" type="string" xmi:id="_h-YKvknQEe-gk4uAo-zqmg"/>
+            <children length="50" name="MESSAGE_V4" tableResideInTables="false" type="string" xmi:id="_h-YKv0nQEe-gk4uAo-zqmg"/>
+          </children>
+          <children name="LINEITEMS" type="table" xmi:id="_h-YKwEnQEe-gk4uAo-zqmg">
+            <children length="4" name="COMP_CODE" tableResideInTables="false" type="string" xmi:id="_h-YKwUnQEe-gk4uAo-zqmg"/>
+            <children length="10" name="CUSTOMER" tableResideInTables="false" type="string" xmi:id="_h-YKwknQEe-gk4uAo-zqmg"/>
+            <children length="1" name="SP_GL_IND" tableResideInTables="false" type="string" xmi:id="_h-YKw0nQEe-gk4uAo-zqmg"/>
+            <children name="CLEAR_DATE" tableResideInTables="false" type="date" xmi:id="_h-YKxEnQEe-gk4uAo-zqmg"/>
+            <children length="10" name="CLR_DOC_NO" tableResideInTables="false" type="string" xmi:id="_h-YKxUnQEe-gk4uAo-zqmg"/>
+            <children length="18" name="ALLOC_NMBR" tableResideInTables="false" type="string" xmi:id="_h-YKxknQEe-gk4uAo-zqmg"/>
+            <children name="FISC_YEAR" tableResideInTables="false" type="long" xmi:id="_h-YKx0nQEe-gk4uAo-zqmg"/>
+            <children length="10" name="DOC_NO" tableResideInTables="false" type="string" xmi:id="_h-YKyEnQEe-gk4uAo-zqmg"/>
+            <children name="ITEM_NUM" tableResideInTables="false" type="long" xmi:id="_h-YKyUnQEe-gk4uAo-zqmg"/>
+            <children name="PSTNG_DATE" tableResideInTables="false" type="date" xmi:id="_h-YKyknQEe-gk4uAo-zqmg"/>
+            <children name="DOC_DATE" tableResideInTables="false" type="date" xmi:id="_h-YKy0nQEe-gk4uAo-zqmg"/>
+            <children name="ENTRY_DATE" tableResideInTables="false" type="date" xmi:id="_h-YKzEnQEe-gk4uAo-zqmg"/>
+            <children length="5" name="CURRENCY" tableResideInTables="false" type="string" xmi:id="_h-YKzUnQEe-gk4uAo-zqmg"/>
+            <children length="5" name="LOC_CURRCY" tableResideInTables="false" type="string" xmi:id="_h-YKzknQEe-gk4uAo-zqmg"/>
+            <children length="16" name="REF_DOC_NO" tableResideInTables="false" type="string" xmi:id="_h-YKz0nQEe-gk4uAo-zqmg"/>
+            <children length="2" name="DOC_TYPE" tableResideInTables="false" type="string" xmi:id="_h-YK0EnQEe-gk4uAo-zqmg"/>
+            <children name="FIS_PERIOD" tableResideInTables="false" type="long" xmi:id="_h-YK0UnQEe-gk4uAo-zqmg"/>
+            <children length="2" name="POST_KEY" tableResideInTables="false" type="string" xmi:id="_h-YK0knQEe-gk4uAo-zqmg"/>
+            <children length="1" name="DB_CR_IND" tableResideInTables="false" type="string" xmi:id="_h-YK00nQEe-gk4uAo-zqmg"/>
+            <children length="4" name="BUS_AREA" tableResideInTables="false" type="string" xmi:id="_h-YK1EnQEe-gk4uAo-zqmg"/>
+            <children length="2" name="TAX_CODE" tableResideInTables="false" type="string" xmi:id="_h-YK1UnQEe-gk4uAo-zqmg"/>
+            <children name="LC_AMOUNT" tableResideInTables="false" type="decimal" xmi:id="_h-YK1knQEe-gk4uAo-zqmg"/>
+            <children name="AMT_DOCCUR" tableResideInTables="false" type="decimal" xmi:id="_h-YK10nQEe-gk4uAo-zqmg"/>
+            <children name="LC_TAX" tableResideInTables="false" type="decimal" xmi:id="_h-YK2EnQEe-gk4uAo-zqmg"/>
+            <children name="TX_DOC_CUR" tableResideInTables="false" type="decimal" xmi:id="_h-YK2UnQEe-gk4uAo-zqmg"/>
+            <children length="50" name="ITEM_TEXT" tableResideInTables="false" type="string" xmi:id="_h-YK2knQEe-gk4uAo-zqmg"/>
+            <children length="10" name="BRANCH" tableResideInTables="false" type="string" xmi:id="_h-YK20nQEe-gk4uAo-zqmg"/>
+            <children name="BLINE_DATE" tableResideInTables="false" type="date" xmi:id="_h-YK3EnQEe-gk4uAo-zqmg"/>
+            <children length="4" name="PMNTTRMS" tableResideInTables="false" type="string" xmi:id="_h-YK3UnQEe-gk4uAo-zqmg"/>
+            <children name="DSCT_DAYS1" tableResideInTables="false" type="decimal" xmi:id="_h-YK3knQEe-gk4uAo-zqmg"/>
+            <children name="DSCT_DAYS2" tableResideInTables="false" type="decimal" xmi:id="_h-YK30nQEe-gk4uAo-zqmg"/>
+            <children name="NETTERMS" tableResideInTables="false" type="decimal" xmi:id="_h-YK4EnQEe-gk4uAo-zqmg"/>
+            <children name="DSCT_PCT1" tableResideInTables="false" type="decimal" xmi:id="_h-YK4UnQEe-gk4uAo-zqmg"/>
+            <children name="DSCT_PCT2" tableResideInTables="false" type="decimal" xmi:id="_h-YK4knQEe-gk4uAo-zqmg"/>
+            <children name="DISC_BASE" tableResideInTables="false" type="decimal" xmi:id="_h-YK40nQEe-gk4uAo-zqmg"/>
+            <children name="DSC_AMT_LC" tableResideInTables="false" type="decimal" xmi:id="_h-YK5EnQEe-gk4uAo-zqmg"/>
+            <children name="DSC_AMT_DC" tableResideInTables="false" type="decimal" xmi:id="_h-YK5UnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="PYMT_METH" tableResideInTables="false" type="string" xmi:id="_h-YK5knQEe-gk4uAo-zqmg"/>
+            <children length="1" name="PMNT_BLOCK" tableResideInTables="false" type="string" xmi:id="_h-YK50nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="FIXEDTERMS" tableResideInTables="false" type="string" xmi:id="_h-YK6EnQEe-gk4uAo-zqmg"/>
+            <children length="10" name="INV_REF" tableResideInTables="false" type="string" xmi:id="_h-YK6UnQEe-gk4uAo-zqmg"/>
+            <children name="INV_YEAR" tableResideInTables="false" type="long" xmi:id="_h-YK6knQEe-gk4uAo-zqmg"/>
+            <children name="INV_ITEM" tableResideInTables="false" type="long" xmi:id="_h-YK60nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="DUNN_BLOCK" tableResideInTables="false" type="string" xmi:id="_h-YK7EnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="DUNN_KEY" tableResideInTables="false" type="string" xmi:id="_h-YK7UnQEe-gk4uAo-zqmg"/>
+            <children name="LAST_DUNN" tableResideInTables="false" type="date" xmi:id="_h-YK7knQEe-gk4uAo-zqmg"/>
+            <children name="DUNN_LEVEL" tableResideInTables="false" type="long" xmi:id="_h-YK70nQEe-gk4uAo-zqmg"/>
+            <children length="2" name="DUNN_AREA" tableResideInTables="false" type="string" xmi:id="_h-YK8EnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="DOC_STATUS" tableResideInTables="false" type="string" xmi:id="_h-YK8UnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="NXT_DOCTYP" tableResideInTables="false" type="string" xmi:id="_h-YK8knQEe-gk4uAo-zqmg"/>
+            <children length="20" name="VAT_REG_NO" tableResideInTables="false" type="string" xmi:id="_h-YK80nQEe-gk4uAo-zqmg"/>
+            <children length="3" name="REASON_CDE" tableResideInTables="false" type="string" xmi:id="_h-YK9EnQEe-gk4uAo-zqmg"/>
+            <children length="2" name="PMTMTHSUPL" tableResideInTables="false" type="string" xmi:id="_h-YK9UnQEe-gk4uAo-zqmg"/>
+            <children length="12" name="REF_KEY_1" tableResideInTables="false" type="string" xmi:id="_h-YK9knQEe-gk4uAo-zqmg"/>
+            <children length="12" name="REF_KEY_2" tableResideInTables="false" type="string" xmi:id="_h-YK90nQEe-gk4uAo-zqmg"/>
+            <children length="5" name="T_CURRENCY" tableResideInTables="false" type="string" xmi:id="_h-YK-EnQEe-gk4uAo-zqmg"/>
+            <children name="AMOUNT" tableResideInTables="false" type="decimal" xmi:id="_h-YK-UnQEe-gk4uAo-zqmg"/>
+            <children name="NET_AMOUNT" tableResideInTables="false" type="decimal" xmi:id="_h-YK-knQEe-gk4uAo-zqmg"/>
+            <children length="35" name="NAME" tableResideInTables="false" type="string" xmi:id="_h-YK-0nQEe-gk4uAo-zqmg"/>
+            <children length="35" name="NAME_2" tableResideInTables="false" type="string" xmi:id="_h-YK_EnQEe-gk4uAo-zqmg"/>
+            <children length="35" name="NAME_3" tableResideInTables="false" type="string" xmi:id="_h-YK_UnQEe-gk4uAo-zqmg"/>
+            <children length="35" name="NAME_4" tableResideInTables="false" type="string" xmi:id="_h-YK_knQEe-gk4uAo-zqmg"/>
+            <children length="10" name="POSTL_CODE" tableResideInTables="false" type="string" xmi:id="_h-YK_0nQEe-gk4uAo-zqmg"/>
+            <children length="35" name="CITY" tableResideInTables="false" type="string" xmi:id="_h-YLAEnQEe-gk4uAo-zqmg"/>
+            <children length="3" name="COUNTRY" tableResideInTables="false" type="string" xmi:id="_h-YLAUnQEe-gk4uAo-zqmg"/>
+            <children length="35" name="STREET" tableResideInTables="false" type="string" xmi:id="_h-YLAknQEe-gk4uAo-zqmg"/>
+            <children length="10" name="PO_BOX" tableResideInTables="false" type="string" xmi:id="_h-YLA0nQEe-gk4uAo-zqmg"/>
+            <children length="10" name="POBX_PCD" tableResideInTables="false" type="string" xmi:id="_h-YLBEnQEe-gk4uAo-zqmg"/>
+            <children length="16" name="POBK_CURAC" tableResideInTables="false" type="string" xmi:id="_h-YLBUnQEe-gk4uAo-zqmg"/>
+            <children length="18" name="BANK_ACCT" tableResideInTables="false" type="string" xmi:id="_h-YLBknQEe-gk4uAo-zqmg"/>
+            <children length="15" name="BANK_KEY" tableResideInTables="false" type="string" xmi:id="_h-YLB0nQEe-gk4uAo-zqmg"/>
+            <children length="3" name="BANK_CTRY" tableResideInTables="false" type="string" xmi:id="_h-YLCEnQEe-gk4uAo-zqmg"/>
+            <children length="16" name="TAX_NO_1" tableResideInTables="false" type="string" xmi:id="_h-YLCUnQEe-gk4uAo-zqmg"/>
+            <children length="11" name="TAX_NO_2" tableResideInTables="false" type="string" xmi:id="_h-YLCknQEe-gk4uAo-zqmg"/>
+            <children length="1" name="TAX" tableResideInTables="false" type="string" xmi:id="_h-YLC0nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="EQUAL_TAX" tableResideInTables="false" type="string" xmi:id="_h-YLDEnQEe-gk4uAo-zqmg"/>
+            <children length="3" name="REGION" tableResideInTables="false" type="string" xmi:id="_h-YLDUnQEe-gk4uAo-zqmg"/>
+            <children length="2" name="CTRL_KEY" tableResideInTables="false" type="string" xmi:id="_h-YLDknQEe-gk4uAo-zqmg"/>
+            <children length="2" name="INSTR_KEY" tableResideInTables="false" type="string" xmi:id="_h-YLD0nQEe-gk4uAo-zqmg"/>
+            <children length="16" name="PAYEE_CODE" tableResideInTables="false" type="string" xmi:id="_h-YLEEnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="LANGU" tableResideInTables="false" type="string" xmi:id="_h-YLEUnQEe-gk4uAo-zqmg"/>
+            <children name="BILL_LIFE" tableResideInTables="false" type="decimal" xmi:id="_h-YLEknQEe-gk4uAo-zqmg"/>
+            <children length="1" name="BE_TAXCODE" tableResideInTables="false" type="string" xmi:id="_h-YLE0nQEe-gk4uAo-zqmg"/>
+            <children name="BILLTAX_LC" tableResideInTables="false" type="decimal" xmi:id="_h-YLFEnQEe-gk4uAo-zqmg"/>
+            <children name="BILLTAX_FC" tableResideInTables="false" type="decimal" xmi:id="_h-YLFUnQEe-gk4uAo-zqmg"/>
+            <children name="LC_COL_CHG" tableResideInTables="false" type="decimal" xmi:id="_h-YLFknQEe-gk4uAo-zqmg"/>
+            <children name="COLL_CHARG" tableResideInTables="false" type="decimal" xmi:id="_h-YLF0nQEe-gk4uAo-zqmg"/>
+            <children length="2" name="CHGS_TX_CD" tableResideInTables="false" type="string" xmi:id="_h-YLGEnQEe-gk4uAo-zqmg"/>
+            <children name="ISSUE_DATE" tableResideInTables="false" type="date" xmi:id="_h-YLGUnQEe-gk4uAo-zqmg"/>
+            <children name="USAGEDATE" tableResideInTables="false" type="date" xmi:id="_h-YLGknQEe-gk4uAo-zqmg"/>
+            <children length="1" name="BILL_USAGE" tableResideInTables="false" type="string" xmi:id="_h-YLG0nQEe-gk4uAo-zqmg"/>
+            <children length="60" name="DOMICILE" tableResideInTables="false" type="string" xmi:id="_h-YLHEnQEe-gk4uAo-zqmg"/>
+            <children length="30" name="DRAWER" tableResideInTables="false" type="string" xmi:id="_h-YLHUnQEe-gk4uAo-zqmg"/>
+            <children length="60" name="CTRBNK_LOC" tableResideInTables="false" type="string" xmi:id="_h-YLHknQEe-gk4uAo-zqmg"/>
+            <children length="30" name="DRAW_CITY1" tableResideInTables="false" type="string" xmi:id="_h-YLH0nQEe-gk4uAo-zqmg"/>
+            <children length="30" name="DRAWEE" tableResideInTables="false" type="string" xmi:id="_h-YLIEnQEe-gk4uAo-zqmg"/>
+            <children length="30" name="DRAW_CITY2" tableResideInTables="false" type="string" xmi:id="_h-YLIUnQEe-gk4uAo-zqmg"/>
+            <children name="DISCT_DAYS" tableResideInTables="false" type="decimal" xmi:id="_h-YLIknQEe-gk4uAo-zqmg"/>
+            <children name="DISCT_RATE" tableResideInTables="false" type="decimal" xmi:id="_h-YLI0nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="ACCEPTED" tableResideInTables="false" type="string" xmi:id="_h-YLJEnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="BILLSTATUS" tableResideInTables="false" type="string" xmi:id="_h-YLJUnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="PRTEST_IND" tableResideInTables="false" type="string" xmi:id="_h-YLJknQEe-gk4uAo-zqmg"/>
+            <children length="1" name="BE_DEMAND" tableResideInTables="false" type="string" xmi:id="_h-YLJ0nQEe-gk4uAo-zqmg"/>
+            <children length="5" name="OBJ_TYPE" tableResideInTables="false" type="string" xmi:id="_h-YLKEnQEe-gk4uAo-zqmg"/>
+            <children length="10" name="REF_DOC" tableResideInTables="false" type="string" xmi:id="_h-YLKUnQEe-gk4uAo-zqmg"/>
+            <children length="10" name="REF_ORG_UN" tableResideInTables="false" type="string" xmi:id="_h-YLKknQEe-gk4uAo-zqmg"/>
+            <children length="10" name="REVERSAL_DOC" tableResideInTables="false" type="string" xmi:id="_h-YLK0nQEe-gk4uAo-zqmg"/>
+            <children length="1" name="SP_GL_TYPE" tableResideInTables="false" type="string" xmi:id="_h-YLLEnQEe-gk4uAo-zqmg"/>
+            <children length="1" name="NEG_POSTNG" tableResideInTables="false" type="string" xmi:id="_h-YLLUnQEe-gk4uAo-zqmg"/>
+            <children length="35" name="REF_DOC_NO_LONG" tableResideInTables="false" type="string" xmi:id="_h-YLLknQEe-gk4uAo-zqmg"/>
+            <children length="10" name="BILL_DOC" tableResideInTables="false" type="string" xmi:id="_h-YLL0nQEe-gk4uAo-zqmg"/>
+          </children>
+        </outputRoot>
+      </paramData>
+    </Funtions>
+  </TalendMetadata:SAPConnection>
+  <orgomg.cwm.foundation.businessinformation:Description body="" modelElement="_h-YKQEnQEe-gk4uAo-zqmg" xmi:id="_h-YLMEnQEe-gk4uAo-zqmg"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8c034d04-3773-440d-9ec3-cef9a669f8c5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AgKnD9XLzl21BOStAqBb/VPS3wW+OPIWD89AE5DUqHhSTM+CzY1YZM4AkPh4DaCYquhcftf1/YVa&#13;
+VWQg1tY1FQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f81105ce-d215-4957-9ba2-a8bb70724363"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gInBn2oZ1UH7MuIKukOSshyFyuYj+XNSeJ2vcu1ePaif7g88pseoJVPWAJijLo2IBao+2f5hLs7P&#13;
+rIx8bOeErw==</DigestValue></Reference></SignedInfo><SignatureValue>Z4FGZPp4Ot3ixivdfYordsly1XYYjEqvS4EU3Jg1m2wc0PpIo8uScnHK/xEg+3iMCBa2seyohDY0&#13;
+onYctnqdFRBTXXkxMB5rbVlAvrpnvE92MsAPLBSlZbn6TtYSUQtLVPuHG1TyWsRPv5drpGFzG5I9&#13;
+3UsfAJDaHCsHHLPqKV4nrqjPnRU77tpl6v7D2ZJ9B860W4/YaZveH7UcHC+K9iBZb6GvYzkR0SUD&#13;
+5kxmnM2iwGQe8LQlzxjJrkVEK9NXRjqyyTOA3ogNOrMIeDC/uzD2Gj6vfGffxi5O2FO3kz3hvQvc&#13;
+cnx7uW4WdCAd5LC51btawbtHra7+w9+pqkZ4mA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -26,4 +277,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_019563d3-5416-4cdb-9742-1fa2810ffdfc" Target="#_a9a4009e-ec12-4e09-80f7-6cf691306d35"><Timestamp>2024-07-24 15:07:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendMetadata:SAPConnection>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f81105ce-d215-4957-9ba2-a8bb70724363" Target="#_8c034d04-3773-440d-9ec3-cef9a669f8c5"><Timestamp>2024-07-24 15:22:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
