@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Wh1B16imdEB/dEdmz7PuDbOWnl/zocZBOaDIYHfp"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:iYnvWJjrRWLmXMDYldJjCTRZ5/uRYw3v52RQreFX"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:aSUMKhzeYoNnVuBBLg32CXxupVfj0/8zjp21BRpUUMc0uXBRLC8hGW0d"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qLTdmu4ZO9oqb9gA0NjJ2M8ZiKag+idTh/nSI28xNE5PHSvCl/THoLOv"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -133,19 +133,161 @@
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData"/>
+    <metadata connector="FLOW" label="in" name="in">
+      <column comment="" key="false" length="-1" name="LineItems" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1">
+        <nodes name="CompanyCode" outgoingConnections="//@node.1/@nodeData/@connections.0" type="id_String" xpath="row1/CompanyCode"/>
+        <nodes name="KeyDate" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_String" xpath="row1/KeyDate"/>
+      </inputTrees>
+      <outputTrees name="in">
+        <nodes expression="" name="LineItems" pattern="" type="id_Document" xpath="in/LineItems">
+          <children main="true" name="Z_BAPI_AR_ACC_GETOPENITEMS" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children loop="true" main="true" name="INPUT" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/INPUT" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression=" " name="COMPANYCODE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/INPUT/COMPANYCODE" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="row1.CompanyCode" incomingConnections="//@node.1/@nodeData/@connections.0" name="CompanyCode" nodeType="ATTRIBUT" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/INPUT/COMPANYCODE/@CompanyCode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+              <children name="KEYDATE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/INPUT/KEYDATE" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="row1.KeyDate" incomingConnections="//@node.1/@nodeData/@connections.1" name="KeyDate" nodeType="ATTRIBUT" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/INPUT/KEYDATE/@KeyDate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+            </children>
+            <children name="TABLES" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children name="LINEITEMS" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="item" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="COMP_CODE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/COMP_CODE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="CUSTOMER" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CUSTOMER" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="SP_GL_IND" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/SP_GL_IND" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="CLEAR_DATE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CLEAR_DATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="CLR_DOC_NO" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CLR_DOC_NO" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="ALLOC_NMBR" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ALLOC_NMBR" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="FISC_YEAR" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/FISC_YEAR" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DOC_NO" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_NO" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="ITEM_NUM" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ITEM_NUM" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="PSTNG_DATE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PSTNG_DATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DOC_DATE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_DATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="ENTRY_DATE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ENTRY_DATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="CURRENCY" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CURRENCY" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="LOC_CURRCY" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LOC_CURRCY" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="REF_DOC_NO" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_DOC_NO" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DOC_TYPE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_TYPE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="FIS_PERIOD" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/FIS_PERIOD" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="POST_KEY" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POST_KEY" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DB_CR_IND" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DB_CR_IND" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BUS_AREA" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BUS_AREA" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="TAX_CODE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX_CODE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="LC_AMOUNT" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LC_AMOUNT" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="AMT_DOCCUR" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/AMT_DOCCUR" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="LC_TAX" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LC_TAX" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="TX_DOC_CUR" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TX_DOC_CUR" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="ITEM_TEXT" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ITEM_TEXT" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BRANCH" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BRANCH" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BLINE_DATE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BLINE_DATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="PMNTTRMS" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PMNTTRMS" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DSCT_DAYS1" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_DAYS1" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DSCT_DAYS2" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_DAYS2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="NETTERMS" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NETTERMS" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DSCT_PCT1" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_PCT1" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DSCT_PCT2" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_PCT2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DISC_BASE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DISC_BASE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DSC_AMT_LC" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSC_AMT_LC" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DSC_AMT_DC" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSC_AMT_DC" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="PYMT_METH" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PYMT_METH" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="PMNT_BLOCK" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PMNT_BLOCK" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="FIXEDTERMS" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/FIXEDTERMS" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="INV_REF" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INV_REF" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="INV_YEAR" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INV_YEAR" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="INV_ITEM" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INV_ITEM" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DUNN_BLOCK" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_BLOCK" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DUNN_KEY" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_KEY" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="LAST_DUNN" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LAST_DUNN" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DUNN_LEVEL" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_LEVEL" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DUNN_AREA" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_AREA" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DOC_STATUS" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_STATUS" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="NXT_DOCTYP" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NXT_DOCTYP" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="VAT_REG_NO" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/VAT_REG_NO" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="REASON_CDE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REASON_CDE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="PMTMTHSUPL" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PMTMTHSUPL" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="REF_KEY_1" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_KEY_1" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="REF_KEY_2" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_KEY_2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="T_CURRENCY" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/T_CURRENCY" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="AMOUNT" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/AMOUNT" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="NET_AMOUNT" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NET_AMOUNT" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="NAME" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="NAME_2" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME_2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="NAME_3" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME_3" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="NAME_4" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME_4" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="POSTL_CODE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POSTL_CODE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="CITY" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CITY" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="COUNTRY" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/COUNTRY" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="STREET" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/STREET" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="PO_BOX" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PO_BOX" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="POBX_PCD" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POBX_PCD" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="POBK_CURAC" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POBK_CURAC" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BANK_ACCT" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BANK_ACCT" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BANK_KEY" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BANK_KEY" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BANK_CTRY" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BANK_CTRY" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="TAX_NO_1" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX_NO_1" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="TAX_NO_2" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX_NO_2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="TAX" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="EQUAL_TAX" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/EQUAL_TAX" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="REGION" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REGION" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="CTRL_KEY" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CTRL_KEY" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="INSTR_KEY" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INSTR_KEY" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="PAYEE_CODE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PAYEE_CODE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="LANGU" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LANGU" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BILL_LIFE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILL_LIFE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BE_TAXCODE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BE_TAXCODE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BILLTAX_LC" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILLTAX_LC" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BILLTAX_FC" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILLTAX_FC" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="LC_COL_CHG" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LC_COL_CHG" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="COLL_CHARG" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/COLL_CHARG" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="CHGS_TX_CD" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CHGS_TX_CD" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="ISSUE_DATE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ISSUE_DATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="USAGEDATE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/USAGEDATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BILL_USAGE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILL_USAGE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DOMICILE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOMICILE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DRAWER" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAWER" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="CTRBNK_LOC" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CTRBNK_LOC" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DRAW_CITY1" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAW_CITY1" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DRAWEE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAWEE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DRAW_CITY2" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAW_CITY2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DISCT_DAYS" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DISCT_DAYS" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="DISCT_RATE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DISCT_RATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="ACCEPTED" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ACCEPTED" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BILLSTATUS" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILLSTATUS" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="PRTEST_IND" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PRTEST_IND" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BE_DEMAND" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BE_DEMAND" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="OBJ_TYPE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/OBJ_TYPE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="REF_DOC" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_DOC" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="REF_ORG_UN" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_ORG_UN" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="REVERSAL_DOC" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REVERSAL_DOC" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="SP_GL_TYPE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/SP_GL_TYPE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="NEG_POSTNG" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NEG_POSTNG" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="REF_DOC_NO_LONG" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_DOC_NO_LONG" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="BILL_DOC" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILL_DOC" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1/@children.0" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
   </node>
-  <node componentName="tSAPBapi" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="96">
+  <node componentName="tSAPBapi" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPBapi_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
     <elementParameter field="TEXT" name="CLIENT" value="&quot;200&quot;"/>
     <elementParameter field="TEXT" name="USERID" value="&quot;ztest&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:VNiNkf0eIlEwnvcgvI9NI/6n6xrAYWRjSUju24UwYRo0wWkt9qk="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:8ZUtNH2LUSPMPRSszclJcoZvC0iwRbB3utddGSGnVgjrINeW7m8="/>
     <elementParameter field="TEXT" name="LANGUAGE" value="&quot;EN&quot;"/>
     <elementParameter field="TEXT" name="HOSTNAME" value="&quot;192.168.100.152&quot;"/>
     <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;01&quot;"/>
@@ -177,8 +319,8 @@
     <elementParameter field="TABLE" name="SAP_PROPERTIES"/>
     <elementParameter field="TEXT" name="LABEL" value="Z_BAPI_AR_ACC_GETOPENITEMS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSAPBapi_1">
-      <column comment="" key="false" length="4" name="LineItems" nullable="true" originalLength="4" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    <metadata connector="FLOW" label="in" name="tSAPBapi_1">
+      <column comment="" key="false" length="-1" name="LineItems" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="96">
@@ -201,13 +343,17 @@
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="4" name="LineItems" nullable="true" originalLength="4" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    <metadata connector="FLOW" label="in" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="LineItems" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="in" lineStyle="10" mergeOrder="1" metaname="in" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tSAPBapi_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="in"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tSAPBapi_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -218,18 +364,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPBapi_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_692c688f-53e0-4936-a4b2-aa4932883037"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7VX6vfSWJEyVD1bqB1npl/zJ0NU6RcAeu/aei9pZTJIRoPs9v5GbCKnzYkT0yMgbpHz7l4dBIEv/&#13;
-fw+U2Brwzg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_30fb270b-2cd5-41aa-bb70-e80c8c332397"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>misuVPqcuNxlPYtYSEj5Yye8NegM4aau/2USodlrTaupc9/cQXvvlGnLXfR2ex+MtKrFbkIKf0/s&#13;
-gkQrv7ALSg==</DigestValue></Reference></SignedInfo><SignatureValue>CeGtytjMM4kpkoFJkgvqpta0SsczxuZWIVk5ztDySuldgAPZaC4Bzj8PgGay5CgNj6IGZCBwROEb&#13;
-0gD/b4TvCeEl/uHwFUiibovbuvRJ2H4Ng/ehU2asOZDqdCsTJ63rKSvDviszTTL2r7u78a7X+Lzp&#13;
-qjqiSVNmKSwASejgdgNFBRLJmhxbKV59F2nvb4oq0rxCGgf+X7akpQRzyQdHUy2QnGjFjF0lC2RM&#13;
-wTfQ9sbKhLkmgqPJjaJneKzm9VSpMdNwB0GA3az7gcjJ1B//uU5lA6ITFOozCBfbzgWOLoMS0Bpi&#13;
-zu2ZeiEVurL7qPEAetN936h7616mVGGa3fGWow==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1583bdc5-70c9-4725-b5dc-df0c810f15af"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>glcpAHOEhXJOYTvXP1iTGaeo5/zRYPBoerLhKZdY7G34Ov4HW4NgtsYoXgOJu0d7niqfLUTDc3AM&#13;
+1QxaiZT1dw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_153a5fc3-4cfe-47d5-85d8-1d038facf611"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VvJIg0c9Ge/C0bGXqr8cTgap70Lk9FpHYcMg9h5qLO4spouyxLLNkfm3rRXjXY1Wtl4y+snBcT5n&#13;
+lOJzWZO/LA==</DigestValue></Reference></SignedInfo><SignatureValue>YfXYDY4J9ZzGPFPP5U7sP2vSfPEE6luIKdaBm9lSN4BkRH3eguaIYp33s0AoZ/dEm2ZUuG8kG3as&#13;
+HqL8vKfmlZdb236w0k2yli8bpkQFfzSo4V7PG1J7Xec3QPMdXdSqlg32hbQdFBFb7dIqa6xv1boa&#13;
+DCP6lU9c5sza5Dl+pVycdQMJ1t/S0PtdQHjzqihLAqd7IRxalRgu9UdMoya1E5oS4lxs9Cje9v/Q&#13;
+rfKNLZdwzUJcjgLZ0lQQ19bLefg3LLQIX0ElzsIav5ibk9s11TKOZ601vEGZn/HNI/xTC4qjDrkw&#13;
+3hxO7KHRBCuXmEErQ+6C/dacmUgpCd1JCScdoQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -251,4 +392,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_30fb270b-2cd5-41aa-bb70-e80c8c332397" Target="#_692c688f-53e0-4936-a4b2-aa4932883037"><Timestamp>2024-07-24 15:37:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_153a5fc3-4cfe-47d5-85d8-1d038facf611" Target="#_1583bdc5-70c9-4725-b5dc-df0c810f15af"><Timestamp>2024-07-24 15:44:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
