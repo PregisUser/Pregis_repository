@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:aGj2tDIaf7aZ6+sjariXdlYPkrUguIGRd3g3FTWn"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:J53KsHOfbxnux5x+d7mMIA77T3TEVvRM8Ee0UkoW"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OSpeiTDD3T02luYGHZkDgriRwtbMIeWgGnd2fixM29Mi7CuTozZdBdjM"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bI/qdUJ8SDAoQkRMCnjrXhZpCDMSaQc30TUYj6srAzXb0o5sOAPxbu8L"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -166,7 +166,7 @@
     <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
     <elementParameter field="TEXT" name="CLIENT" value="&quot;200&quot;"/>
     <elementParameter field="TEXT" name="USERID" value="&quot;ztest&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:EiyVbe6CbSxoQa6SuV8RoAKeb2lLa9uf0wsaQluHAKTqFnEDlMU="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:rnOTvcc/JUXGDc48wcv07YHLtIy6M4FFR6BJ3H77Z9OkKkzSO2I="/>
     <elementParameter field="TEXT" name="LANGUAGE" value="&quot;EN&quot;"/>
     <elementParameter field="TEXT" name="HOSTNAME" value="&quot;192.168.100.152&quot;"/>
     <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;01&quot;"/>
@@ -202,29 +202,488 @@
       <column comment="" key="false" length="-1" name="LineItems" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="LineItems"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="in" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="LineItems" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    <metadata label="Table" name="Table">
+      <column comment="" key="false" length="-1" name="COMP_CODE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUSTOMER" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SP_GL_IND" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CLEAR_DATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CLR_DOC_NO" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ALLOC_NMBR" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FISC_YEAR" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOC_NO" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEM_NUM" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PSTNG_DATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOC_DATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ENTRY_DATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOC_CURRCY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REF_DOC_NO" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOC_TYPE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIS_PERIOD" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POST_KEY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DB_CR_IND" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BUS_AREA" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TAX_CODE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LC_AMOUNT" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AMT_DOCCUR" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LC_TAX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TX_DOC_CUR" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEM_TEXT" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BRANCH" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BLINE_DATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PMNTTRMS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DSCT_DAYS1" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DSCT_DAYS2" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NETTERMS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DSCT_PCT1" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DSCT_PCT2" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISC_BASE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DSC_AMT_LC" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DSC_AMT_DC" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PYMT_METH" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PMNT_BLOCK" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIXEDTERMS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INV_REF" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INV_YEAR" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INV_ITEM" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DUNN_BLOCK" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DUNN_KEY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LAST_DUNN" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DUNN_LEVEL" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DUNN_AREA" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOC_STATUS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NXT_DOCTYP" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VAT_REG_NO" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REASON_CDE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PMTMTHSUPL" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REF_KEY_1" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REF_KEY_2" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="T_CURRENCY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AMOUNT" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NET_AMOUNT" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_2" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_3" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_4" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POSTL_CODE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CITY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="COUNTRY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STREET" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PO_BOX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POBX_PCD" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POBK_CURAC" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BANK_ACCT" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BANK_KEY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BANK_CTRY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TAX_NO_1" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TAX_NO_2" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TAX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EQUAL_TAX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REGION" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CTRL_KEY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INSTR_KEY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PAYEE_CODE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LANGU" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BILL_LIFE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BE_TAXCODE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BILLTAX_LC" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BILLTAX_FC" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LC_COL_CHG" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="COLL_CHARG" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CHGS_TX_CD" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ISSUE_DATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="USAGEDATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BILL_USAGE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOMICILE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DRAWER" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CTRBNK_LOC" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DRAW_CITY1" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DRAWEE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DRAW_CITY2" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISCT_DAYS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISCT_RATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ACCEPTED" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BILLSTATUS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRTEST_IND" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BE_DEMAND" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OBJ_TYPE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REF_DOC" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REF_ORG_UN" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REVERSAL_DOC" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SP_GL_TYPE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NEG_POSTNG" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REF_DOC_NO_LONG" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BILL_DOC" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
     </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2">
+        <nodes expression="" name="LineItems" type="id_Document" xpath="row2/LineItems">
+          <children main="true" name="Z_BAPI_AR_ACC_GETOPENITEMS" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS">
+            <children loop="true" main="true" name="OUTPUT" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/OUTPUT">
+              <children name="RETURN" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/OUTPUT/RETURN">
+                <children name="TYPE" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/OUTPUT/RETURN/TYPE"/>
+                <children name="CODE" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/OUTPUT/RETURN/CODE"/>
+                <children name="MESSAGE" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/OUTPUT/RETURN/MESSAGE"/>
+                <children name="LOG_NO" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/OUTPUT/RETURN/LOG_NO"/>
+                <children name="LOG_MSG_NO" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/OUTPUT/RETURN/LOG_MSG_NO"/>
+                <children name="MESSAGE_V1" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/OUTPUT/RETURN/MESSAGE_V1"/>
+                <children name="MESSAGE_V2" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/OUTPUT/RETURN/MESSAGE_V2"/>
+                <children name="MESSAGE_V3" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/OUTPUT/RETURN/MESSAGE_V3"/>
+                <children name="MESSAGE_V4" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/OUTPUT/RETURN/MESSAGE_V4"/>
+              </children>
+            </children>
+            <children name="TABLES" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES">
+              <children name="LINEITEMS" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS">
+                <children name="item" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item">
+                  <children name="COMP_CODE" outgoingConnections="//@node.3/@nodeData/@connections.0" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/COMP_CODE"/>
+                  <children name="CUSTOMER" outgoingConnections="//@node.3/@nodeData/@connections.1" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CUSTOMER"/>
+                  <children name="SP_GL_IND" outgoingConnections="//@node.3/@nodeData/@connections.2" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/SP_GL_IND"/>
+                  <children name="CLEAR_DATE" outgoingConnections="//@node.3/@nodeData/@connections.3" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CLEAR_DATE"/>
+                  <children name="CLR_DOC_NO" outgoingConnections="//@node.3/@nodeData/@connections.4" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CLR_DOC_NO"/>
+                  <children name="ALLOC_NMBR" outgoingConnections="//@node.3/@nodeData/@connections.5" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ALLOC_NMBR"/>
+                  <children name="FISC_YEAR" outgoingConnections="//@node.3/@nodeData/@connections.6" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/FISC_YEAR"/>
+                  <children name="DOC_NO" outgoingConnections="//@node.3/@nodeData/@connections.7" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_NO"/>
+                  <children name="ITEM_NUM" outgoingConnections="//@node.3/@nodeData/@connections.8" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ITEM_NUM"/>
+                  <children name="PSTNG_DATE" outgoingConnections="//@node.3/@nodeData/@connections.9" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PSTNG_DATE"/>
+                  <children name="DOC_DATE" outgoingConnections="//@node.3/@nodeData/@connections.10" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_DATE"/>
+                  <children name="ENTRY_DATE" outgoingConnections="//@node.3/@nodeData/@connections.11" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ENTRY_DATE"/>
+                  <children name="CURRENCY" outgoingConnections="//@node.3/@nodeData/@connections.12" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CURRENCY"/>
+                  <children name="LOC_CURRCY" outgoingConnections="//@node.3/@nodeData/@connections.13" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LOC_CURRCY"/>
+                  <children name="REF_DOC_NO" outgoingConnections="//@node.3/@nodeData/@connections.14" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_DOC_NO"/>
+                  <children name="DOC_TYPE" outgoingConnections="//@node.3/@nodeData/@connections.15" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_TYPE"/>
+                  <children name="FIS_PERIOD" outgoingConnections="//@node.3/@nodeData/@connections.16" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/FIS_PERIOD"/>
+                  <children name="POST_KEY" outgoingConnections="//@node.3/@nodeData/@connections.17" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POST_KEY"/>
+                  <children name="DB_CR_IND" outgoingConnections="//@node.3/@nodeData/@connections.18" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DB_CR_IND"/>
+                  <children name="BUS_AREA" outgoingConnections="//@node.3/@nodeData/@connections.19" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BUS_AREA"/>
+                  <children name="TAX_CODE" outgoingConnections="//@node.3/@nodeData/@connections.20" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX_CODE"/>
+                  <children name="LC_AMOUNT" outgoingConnections="//@node.3/@nodeData/@connections.21" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LC_AMOUNT"/>
+                  <children name="AMT_DOCCUR" outgoingConnections="//@node.3/@nodeData/@connections.22" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/AMT_DOCCUR"/>
+                  <children name="LC_TAX" outgoingConnections="//@node.3/@nodeData/@connections.23" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LC_TAX"/>
+                  <children name="TX_DOC_CUR" outgoingConnections="//@node.3/@nodeData/@connections.24" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TX_DOC_CUR"/>
+                  <children name="ITEM_TEXT" outgoingConnections="//@node.3/@nodeData/@connections.25" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ITEM_TEXT"/>
+                  <children name="BRANCH" outgoingConnections="//@node.3/@nodeData/@connections.26" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BRANCH"/>
+                  <children name="BLINE_DATE" outgoingConnections="//@node.3/@nodeData/@connections.27" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BLINE_DATE"/>
+                  <children name="PMNTTRMS" outgoingConnections="//@node.3/@nodeData/@connections.28" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PMNTTRMS"/>
+                  <children name="DSCT_DAYS1" outgoingConnections="//@node.3/@nodeData/@connections.29" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_DAYS1"/>
+                  <children name="DSCT_DAYS2" outgoingConnections="//@node.3/@nodeData/@connections.30" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_DAYS2"/>
+                  <children name="NETTERMS" outgoingConnections="//@node.3/@nodeData/@connections.31" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NETTERMS"/>
+                  <children name="DSCT_PCT1" outgoingConnections="//@node.3/@nodeData/@connections.32" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_PCT1"/>
+                  <children name="DSCT_PCT2" outgoingConnections="//@node.3/@nodeData/@connections.33" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_PCT2"/>
+                  <children name="DISC_BASE" outgoingConnections="//@node.3/@nodeData/@connections.34" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DISC_BASE"/>
+                  <children name="DSC_AMT_LC" outgoingConnections="//@node.3/@nodeData/@connections.35" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSC_AMT_LC"/>
+                  <children name="DSC_AMT_DC" outgoingConnections="//@node.3/@nodeData/@connections.36" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSC_AMT_DC"/>
+                  <children name="PYMT_METH" outgoingConnections="//@node.3/@nodeData/@connections.37" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PYMT_METH"/>
+                  <children name="PMNT_BLOCK" outgoingConnections="//@node.3/@nodeData/@connections.38" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PMNT_BLOCK"/>
+                  <children name="FIXEDTERMS" outgoingConnections="//@node.3/@nodeData/@connections.39" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/FIXEDTERMS"/>
+                  <children name="INV_REF" outgoingConnections="//@node.3/@nodeData/@connections.40" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INV_REF"/>
+                  <children name="INV_YEAR" outgoingConnections="//@node.3/@nodeData/@connections.41" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INV_YEAR"/>
+                  <children name="INV_ITEM" outgoingConnections="//@node.3/@nodeData/@connections.42" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INV_ITEM"/>
+                  <children name="DUNN_BLOCK" outgoingConnections="//@node.3/@nodeData/@connections.43" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_BLOCK"/>
+                  <children name="DUNN_KEY" outgoingConnections="//@node.3/@nodeData/@connections.44" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_KEY"/>
+                  <children name="LAST_DUNN" outgoingConnections="//@node.3/@nodeData/@connections.45" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LAST_DUNN"/>
+                  <children name="DUNN_LEVEL" outgoingConnections="//@node.3/@nodeData/@connections.46" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_LEVEL"/>
+                  <children name="DUNN_AREA" outgoingConnections="//@node.3/@nodeData/@connections.47" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_AREA"/>
+                  <children name="DOC_STATUS" outgoingConnections="//@node.3/@nodeData/@connections.48" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_STATUS"/>
+                  <children name="NXT_DOCTYP" outgoingConnections="//@node.3/@nodeData/@connections.49" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NXT_DOCTYP"/>
+                  <children name="VAT_REG_NO" outgoingConnections="//@node.3/@nodeData/@connections.50" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/VAT_REG_NO"/>
+                  <children name="REASON_CDE" outgoingConnections="//@node.3/@nodeData/@connections.51" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REASON_CDE"/>
+                  <children name="PMTMTHSUPL" outgoingConnections="//@node.3/@nodeData/@connections.52" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PMTMTHSUPL"/>
+                  <children name="REF_KEY_1" outgoingConnections="//@node.3/@nodeData/@connections.53" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_KEY_1"/>
+                  <children name="REF_KEY_2" outgoingConnections="//@node.3/@nodeData/@connections.54" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_KEY_2"/>
+                  <children name="T_CURRENCY" outgoingConnections="//@node.3/@nodeData/@connections.55" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/T_CURRENCY"/>
+                  <children name="AMOUNT" outgoingConnections="//@node.3/@nodeData/@connections.56" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/AMOUNT"/>
+                  <children name="NET_AMOUNT" outgoingConnections="//@node.3/@nodeData/@connections.57" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NET_AMOUNT"/>
+                  <children name="NAME" outgoingConnections="//@node.3/@nodeData/@connections.58" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME"/>
+                  <children name="NAME_2" outgoingConnections="//@node.3/@nodeData/@connections.59" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME_2"/>
+                  <children name="NAME_3" outgoingConnections="//@node.3/@nodeData/@connections.60" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME_3"/>
+                  <children name="NAME_4" outgoingConnections="//@node.3/@nodeData/@connections.61" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME_4"/>
+                  <children name="POSTL_CODE" outgoingConnections="//@node.3/@nodeData/@connections.62" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POSTL_CODE"/>
+                  <children name="CITY" outgoingConnections="//@node.3/@nodeData/@connections.63" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CITY"/>
+                  <children name="COUNTRY" outgoingConnections="//@node.3/@nodeData/@connections.64" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/COUNTRY"/>
+                  <children name="STREET" outgoingConnections="//@node.3/@nodeData/@connections.65" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/STREET"/>
+                  <children name="PO_BOX" outgoingConnections="//@node.3/@nodeData/@connections.66" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PO_BOX"/>
+                  <children name="POBX_PCD" outgoingConnections="//@node.3/@nodeData/@connections.67" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POBX_PCD"/>
+                  <children name="POBK_CURAC" outgoingConnections="//@node.3/@nodeData/@connections.68" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POBK_CURAC"/>
+                  <children name="BANK_ACCT" outgoingConnections="//@node.3/@nodeData/@connections.69" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BANK_ACCT"/>
+                  <children name="BANK_KEY" outgoingConnections="//@node.3/@nodeData/@connections.70" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BANK_KEY"/>
+                  <children name="BANK_CTRY" outgoingConnections="//@node.3/@nodeData/@connections.71" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BANK_CTRY"/>
+                  <children name="TAX_NO_1" outgoingConnections="//@node.3/@nodeData/@connections.72" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX_NO_1"/>
+                  <children name="TAX_NO_2" outgoingConnections="//@node.3/@nodeData/@connections.73" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX_NO_2"/>
+                  <children name="TAX" outgoingConnections="//@node.3/@nodeData/@connections.74" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX"/>
+                  <children name="EQUAL_TAX" outgoingConnections="//@node.3/@nodeData/@connections.75" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/EQUAL_TAX"/>
+                  <children name="REGION" outgoingConnections="//@node.3/@nodeData/@connections.76" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REGION"/>
+                  <children name="CTRL_KEY" outgoingConnections="//@node.3/@nodeData/@connections.77" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CTRL_KEY"/>
+                  <children name="INSTR_KEY" outgoingConnections="//@node.3/@nodeData/@connections.78" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INSTR_KEY"/>
+                  <children name="PAYEE_CODE" outgoingConnections="//@node.3/@nodeData/@connections.79" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PAYEE_CODE"/>
+                  <children name="LANGU" outgoingConnections="//@node.3/@nodeData/@connections.80" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LANGU"/>
+                  <children name="BILL_LIFE" outgoingConnections="//@node.3/@nodeData/@connections.81" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILL_LIFE"/>
+                  <children name="BE_TAXCODE" outgoingConnections="//@node.3/@nodeData/@connections.82" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BE_TAXCODE"/>
+                  <children name="BILLTAX_LC" outgoingConnections="//@node.3/@nodeData/@connections.83" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILLTAX_LC"/>
+                  <children name="BILLTAX_FC" outgoingConnections="//@node.3/@nodeData/@connections.84" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILLTAX_FC"/>
+                  <children name="LC_COL_CHG" outgoingConnections="//@node.3/@nodeData/@connections.85" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LC_COL_CHG"/>
+                  <children name="COLL_CHARG" outgoingConnections="//@node.3/@nodeData/@connections.86" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/COLL_CHARG"/>
+                  <children name="CHGS_TX_CD" outgoingConnections="//@node.3/@nodeData/@connections.87" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CHGS_TX_CD"/>
+                  <children name="ISSUE_DATE" outgoingConnections="//@node.3/@nodeData/@connections.88" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ISSUE_DATE"/>
+                  <children name="USAGEDATE" outgoingConnections="//@node.3/@nodeData/@connections.89" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/USAGEDATE"/>
+                  <children name="BILL_USAGE" outgoingConnections="//@node.3/@nodeData/@connections.90" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILL_USAGE"/>
+                  <children name="DOMICILE" outgoingConnections="//@node.3/@nodeData/@connections.91" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOMICILE"/>
+                  <children name="DRAWER" outgoingConnections="//@node.3/@nodeData/@connections.92" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAWER"/>
+                  <children name="CTRBNK_LOC" outgoingConnections="//@node.3/@nodeData/@connections.93" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CTRBNK_LOC"/>
+                  <children name="DRAW_CITY1" outgoingConnections="//@node.3/@nodeData/@connections.94" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAW_CITY1"/>
+                  <children name="DRAWEE" outgoingConnections="//@node.3/@nodeData/@connections.95" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAWEE"/>
+                  <children name="DRAW_CITY2" outgoingConnections="//@node.3/@nodeData/@connections.96" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAW_CITY2"/>
+                  <children name="DISCT_DAYS" outgoingConnections="//@node.3/@nodeData/@connections.97" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DISCT_DAYS"/>
+                  <children name="DISCT_RATE" outgoingConnections="//@node.3/@nodeData/@connections.98" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DISCT_RATE"/>
+                  <children name="ACCEPTED" outgoingConnections="//@node.3/@nodeData/@connections.99" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ACCEPTED"/>
+                  <children name="BILLSTATUS" outgoingConnections="//@node.3/@nodeData/@connections.100" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILLSTATUS"/>
+                  <children name="PRTEST_IND" outgoingConnections="//@node.3/@nodeData/@connections.101" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PRTEST_IND"/>
+                  <children name="BE_DEMAND" outgoingConnections="//@node.3/@nodeData/@connections.102" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BE_DEMAND"/>
+                  <children name="OBJ_TYPE" outgoingConnections="//@node.3/@nodeData/@connections.103" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/OBJ_TYPE"/>
+                  <children name="REF_DOC" outgoingConnections="//@node.3/@nodeData/@connections.104" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_DOC"/>
+                  <children name="REF_ORG_UN" outgoingConnections="//@node.3/@nodeData/@connections.105" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_ORG_UN"/>
+                  <children name="REVERSAL_DOC" outgoingConnections="//@node.3/@nodeData/@connections.106" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REVERSAL_DOC"/>
+                  <children name="SP_GL_TYPE" outgoingConnections="//@node.3/@nodeData/@connections.107" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/SP_GL_TYPE"/>
+                  <children name="NEG_POSTNG" outgoingConnections="//@node.3/@nodeData/@connections.108" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NEG_POSTNG"/>
+                  <children name="REF_DOC_NO_LONG" outgoingConnections="//@node.3/@nodeData/@connections.109" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_DOC_NO_LONG"/>
+                  <children name="BILL_DOC" outgoingConnections="//@node.3/@nodeData/@connections.110" type="id_String" xpath="row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILL_DOC"/>
+                </children>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="Table">
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/COMP_CODE]" incomingConnections="//@node.3/@nodeData/@connections.0" name="COMP_CODE" type="id_String" xpath="Table/COMP_CODE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CUSTOMER]" incomingConnections="//@node.3/@nodeData/@connections.1" name="CUSTOMER" type="id_String" xpath="Table/CUSTOMER"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/SP_GL_IND]" incomingConnections="//@node.3/@nodeData/@connections.2" name="SP_GL_IND" type="id_String" xpath="Table/SP_GL_IND"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CLEAR_DATE]" incomingConnections="//@node.3/@nodeData/@connections.3" name="CLEAR_DATE" type="id_String" xpath="Table/CLEAR_DATE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CLR_DOC_NO]" incomingConnections="//@node.3/@nodeData/@connections.4" name="CLR_DOC_NO" type="id_String" xpath="Table/CLR_DOC_NO"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ALLOC_NMBR]" incomingConnections="//@node.3/@nodeData/@connections.5" name="ALLOC_NMBR" type="id_String" xpath="Table/ALLOC_NMBR"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/FISC_YEAR]" incomingConnections="//@node.3/@nodeData/@connections.6" name="FISC_YEAR" type="id_String" xpath="Table/FISC_YEAR"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_NO]" incomingConnections="//@node.3/@nodeData/@connections.7" name="DOC_NO" type="id_String" xpath="Table/DOC_NO"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ITEM_NUM]" incomingConnections="//@node.3/@nodeData/@connections.8" name="ITEM_NUM" type="id_String" xpath="Table/ITEM_NUM"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PSTNG_DATE]" incomingConnections="//@node.3/@nodeData/@connections.9" name="PSTNG_DATE" type="id_String" xpath="Table/PSTNG_DATE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_DATE]" incomingConnections="//@node.3/@nodeData/@connections.10" name="DOC_DATE" type="id_String" xpath="Table/DOC_DATE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ENTRY_DATE]" incomingConnections="//@node.3/@nodeData/@connections.11" name="ENTRY_DATE" type="id_String" xpath="Table/ENTRY_DATE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CURRENCY]" incomingConnections="//@node.3/@nodeData/@connections.12" name="CURRENCY" type="id_String" xpath="Table/CURRENCY"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LOC_CURRCY]" incomingConnections="//@node.3/@nodeData/@connections.13" name="LOC_CURRCY" type="id_String" xpath="Table/LOC_CURRCY"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_DOC_NO]" incomingConnections="//@node.3/@nodeData/@connections.14" name="REF_DOC_NO" type="id_String" xpath="Table/REF_DOC_NO"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_TYPE]" incomingConnections="//@node.3/@nodeData/@connections.15" name="DOC_TYPE" type="id_String" xpath="Table/DOC_TYPE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/FIS_PERIOD]" incomingConnections="//@node.3/@nodeData/@connections.16" name="FIS_PERIOD" type="id_String" xpath="Table/FIS_PERIOD"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POST_KEY]" incomingConnections="//@node.3/@nodeData/@connections.17" name="POST_KEY" type="id_String" xpath="Table/POST_KEY"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DB_CR_IND]" incomingConnections="//@node.3/@nodeData/@connections.18" name="DB_CR_IND" type="id_String" xpath="Table/DB_CR_IND"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BUS_AREA]" incomingConnections="//@node.3/@nodeData/@connections.19" name="BUS_AREA" type="id_String" xpath="Table/BUS_AREA"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX_CODE]" incomingConnections="//@node.3/@nodeData/@connections.20" name="TAX_CODE" type="id_String" xpath="Table/TAX_CODE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LC_AMOUNT]" incomingConnections="//@node.3/@nodeData/@connections.21" name="LC_AMOUNT" type="id_String" xpath="Table/LC_AMOUNT"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/AMT_DOCCUR]" incomingConnections="//@node.3/@nodeData/@connections.22" name="AMT_DOCCUR" type="id_String" xpath="Table/AMT_DOCCUR"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LC_TAX]" incomingConnections="//@node.3/@nodeData/@connections.23" name="LC_TAX" type="id_String" xpath="Table/LC_TAX"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TX_DOC_CUR]" incomingConnections="//@node.3/@nodeData/@connections.24" name="TX_DOC_CUR" type="id_String" xpath="Table/TX_DOC_CUR"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ITEM_TEXT]" incomingConnections="//@node.3/@nodeData/@connections.25" name="ITEM_TEXT" type="id_String" xpath="Table/ITEM_TEXT"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BRANCH]" incomingConnections="//@node.3/@nodeData/@connections.26" name="BRANCH" type="id_String" xpath="Table/BRANCH"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BLINE_DATE]" incomingConnections="//@node.3/@nodeData/@connections.27" name="BLINE_DATE" type="id_String" xpath="Table/BLINE_DATE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PMNTTRMS]" incomingConnections="//@node.3/@nodeData/@connections.28" name="PMNTTRMS" type="id_String" xpath="Table/PMNTTRMS"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_DAYS1]" incomingConnections="//@node.3/@nodeData/@connections.29" name="DSCT_DAYS1" type="id_String" xpath="Table/DSCT_DAYS1"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_DAYS2]" incomingConnections="//@node.3/@nodeData/@connections.30" name="DSCT_DAYS2" type="id_String" xpath="Table/DSCT_DAYS2"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NETTERMS]" incomingConnections="//@node.3/@nodeData/@connections.31" name="NETTERMS" type="id_String" xpath="Table/NETTERMS"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_PCT1]" incomingConnections="//@node.3/@nodeData/@connections.32" name="DSCT_PCT1" type="id_String" xpath="Table/DSCT_PCT1"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSCT_PCT2]" incomingConnections="//@node.3/@nodeData/@connections.33" name="DSCT_PCT2" type="id_String" xpath="Table/DSCT_PCT2"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DISC_BASE]" incomingConnections="//@node.3/@nodeData/@connections.34" name="DISC_BASE" type="id_String" xpath="Table/DISC_BASE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSC_AMT_LC]" incomingConnections="//@node.3/@nodeData/@connections.35" name="DSC_AMT_LC" type="id_String" xpath="Table/DSC_AMT_LC"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DSC_AMT_DC]" incomingConnections="//@node.3/@nodeData/@connections.36" name="DSC_AMT_DC" type="id_String" xpath="Table/DSC_AMT_DC"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PYMT_METH]" incomingConnections="//@node.3/@nodeData/@connections.37" name="PYMT_METH" type="id_String" xpath="Table/PYMT_METH"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PMNT_BLOCK]" incomingConnections="//@node.3/@nodeData/@connections.38" name="PMNT_BLOCK" type="id_String" xpath="Table/PMNT_BLOCK"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/FIXEDTERMS]" incomingConnections="//@node.3/@nodeData/@connections.39" name="FIXEDTERMS" type="id_String" xpath="Table/FIXEDTERMS"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INV_REF]" incomingConnections="//@node.3/@nodeData/@connections.40" name="INV_REF" type="id_String" xpath="Table/INV_REF"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INV_YEAR]" incomingConnections="//@node.3/@nodeData/@connections.41" name="INV_YEAR" type="id_String" xpath="Table/INV_YEAR"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INV_ITEM]" incomingConnections="//@node.3/@nodeData/@connections.42" name="INV_ITEM" type="id_String" xpath="Table/INV_ITEM"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_BLOCK]" incomingConnections="//@node.3/@nodeData/@connections.43" name="DUNN_BLOCK" type="id_String" xpath="Table/DUNN_BLOCK"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_KEY]" incomingConnections="//@node.3/@nodeData/@connections.44" name="DUNN_KEY" type="id_String" xpath="Table/DUNN_KEY"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LAST_DUNN]" incomingConnections="//@node.3/@nodeData/@connections.45" name="LAST_DUNN" type="id_String" xpath="Table/LAST_DUNN"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_LEVEL]" incomingConnections="//@node.3/@nodeData/@connections.46" name="DUNN_LEVEL" type="id_String" xpath="Table/DUNN_LEVEL"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DUNN_AREA]" incomingConnections="//@node.3/@nodeData/@connections.47" name="DUNN_AREA" type="id_String" xpath="Table/DUNN_AREA"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOC_STATUS]" incomingConnections="//@node.3/@nodeData/@connections.48" name="DOC_STATUS" type="id_String" xpath="Table/DOC_STATUS"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NXT_DOCTYP]" incomingConnections="//@node.3/@nodeData/@connections.49" name="NXT_DOCTYP" type="id_String" xpath="Table/NXT_DOCTYP"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/VAT_REG_NO]" incomingConnections="//@node.3/@nodeData/@connections.50" name="VAT_REG_NO" type="id_String" xpath="Table/VAT_REG_NO"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REASON_CDE]" incomingConnections="//@node.3/@nodeData/@connections.51" name="REASON_CDE" type="id_String" xpath="Table/REASON_CDE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PMTMTHSUPL]" incomingConnections="//@node.3/@nodeData/@connections.52" name="PMTMTHSUPL" type="id_String" xpath="Table/PMTMTHSUPL"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_KEY_1]" incomingConnections="//@node.3/@nodeData/@connections.53" name="REF_KEY_1" type="id_String" xpath="Table/REF_KEY_1"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_KEY_2]" incomingConnections="//@node.3/@nodeData/@connections.54" name="REF_KEY_2" type="id_String" xpath="Table/REF_KEY_2"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/T_CURRENCY]" incomingConnections="//@node.3/@nodeData/@connections.55" name="T_CURRENCY" type="id_String" xpath="Table/T_CURRENCY"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/AMOUNT]" incomingConnections="//@node.3/@nodeData/@connections.56" name="AMOUNT" type="id_String" xpath="Table/AMOUNT"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NET_AMOUNT]" incomingConnections="//@node.3/@nodeData/@connections.57" name="NET_AMOUNT" type="id_String" xpath="Table/NET_AMOUNT"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME]" incomingConnections="//@node.3/@nodeData/@connections.58" name="NAME" type="id_String" xpath="Table/NAME"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME_2]" incomingConnections="//@node.3/@nodeData/@connections.59" name="NAME_2" type="id_String" xpath="Table/NAME_2"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME_3]" incomingConnections="//@node.3/@nodeData/@connections.60" name="NAME_3" type="id_String" xpath="Table/NAME_3"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NAME_4]" incomingConnections="//@node.3/@nodeData/@connections.61" name="NAME_4" type="id_String" xpath="Table/NAME_4"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POSTL_CODE]" incomingConnections="//@node.3/@nodeData/@connections.62" name="POSTL_CODE" type="id_String" xpath="Table/POSTL_CODE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CITY]" incomingConnections="//@node.3/@nodeData/@connections.63" name="CITY" type="id_String" xpath="Table/CITY"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/COUNTRY]" incomingConnections="//@node.3/@nodeData/@connections.64" name="COUNTRY" type="id_String" xpath="Table/COUNTRY"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/STREET]" incomingConnections="//@node.3/@nodeData/@connections.65" name="STREET" type="id_String" xpath="Table/STREET"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PO_BOX]" incomingConnections="//@node.3/@nodeData/@connections.66" name="PO_BOX" type="id_String" xpath="Table/PO_BOX"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POBX_PCD]" incomingConnections="//@node.3/@nodeData/@connections.67" name="POBX_PCD" type="id_String" xpath="Table/POBX_PCD"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/POBK_CURAC]" incomingConnections="//@node.3/@nodeData/@connections.68" name="POBK_CURAC" type="id_String" xpath="Table/POBK_CURAC"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BANK_ACCT]" incomingConnections="//@node.3/@nodeData/@connections.69" name="BANK_ACCT" type="id_String" xpath="Table/BANK_ACCT"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BANK_KEY]" incomingConnections="//@node.3/@nodeData/@connections.70" name="BANK_KEY" type="id_String" xpath="Table/BANK_KEY"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BANK_CTRY]" incomingConnections="//@node.3/@nodeData/@connections.71" name="BANK_CTRY" type="id_String" xpath="Table/BANK_CTRY"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX_NO_1]" incomingConnections="//@node.3/@nodeData/@connections.72" name="TAX_NO_1" type="id_String" xpath="Table/TAX_NO_1"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX_NO_2]" incomingConnections="//@node.3/@nodeData/@connections.73" name="TAX_NO_2" type="id_String" xpath="Table/TAX_NO_2"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/TAX]" incomingConnections="//@node.3/@nodeData/@connections.74" name="TAX" type="id_String" xpath="Table/TAX"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/EQUAL_TAX]" incomingConnections="//@node.3/@nodeData/@connections.75" name="EQUAL_TAX" type="id_String" xpath="Table/EQUAL_TAX"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REGION]" incomingConnections="//@node.3/@nodeData/@connections.76" name="REGION" type="id_String" xpath="Table/REGION"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CTRL_KEY]" incomingConnections="//@node.3/@nodeData/@connections.77" name="CTRL_KEY" type="id_String" xpath="Table/CTRL_KEY"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/INSTR_KEY]" incomingConnections="//@node.3/@nodeData/@connections.78" name="INSTR_KEY" type="id_String" xpath="Table/INSTR_KEY"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PAYEE_CODE]" incomingConnections="//@node.3/@nodeData/@connections.79" name="PAYEE_CODE" type="id_String" xpath="Table/PAYEE_CODE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LANGU]" incomingConnections="//@node.3/@nodeData/@connections.80" name="LANGU" type="id_String" xpath="Table/LANGU"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILL_LIFE]" incomingConnections="//@node.3/@nodeData/@connections.81" name="BILL_LIFE" type="id_String" xpath="Table/BILL_LIFE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BE_TAXCODE]" incomingConnections="//@node.3/@nodeData/@connections.82" name="BE_TAXCODE" type="id_String" xpath="Table/BE_TAXCODE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILLTAX_LC]" incomingConnections="//@node.3/@nodeData/@connections.83" name="BILLTAX_LC" type="id_String" xpath="Table/BILLTAX_LC"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILLTAX_FC]" incomingConnections="//@node.3/@nodeData/@connections.84" name="BILLTAX_FC" type="id_String" xpath="Table/BILLTAX_FC"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/LC_COL_CHG]" incomingConnections="//@node.3/@nodeData/@connections.85" name="LC_COL_CHG" type="id_String" xpath="Table/LC_COL_CHG"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/COLL_CHARG]" incomingConnections="//@node.3/@nodeData/@connections.86" name="COLL_CHARG" type="id_String" xpath="Table/COLL_CHARG"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CHGS_TX_CD]" incomingConnections="//@node.3/@nodeData/@connections.87" name="CHGS_TX_CD" type="id_String" xpath="Table/CHGS_TX_CD"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ISSUE_DATE]" incomingConnections="//@node.3/@nodeData/@connections.88" name="ISSUE_DATE" type="id_String" xpath="Table/ISSUE_DATE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/USAGEDATE]" incomingConnections="//@node.3/@nodeData/@connections.89" name="USAGEDATE" type="id_String" xpath="Table/USAGEDATE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILL_USAGE]" incomingConnections="//@node.3/@nodeData/@connections.90" name="BILL_USAGE" type="id_String" xpath="Table/BILL_USAGE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DOMICILE]" incomingConnections="//@node.3/@nodeData/@connections.91" name="DOMICILE" type="id_String" xpath="Table/DOMICILE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAWER]" incomingConnections="//@node.3/@nodeData/@connections.92" name="DRAWER" type="id_String" xpath="Table/DRAWER"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/CTRBNK_LOC]" incomingConnections="//@node.3/@nodeData/@connections.93" name="CTRBNK_LOC" type="id_String" xpath="Table/CTRBNK_LOC"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAW_CITY1]" incomingConnections="//@node.3/@nodeData/@connections.94" name="DRAW_CITY1" type="id_String" xpath="Table/DRAW_CITY1"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAWEE]" incomingConnections="//@node.3/@nodeData/@connections.95" name="DRAWEE" type="id_String" xpath="Table/DRAWEE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DRAW_CITY2]" incomingConnections="//@node.3/@nodeData/@connections.96" name="DRAW_CITY2" type="id_String" xpath="Table/DRAW_CITY2"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DISCT_DAYS]" incomingConnections="//@node.3/@nodeData/@connections.97" name="DISCT_DAYS" type="id_String" xpath="Table/DISCT_DAYS"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/DISCT_RATE]" incomingConnections="//@node.3/@nodeData/@connections.98" name="DISCT_RATE" type="id_String" xpath="Table/DISCT_RATE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/ACCEPTED]" incomingConnections="//@node.3/@nodeData/@connections.99" name="ACCEPTED" type="id_String" xpath="Table/ACCEPTED"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILLSTATUS]" incomingConnections="//@node.3/@nodeData/@connections.100" name="BILLSTATUS" type="id_String" xpath="Table/BILLSTATUS"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/PRTEST_IND]" incomingConnections="//@node.3/@nodeData/@connections.101" name="PRTEST_IND" type="id_String" xpath="Table/PRTEST_IND"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BE_DEMAND]" incomingConnections="//@node.3/@nodeData/@connections.102" name="BE_DEMAND" type="id_String" xpath="Table/BE_DEMAND"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/OBJ_TYPE]" incomingConnections="//@node.3/@nodeData/@connections.103" name="OBJ_TYPE" type="id_String" xpath="Table/OBJ_TYPE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_DOC]" incomingConnections="//@node.3/@nodeData/@connections.104" name="REF_DOC" type="id_String" xpath="Table/REF_DOC"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_ORG_UN]" incomingConnections="//@node.3/@nodeData/@connections.105" name="REF_ORG_UN" type="id_String" xpath="Table/REF_ORG_UN"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REVERSAL_DOC]" incomingConnections="//@node.3/@nodeData/@connections.106" name="REVERSAL_DOC" type="id_String" xpath="Table/REVERSAL_DOC"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/SP_GL_TYPE]" incomingConnections="//@node.3/@nodeData/@connections.107" name="SP_GL_TYPE" type="id_String" xpath="Table/SP_GL_TYPE"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/NEG_POSTNG]" incomingConnections="//@node.3/@nodeData/@connections.108" name="NEG_POSTNG" type="id_String" xpath="Table/NEG_POSTNG"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/REF_DOC_NO_LONG]" incomingConnections="//@node.3/@nodeData/@connections.109" name="REF_DOC_NO_LONG" type="id_String" xpath="Table/REF_DOC_NO_LONG"/>
+        <nodes expression="[row2.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/TABLES/LINEITEMS/item/BILL_DOC]" incomingConnections="//@node.3/@nodeData/@connections.110" name="BILL_DOC" type="id_String" xpath="Table/BILL_DOC"/>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.6" target="//@node.3/@nodeData/@outputTrees.0/@nodes.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.7" target="//@node.3/@nodeData/@outputTrees.0/@nodes.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.8" target="//@node.3/@nodeData/@outputTrees.0/@nodes.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.9" target="//@node.3/@nodeData/@outputTrees.0/@nodes.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.10" target="//@node.3/@nodeData/@outputTrees.0/@nodes.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.11" target="//@node.3/@nodeData/@outputTrees.0/@nodes.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.12" target="//@node.3/@nodeData/@outputTrees.0/@nodes.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.13" target="//@node.3/@nodeData/@outputTrees.0/@nodes.13" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.14" target="//@node.3/@nodeData/@outputTrees.0/@nodes.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.15" target="//@node.3/@nodeData/@outputTrees.0/@nodes.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.16" target="//@node.3/@nodeData/@outputTrees.0/@nodes.16" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.17" target="//@node.3/@nodeData/@outputTrees.0/@nodes.17" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.18" target="//@node.3/@nodeData/@outputTrees.0/@nodes.18" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.19" target="//@node.3/@nodeData/@outputTrees.0/@nodes.19" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.20" target="//@node.3/@nodeData/@outputTrees.0/@nodes.20" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.21" target="//@node.3/@nodeData/@outputTrees.0/@nodes.21" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.22" target="//@node.3/@nodeData/@outputTrees.0/@nodes.22" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.23" target="//@node.3/@nodeData/@outputTrees.0/@nodes.23" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.24" target="//@node.3/@nodeData/@outputTrees.0/@nodes.24" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.25" target="//@node.3/@nodeData/@outputTrees.0/@nodes.25" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.26" target="//@node.3/@nodeData/@outputTrees.0/@nodes.26" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.27" target="//@node.3/@nodeData/@outputTrees.0/@nodes.27" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.28" target="//@node.3/@nodeData/@outputTrees.0/@nodes.28" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.29" target="//@node.3/@nodeData/@outputTrees.0/@nodes.29" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.30" target="//@node.3/@nodeData/@outputTrees.0/@nodes.30" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.31" target="//@node.3/@nodeData/@outputTrees.0/@nodes.31" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.32" target="//@node.3/@nodeData/@outputTrees.0/@nodes.32" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.33" target="//@node.3/@nodeData/@outputTrees.0/@nodes.33" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.34" target="//@node.3/@nodeData/@outputTrees.0/@nodes.34" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.35" target="//@node.3/@nodeData/@outputTrees.0/@nodes.35" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.36" target="//@node.3/@nodeData/@outputTrees.0/@nodes.36" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.37" target="//@node.3/@nodeData/@outputTrees.0/@nodes.37" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.38" target="//@node.3/@nodeData/@outputTrees.0/@nodes.38" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.39" target="//@node.3/@nodeData/@outputTrees.0/@nodes.39" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.40" target="//@node.3/@nodeData/@outputTrees.0/@nodes.40" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.41" target="//@node.3/@nodeData/@outputTrees.0/@nodes.41" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.42" target="//@node.3/@nodeData/@outputTrees.0/@nodes.42" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.43" target="//@node.3/@nodeData/@outputTrees.0/@nodes.43" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.44" target="//@node.3/@nodeData/@outputTrees.0/@nodes.44" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.45" target="//@node.3/@nodeData/@outputTrees.0/@nodes.45" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.46" target="//@node.3/@nodeData/@outputTrees.0/@nodes.46" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.47" target="//@node.3/@nodeData/@outputTrees.0/@nodes.47" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.48" target="//@node.3/@nodeData/@outputTrees.0/@nodes.48" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.49" target="//@node.3/@nodeData/@outputTrees.0/@nodes.49" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.50" target="//@node.3/@nodeData/@outputTrees.0/@nodes.50" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.51" target="//@node.3/@nodeData/@outputTrees.0/@nodes.51" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.52" target="//@node.3/@nodeData/@outputTrees.0/@nodes.52" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.53" target="//@node.3/@nodeData/@outputTrees.0/@nodes.53" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.54" target="//@node.3/@nodeData/@outputTrees.0/@nodes.54" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.55" target="//@node.3/@nodeData/@outputTrees.0/@nodes.55" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.56" target="//@node.3/@nodeData/@outputTrees.0/@nodes.56" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.57" target="//@node.3/@nodeData/@outputTrees.0/@nodes.57" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.58" target="//@node.3/@nodeData/@outputTrees.0/@nodes.58" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.59" target="//@node.3/@nodeData/@outputTrees.0/@nodes.59" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.60" target="//@node.3/@nodeData/@outputTrees.0/@nodes.60" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.61" target="//@node.3/@nodeData/@outputTrees.0/@nodes.61" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.62" target="//@node.3/@nodeData/@outputTrees.0/@nodes.62" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.63" target="//@node.3/@nodeData/@outputTrees.0/@nodes.63" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.64" target="//@node.3/@nodeData/@outputTrees.0/@nodes.64" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.65" target="//@node.3/@nodeData/@outputTrees.0/@nodes.65" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.66" target="//@node.3/@nodeData/@outputTrees.0/@nodes.66" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.67" target="//@node.3/@nodeData/@outputTrees.0/@nodes.67" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.68" target="//@node.3/@nodeData/@outputTrees.0/@nodes.68" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.69" target="//@node.3/@nodeData/@outputTrees.0/@nodes.69" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.70" target="//@node.3/@nodeData/@outputTrees.0/@nodes.70" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.71" target="//@node.3/@nodeData/@outputTrees.0/@nodes.71" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.72" target="//@node.3/@nodeData/@outputTrees.0/@nodes.72" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.73" target="//@node.3/@nodeData/@outputTrees.0/@nodes.73" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.74" target="//@node.3/@nodeData/@outputTrees.0/@nodes.74" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.75" target="//@node.3/@nodeData/@outputTrees.0/@nodes.75" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.76" target="//@node.3/@nodeData/@outputTrees.0/@nodes.76" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.77" target="//@node.3/@nodeData/@outputTrees.0/@nodes.77" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.78" target="//@node.3/@nodeData/@outputTrees.0/@nodes.78" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.79" target="//@node.3/@nodeData/@outputTrees.0/@nodes.79" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.80" target="//@node.3/@nodeData/@outputTrees.0/@nodes.80" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.81" target="//@node.3/@nodeData/@outputTrees.0/@nodes.81" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.82" target="//@node.3/@nodeData/@outputTrees.0/@nodes.82" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.83" target="//@node.3/@nodeData/@outputTrees.0/@nodes.83" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.84" target="//@node.3/@nodeData/@outputTrees.0/@nodes.84" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.85" target="//@node.3/@nodeData/@outputTrees.0/@nodes.85" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.86" target="//@node.3/@nodeData/@outputTrees.0/@nodes.86" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.87" target="//@node.3/@nodeData/@outputTrees.0/@nodes.87" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.88" target="//@node.3/@nodeData/@outputTrees.0/@nodes.88" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.89" target="//@node.3/@nodeData/@outputTrees.0/@nodes.89" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.90" target="//@node.3/@nodeData/@outputTrees.0/@nodes.90" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.91" target="//@node.3/@nodeData/@outputTrees.0/@nodes.91" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.92" target="//@node.3/@nodeData/@outputTrees.0/@nodes.92" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.93" target="//@node.3/@nodeData/@outputTrees.0/@nodes.93" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.94" target="//@node.3/@nodeData/@outputTrees.0/@nodes.94" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.95" target="//@node.3/@nodeData/@outputTrees.0/@nodes.95" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.96" target="//@node.3/@nodeData/@outputTrees.0/@nodes.96" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.97" target="//@node.3/@nodeData/@outputTrees.0/@nodes.97" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.98" target="//@node.3/@nodeData/@outputTrees.0/@nodes.98" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.99" target="//@node.3/@nodeData/@outputTrees.0/@nodes.99" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.100" target="//@node.3/@nodeData/@outputTrees.0/@nodes.100" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.101" target="//@node.3/@nodeData/@outputTrees.0/@nodes.101" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.102" target="//@node.3/@nodeData/@outputTrees.0/@nodes.102" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.103" target="//@node.3/@nodeData/@outputTrees.0/@nodes.103" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.104" target="//@node.3/@nodeData/@outputTrees.0/@nodes.104" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.105" target="//@node.3/@nodeData/@outputTrees.0/@nodes.105" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.106" target="//@node.3/@nodeData/@outputTrees.0/@nodes.106" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.107" target="//@node.3/@nodeData/@outputTrees.0/@nodes.107" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.108" target="//@node.3/@nodeData/@outputTrees.0/@nodes.108" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.109" target="//@node.3/@nodeData/@outputTrees.0/@nodes.109" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.110" target="//@node.3/@nodeData/@outputTrees.0/@nodes.110" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -234,7 +693,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="in"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSAPBapi_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tLogRow_1">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSAPBapi_1" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_1" target="tXMLMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
@@ -243,13 +702,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c891d93d-0110-46fd-8a99-ac47332e167b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DugOCVOYMyahQkfLdqEC0c07jg34dalM8k3GNQX/7Czw3V+pbN3ve5VNkOcE9ja1z5oeagXEq616&#13;
-x4/cT0lGGQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_07a9fcbb-f0fa-4026-ac44-98853b2ab243"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hF/nvuOYzqn1m1uUL/ezMPKjGD0tDRWeSQwdyg/0Q1ewZk/aua8XxoP9ydgoXo75MGqfL0WGgMNr&#13;
-aRZ2WgkENg==</DigestValue></Reference></SignedInfo><SignatureValue>WEV9SvkClLUwIXqgBn2ml9FIvNJAmqGLHUwcP8qyLFDB9otoyRZM08E5kgyYljGM+qH5eIw0+7hG&#13;
-+0mVuzITaKnoy3xNYdvklLzeh7sNOlJOwK2CSvKQe3utEQkMibW9GvRumbjO5IzXkzJy8j8jJHZG&#13;
-SCeSJM2XeRKn3CqqXWzNkQR8mrFhm3y00FnnGd2CEfMsBV0wXDj/i36nY2G8s9UnOxfCvJCKY1Sr&#13;
-pDaTIAgTWL6LnaKojxRUbISFbyw5FrCWHY/G1duqD0+cDyS5XTQPLGFikItaBDHHzpD5IH9x6bIs&#13;
-nof0F5PSp5TgdS6heClADAViJ1/JWwoKVvVhYQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ca330029-1d1a-487b-985b-f17a71024ddb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7RtNkN/GtFMl2ImC9YSvgvW9e6p6Jq8ZWtoJrZ2TAfM9HLocRCqIrrOVTSsUgJsVOjiErj/Ms5wl&#13;
+cdNUYFcCkg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_875230ab-3fba-4f59-8ce1-dc9a09ff120a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>txT/Uj6Em3md/i+0jT5oLCNp3wewQCJ6s2vilM6SyaMouAstV8o9WChb1xAbSBeBzaKrI0pppV+Q&#13;
+NR+N15R2fQ==</DigestValue></Reference></SignedInfo><SignatureValue>J5gUoJYc5+L77RQTjXv44YK8ExzfvppjFtMNqfzrPbhy2GYE/bZUqAIVEWM1zJ6AB6vKiQn6TQAs&#13;
+5o8rPC8f3J0l0Mt3WwvZ7nbsfxQv4x85zBWnuiBvOx1Zq/7CfW0f7sO2YQiPZcH+ktkpFOT5oQ9i&#13;
+9m+WsuXTvAn7OM6cMepLFQRReyJDZ/3FmKmFGtJCCZb0gAx/pegUMhao7j8B980G8+trQ45s3D7G&#13;
+cbmI0+R5CSHuzTP4O/nFl64U71m5AZmJo6cs7z2/EAIzzxE2BhwP8un4NSii+nzaRsHp6ipBMWSO&#13;
+wHjrKAbRm/yFwN7BdQqFm4W0iSLAqsUECh9B7A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -271,4 +730,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_07a9fcbb-f0fa-4026-ac44-98853b2ab243" Target="#_c891d93d-0110-46fd-8a99-ac47332e167b"><Timestamp>2024-07-24 15:50:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_875230ab-3fba-4f59-8ce1-dc9a09ff120a" Target="#_ca330029-1d1a-487b-985b-f17a71024ddb"><Timestamp>2024-07-24 15:56:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
