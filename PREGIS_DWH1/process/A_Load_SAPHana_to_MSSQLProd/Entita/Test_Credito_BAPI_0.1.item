@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:3bm+MQWTNbTgQGDsrMYuL+yxxRWz9CNipNgDdfym"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:zi+YlwNW1rvFmtOFKqIJirPC2HDq9kfRtzxxzna1"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JPDsTzDl8Yqj8telp42oKlLxQl46SRPvs/id+D6O4kaBixQ/1MWzkA/M"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FShCADul6KBFhDOr8YEDab92ir/eP11WXhDisTBv5aXe5eZ/KcOy+dP3"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -108,48 +108,65 @@
     <routinesParameter id="_WX-HAMCWEeyX69HJLuOu2Q" name="TalendStringUtil"/>
     <routinesParameter id="_WX09EMCWEeyX69HJLuOu2Q" name="TalendString"/>
   </parameters>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
-    <elementParameter field="TABLE" name="VALUES">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DcRwpJqRPNgiXfqPHDASmMrncqr7fsZG9wRc7Ehd"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT 'S200' AS CompanyCode, CONVERT(CHAR(10), DataFotografia,112) AS DateKey&#13;&#10;FROM Excel.Credito_MappaturaDataFotografia&#13;&#10;WHERE DataFotografia = '2024-06-30'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="CompanyCode"/>
-      <elementValue elementRef="VALUE" value="&quot;S200&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="KeyDate"/>
-      <elementValue elementRef="VALUE" value="&quot;20240630&quot;"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateKey"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
-    <elementParameter field="TABLE" name="INTABLE" show="false"/>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="4" name="CompanyCode" nullable="true" originalLength="4" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="KeyDate" nullable="true" originalLength="8" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="4" name="CompanyCode" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DateKey" nullable="true" originalLength="8" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="96">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="in" name="in">
-      <column comment="" key="false" length="-1" name="LineItems" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    <metadata connector="FLOW" label="In" name="In">
+      <column comment="" key="false" length="-1" name="Lineitems" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1">
-        <nodes name="CompanyCode" outgoingConnections="//@node.1/@nodeData/@connections.0" type="id_String" xpath="row1/CompanyCode"/>
-        <nodes name="KeyDate" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_String" xpath="row1/KeyDate"/>
+        <nodes name="CompanyCode" nullable="false" outgoingConnections="//@node.1/@nodeData/@connections.0" type="id_String" xpath="row1/CompanyCode"/>
+        <nodes name="DateKey" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_String" xpath="row1/DateKey"/>
       </inputTrees>
-      <outputTrees name="in">
-        <nodes expression="" name="LineItems" pattern="" type="id_Document" xpath="in/LineItems">
-          <children main="true" name="Z_BAPI_AR_ACC_GETOPENITEMS" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS" xsi:type="TalendXMLMap:OutputTreeNode">
-            <children loop="true" main="true" name="INPUT" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/INPUT" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="  row1.CompanyCode" incomingConnections="//@node.1/@nodeData/@connections.0" name="COMPANYCODE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/INPUT/COMPANYCODE" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.KeyDate" incomingConnections="//@node.1/@nodeData/@connections.1" name="KEYDATE" type="id_String" xpath="in.LineItems:/Z_BAPI_AR_ACC_GETOPENITEMS/INPUT/KEYDATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+      <outputTrees name="In">
+        <nodes expression="" name="Lineitems" pattern="" type="id_Document" xpath="In/Lineitems">
+          <children main="true" name="Z_BAPI_AR_ACC_GETOPENITEMS" type="id_String" xpath="In.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children loop="true" main="true" name="INPUT" type="id_String" xpath="In.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS/INPUT" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="row1.CompanyCode" incomingConnections="//@node.1/@nodeData/@connections.0" name="COMPANYCODE" type="id_String" xpath="In.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS/INPUT/COMPANYCODE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.DateKey" incomingConnections="//@node.1/@nodeData/@connections.1" name="KEYDATE" type="id_String" xpath="In.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS/INPUT/KEYDATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
             </children>
           </children>
         </nodes>
@@ -159,7 +176,7 @@
       <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
-  <node componentName="tSAPBapi" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="96">
+  <node componentName="tSAPBapi" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPBapi_2"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ImQ9YEnOEe-VRqFTsZyu7A"/>
@@ -168,7 +185,7 @@
     <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
     <elementParameter field="TEXT" name="CLIENT" value="&quot;200&quot;"/>
     <elementParameter field="TEXT" name="USERID" value="&quot;ztest&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:1AIclTN8uOf3uLDRfC1YcBjdSGdv8Hn3yqDC7uDQT39xx4WkoSE="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:K2Rpl/fcJPCaT1+3OmRn09bL8cYLw/D7kEPQmlrucp3+MA4IL4Y="/>
     <elementParameter field="TEXT" name="LANGUAGE" value="&quot;EN&quot;"/>
     <elementParameter field="TEXT" name="HOSTNAME" value="&quot;192.168.100.152&quot;"/>
     <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;01&quot;"/>
@@ -189,7 +206,7 @@
       <column comment="" key="false" length="-1" name="LineItems" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="96">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_2"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
@@ -672,7 +689,7 @@
       <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.0/@children.110" target="//@node.3/@nodeData/@outputTrees.0/@nodes.110" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="96">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1026,13 +1043,39 @@
       <column comment="" key="false" length="-1" name="BILL_DOC" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tXMLMap_1">
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_RxhvcBPcEe2T05g0G3WxHg"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.254.10&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;Excel&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ODS&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;TalendUser&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mjzelP2IDsg7V5HrJ3NMup4oVdH7UZwp+uigmJAHLDYH02c4hNTKV4Lz3UQ="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="MSSQL_PROD_ODS_excel"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="in" lineStyle="10" mergeOrder="1" metaname="in" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tSAPBapi_2">
+  <connection connectorName="FLOW" label="In" lineStyle="10" mergeOrder="1" metaname="In" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tSAPBapi_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="in"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="In"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSAPBapi_2" offsetLabelX="0" offsetLabelY="0" source="tSAPBapi_2" target="tXMLMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1042,18 +1085,26 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Table"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5ca5c843-abba-4ba2-be87-8f9abdb66b6f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XhNuvAc6nXiZtE5g4s1nMTlRNFvNawpJ5MHCTMCHVNCIlC1VEy0VcKBIBj02/iF4Zsq6RymiqjEe&#13;
-Z+DoBoqotA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_271774ae-a519-4155-9d97-ae4fcaf5f621"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wcYp3McfOWu17/HPhARMBuY+mRN7z302EChVmoD7AOzbk1XuWnkZpu45f8Zj1A9pyFdckY5wCBDg&#13;
-VwUCq4kX3A==</DigestValue></Reference></SignedInfo><SignatureValue>XZDLjT58s+szQzZfExPV9RAM7OKOoYFjaQs82vii131nRPuIEuICyKgfJmp6uZsie9kJYbqI/c0K&#13;
-zOkp8C5RbE3GpTsAXQAmmYG3GvqCO0ypjnYc5imRetgcy4gXqBI9zGaNOQrWt16Tk6B7wlzLNqWe&#13;
-Jis5rsNBQanc/thzU219LOuBruTFSeq6SpWzKIITf1xKmsaroJfZGcHcYIDkTsP+8CYlTx7gSFnj&#13;
-ilCNsbMNWmE5I01noXUaKALrL95Dwz+RtJwXbXErNEie0acocRYXHiwgojm2rQBnrDJW3fXNs6Q1&#13;
-1viZ6cZeUi2eaLLm8zrWl6fB/j2jt9nDCH91qQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7f787e92-36d0-4f84-8fe5-c222b684256a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/e6T0EwziDSaRPfK9GlIbF04Io6vvw7iJ10nviRCHWgcKl5JpRz6QrE/sG56TbnWEhUXaI2KhTYT&#13;
+UyBIt9YKFw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5e577afa-36d6-4f49-8931-22607f54f4f0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PPYEqi+oDt5EnX+rJyPVLEGNyX0IwjZtyhz26ns13GCC7bn9GnmsZnXvFTg0g99DkUUpRbHq3Zpm&#13;
+349I87aIrw==</DigestValue></Reference></SignedInfo><SignatureValue>bVsgtYGsmcShRqEdqmpnj8RDew444OyPgWVNGEsg3QbMcXEgspOauzhBVVg49RI0X9zl9RRwgilX&#13;
+c07ke5Gppq4Sq0ZbkI957NQ4ta4RGZkPAFxkGHhr14mmpW/2MH/WNNQO0OiMKYnEtLusDs8K5u9X&#13;
+K0aLZP3L6h0SXpo3u1wmFDHHxRLr8Uc9B0nm4B6sXz+e2cgwYkVkO4vy0/bkaymjboaXYjIoXCAy&#13;
+AO1gwPhFeUdqVyAFHuQm3AqwWeh9NLiDEkXjO4jjkPUox/gOQWZW4pYTDnZhf+eq/EBVyj3a2xSU&#13;
+i50MLF5A5apOhQ7EfFZaQWN4l+BLfLfgOajNjA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1075,4 +1126,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_271774ae-a519-4155-9d97-ae4fcaf5f621" Target="#_5ca5c843-abba-4ba2-be87-8f9abdb66b6f"><Timestamp>2024-07-25 09:04:07</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5e577afa-36d6-4f49-8931-22607f54f4f0" Target="#_7f787e92-36d0-4f84-8fe5-c222b684256a"><Timestamp>2024-07-25 09:57:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
