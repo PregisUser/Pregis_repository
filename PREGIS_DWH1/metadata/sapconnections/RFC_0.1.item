@@ -1,69 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.foundation.businessinformation="http:///orgomg/cwm/foundation/businessinformation.ecore" xmi:version="2.0">
-  <TalendMetadata:SAPConnection Client="200" Host="192.168.100.152" Language="EN" Password="enc:system.encryption.key.v1:F6yiuOjralg+d2lc7FdM6naTFaDdxJMUz+wYXLFQwc7SAtwD" SystemNumber="01" Username="ztest" jcoVersion="SAP2" xmi:id="_Dlj_IUs4Ee-MY4ZdHx6Syg">
-    <Funtions asXmlSchema="true" connection="_Dlj_IUs4Ee-MY4ZdHx6Syg" description="_LlK6AEs4Ee-MY4ZdHx6Syg" id="_GbwwMEs4Ee-MY4ZdHx6Syg" label="Z_BAPI_AR_ACC_GETOPENITEMS" name="Z_BAPI_AR_ACC_GETOPENITEMS" properties="deleted&#10;&#10;true&#10;&#10;" xmi:id="_LlKS8Es4Ee-MY4ZdHx6Syg">
-      <paramData xmi:id="_LlKS8Us4Ee-MY4ZdHx6Syg">
-        <inputRoot name="Input" xmi:id="_LlKS8ks4Ee-MY4ZdHx6Syg">
-          <children length="4" name="COMPANYCODE" tableResideInTables="false" type="string" xmi:id="_LlKS80s4Ee-MY4ZdHx6Syg"/>
-          <children name="KEYDATE" tableResideInTables="false" type="date" xmi:id="_LlKS9Es4Ee-MY4ZdHx6Syg"/>
-          <children name="LINEITEMS" type="table" xmi:id="_LlKS9Us4Ee-MY4ZdHx6Syg">
-            <children length="3" name="MANDT" tableResideInTables="false" type="string" xmi:id="_LlKS9ks4Ee-MY4ZdHx6Syg"/>
-            <children length="4" name="BUKRS" tableResideInTables="false" type="string" xmi:id="_LlKS90s4Ee-MY4ZdHx6Syg"/>
-            <children length="10" name="BELNR" tableResideInTables="false" type="string" xmi:id="_LlKS-Es4Ee-MY4ZdHx6Syg"/>
-            <children name="BUDAT" tableResideInTables="false" type="date" xmi:id="_LlKS-Us4Ee-MY4ZdHx6Syg"/>
-            <children name="BLDAT" tableResideInTables="false" type="date" xmi:id="_LlKS-ks4Ee-MY4ZdHx6Syg"/>
-            <children name="ZFBDT" tableResideInTables="false" type="date" xmi:id="_LlKS-0s4Ee-MY4ZdHx6Syg"/>
-            <children length="10" name="KUNNR" tableResideInTables="false" type="string" xmi:id="_LlKS_Es4Ee-MY4ZdHx6Syg"/>
-            <children name="GJAHR" tableResideInTables="false" type="long" xmi:id="_LlKS_Us4Ee-MY4ZdHx6Syg"/>
-            <children name="MONAT" tableResideInTables="false" type="long" xmi:id="_LlKS_ks4Ee-MY4ZdHx6Syg"/>
-            <children length="1" name="SHKZG" tableResideInTables="false" type="string" xmi:id="_LlKS_0s4Ee-MY4ZdHx6Syg"/>
-            <children name="DMBTR" tableResideInTables="false" type="decimal" xmi:id="_LlKTAEs4Ee-MY4ZdHx6Syg"/>
-            <children length="2" name="BLART" tableResideInTables="false" type="string" xmi:id="_LlKTAUs4Ee-MY4ZdHx6Syg"/>
-            <children length="50" name="SGTXT" tableResideInTables="false" type="string" xmi:id="_LlKTAks4Ee-MY4ZdHx6Syg"/>
-            <children length="12" name="XREF2" tableResideInTables="false" type="string" xmi:id="_LlKTA0s4Ee-MY4ZdHx6Syg"/>
-            <children length="5" name="WAERS" tableResideInTables="false" type="string" xmi:id="_LlKTBEs4Ee-MY4ZdHx6Syg"/>
-          </children>
-        </inputRoot>
-        <outputRoot name="Output" xmi:id="_LlKTBUs4Ee-MY4ZdHx6Syg">
-          <children name="RETURN" tableResideInTables="false" type="structure" xmi:id="_LlKTBks4Ee-MY4ZdHx6Syg">
-            <children length="1" name="TYPE" tableResideInTables="false" type="string" xmi:id="_LlKTB0s4Ee-MY4ZdHx6Syg"/>
-            <children length="5" name="CODE" tableResideInTables="false" type="string" xmi:id="_LlKTCEs4Ee-MY4ZdHx6Syg"/>
-            <children length="220" name="MESSAGE" tableResideInTables="false" type="string" xmi:id="_LlKTCUs4Ee-MY4ZdHx6Syg"/>
-            <children length="20" name="LOG_NO" tableResideInTables="false" type="string" xmi:id="_LlKTCks4Ee-MY4ZdHx6Syg"/>
-            <children name="LOG_MSG_NO" tableResideInTables="false" type="long" xmi:id="_LlKTC0s4Ee-MY4ZdHx6Syg"/>
-            <children length="50" name="MESSAGE_V1" tableResideInTables="false" type="string" xmi:id="_LlKTDEs4Ee-MY4ZdHx6Syg"/>
-            <children length="50" name="MESSAGE_V2" tableResideInTables="false" type="string" xmi:id="_LlKTDUs4Ee-MY4ZdHx6Syg"/>
-            <children length="50" name="MESSAGE_V3" tableResideInTables="false" type="string" xmi:id="_LlKTDks4Ee-MY4ZdHx6Syg"/>
-            <children length="50" name="MESSAGE_V4" tableResideInTables="false" type="string" xmi:id="_LlKTD0s4Ee-MY4ZdHx6Syg"/>
-          </children>
-          <children name="LINEITEMS" type="table" xmi:id="_LlKTEEs4Ee-MY4ZdHx6Syg">
-            <children length="3" name="MANDT" tableResideInTables="false" type="string" xmi:id="_LlKTEUs4Ee-MY4ZdHx6Syg"/>
-            <children length="4" name="BUKRS" tableResideInTables="false" type="string" xmi:id="_LlKTEks4Ee-MY4ZdHx6Syg"/>
-            <children length="10" name="BELNR" tableResideInTables="false" type="string" xmi:id="_LlKTE0s4Ee-MY4ZdHx6Syg"/>
-            <children name="BUDAT" tableResideInTables="false" type="date" xmi:id="_LlKTFEs4Ee-MY4ZdHx6Syg"/>
-            <children name="BLDAT" tableResideInTables="false" type="date" xmi:id="_LlKTFUs4Ee-MY4ZdHx6Syg"/>
-            <children name="ZFBDT" tableResideInTables="false" type="date" xmi:id="_LlKTFks4Ee-MY4ZdHx6Syg"/>
-            <children length="10" name="KUNNR" tableResideInTables="false" type="string" xmi:id="_LlKTF0s4Ee-MY4ZdHx6Syg"/>
-            <children name="GJAHR" tableResideInTables="false" type="long" xmi:id="_LlKTGEs4Ee-MY4ZdHx6Syg"/>
-            <children name="MONAT" tableResideInTables="false" type="long" xmi:id="_LlKTGUs4Ee-MY4ZdHx6Syg"/>
-            <children length="1" name="SHKZG" tableResideInTables="false" type="string" xmi:id="_LlKTGks4Ee-MY4ZdHx6Syg"/>
-            <children name="DMBTR" tableResideInTables="false" type="decimal" xmi:id="_LlKTG0s4Ee-MY4ZdHx6Syg"/>
-            <children length="2" name="BLART" tableResideInTables="false" type="string" xmi:id="_LlKTHEs4Ee-MY4ZdHx6Syg"/>
-            <children length="50" name="SGTXT" tableResideInTables="false" type="string" xmi:id="_LlKTHUs4Ee-MY4ZdHx6Syg"/>
-            <children length="12" name="XREF2" tableResideInTables="false" type="string" xmi:id="_LlKTHks4Ee-MY4ZdHx6Syg"/>
-            <children length="5" name="WAERS" tableResideInTables="false" type="string" xmi:id="_LlKTH0s4Ee-MY4ZdHx6Syg"/>
-          </children>
-        </outputRoot>
-      </paramData>
-    </Funtions>
-  </TalendMetadata:SAPConnection>
-  <orgomg.cwm.foundation.businessinformation:Description body="" modelElement="_LlKS8Es4Ee-MY4ZdHx6Syg" xmi:id="_LlK6AEs4Ee-MY4ZdHx6Syg"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9bbeaba6-6375-486c-9332-6c4648d5c398"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JCxleXUBfcAyVSZady7Q4zyGYinIfvQMYwW7lIIdqagf0VZiIU00wi1XY7QGcHoXjpEajqYp5Epm&#13;
-VEyMf4IOcg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8bdd2060-afaf-4b25-97d8-3d1cc9623569"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>v7bO1NUyVe4rzxLHmTOu0a6mtbXpqvApvj2zvo39MwQxCXsaIKyHiWdiLaRtX/yNgniWUT+Mmau9&#13;
-9olL5+EKxQ==</DigestValue></Reference></SignedInfo><SignatureValue>VPGsW5xbJRSXlozz47WMWojQ5BqPiTviEMrpWWllV92anl5ROusxxucaeyLZHdTPbfVdcogMCyqv&#13;
-tnc7DKBo20nIGIjKiwXFcCr+o0XVK90i8YmNKE0Fp3Hm6qbkK5AFKsBBKCAN/mmUBaI1XHPz6BXW&#13;
-AGhMEsi+vPCm0m4FNdOpsH2K/bI3KDwf3RGvEKKBJYZtXIUoWQo4IDlsL2AuQMSs8prNYDFaI46j&#13;
-ks4bYSPl3GKUmCb32u4VBiNzGgEcV5qBLX1lpSgqaBx0usdNh0v+xOLCK/XehXBu2DJWuFjmxoDT&#13;
-2JQAKCVAtsR2vcm8xTW4fRo03HHNpmdO902tcA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendMetadata:SAPConnection xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xmi="http://www.omg.org/XMI" Client="200" Host="192.168.100.152" Language="EN" Password="enc:system.encryption.key.v1:F6yiuOjralg+d2lc7FdM6naTFaDdxJMUz+wYXLFQwc7SAtwD" SystemNumber="01" Username="ztest" jcoVersion="SAP2" xmi:id="_Dlj_IUs4Ee-MY4ZdHx6Syg" xmi:version="2.0"><Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c6e29f3f-bc42-4851-b221-a3c09460fdc4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8TIL16AUrca2Zazqfp+Jb2Quo7+hCMj/QA0TN1GXviSH8ahsrEEbcChsUSwH/AChcH0GyCIQ93r/&#13;
+tURyaCaLeg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_973b11c2-08d7-45ff-b0e3-2a42e41aeccf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WSa0Qx4EXNDmHoq7EBgDUZk6Pn0Bm2QQdq3B+wHzCqHHhnc/QM/DMIsTi5Eoreh8HndE8yzjHKMR&#13;
+PZS4tRS0rQ==</DigestValue></Reference></SignedInfo><SignatureValue>JqaJLHxZkzVN+gpO+ZIbo2L8P6l9XxAtB2Uzb4wX5U4BlWUvjgJr//doYPpbmK1OF20Knuiw1Gxw&#13;
+7F2PrigwbBEC92mMjhZo2wF/i7cX8yaE49qmh/ivUTq34RtF9DrtF8WUafqPXZO7BPBhSypyeyhN&#13;
+JusAdqEGA4nHkpdZuInNxQJqtS5H8QUn3VNRljW6IF4yBZs4BkKghjsipC3bfcmvNVQ8ZsBQqnn9&#13;
+uTjxmtFX5eZyDJzmDtSt2xgS883GYDr47unwZr9CwL1mKFtO++ut1LkvbMlQzmO76du8vXv0w69d&#13;
+VyhZV4OYZumIErasZmnwTOOesDm5TKI5q36OoA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -85,4 +26,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8bdd2060-afaf-4b25-97d8-3d1cc9623569" Target="#_9bbeaba6-6375-486c-9332-6c4648d5c398"><Timestamp>2024-07-26 10:18:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_973b11c2-08d7-45ff-b0e3-2a42e41aeccf" Target="#_c6e29f3f-bc42-4851-b221-a3c09460fdc4"><Timestamp>2024-07-26 10:18:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendMetadata:SAPConnection>
