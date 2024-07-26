@@ -1,10 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendMetadata:SAPConnection xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xmi="http://www.omg.org/XMI" Client="200" Host="192.168.100.152" Language="EN" Password="enc:system.encryption.key.v1:F6yiuOjralg+d2lc7FdM6naTFaDdxJMUz+wYXLFQwc7SAtwD" SystemNumber="01" Username="ztest" jcoVersion="SAP2" xmi:id="_Dlj_IUs4Ee-MY4ZdHx6Syg" xmi:version="2.0"><Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c6e29f3f-bc42-4851-b221-a3c09460fdc4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8TIL16AUrca2Zazqfp+Jb2Quo7+hCMj/QA0TN1GXviSH8ahsrEEbcChsUSwH/AChcH0GyCIQ93r/&#13;
-tURyaCaLeg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_973b11c2-08d7-45ff-b0e3-2a42e41aeccf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WSa0Qx4EXNDmHoq7EBgDUZk6Pn0Bm2QQdq3B+wHzCqHHhnc/QM/DMIsTi5Eoreh8HndE8yzjHKMR&#13;
-PZS4tRS0rQ==</DigestValue></Reference></SignedInfo><SignatureValue>JqaJLHxZkzVN+gpO+ZIbo2L8P6l9XxAtB2Uzb4wX5U4BlWUvjgJr//doYPpbmK1OF20Knuiw1Gxw&#13;
-7F2PrigwbBEC92mMjhZo2wF/i7cX8yaE49qmh/ivUTq34RtF9DrtF8WUafqPXZO7BPBhSypyeyhN&#13;
-JusAdqEGA4nHkpdZuInNxQJqtS5H8QUn3VNRljW6IF4yBZs4BkKghjsipC3bfcmvNVQ8ZsBQqnn9&#13;
-uTjxmtFX5eZyDJzmDtSt2xgS883GYDr47unwZr9CwL1mKFtO++ut1LkvbMlQzmO76du8vXv0w69d&#13;
-VyhZV4OYZumIErasZmnwTOOesDm5TKI5q36OoA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.foundation.businessinformation="http:///orgomg/cwm/foundation/businessinformation.ecore" xmi:version="2.0">
+  <TalendMetadata:SAPConnection Client="200" Host="192.168.100.152" Language="EN" Password="enc:system.encryption.key.v1:F6yiuOjralg+d2lc7FdM6naTFaDdxJMUz+wYXLFQwc7SAtwD" SystemNumber="01" Username="ztest" jcoVersion="SAP2" xmi:id="_Dlj_IUs4Ee-MY4ZdHx6Syg">
+    <Funtions asXmlSchema="true" connection="_Dlj_IUs4Ee-MY4ZdHx6Syg" description="_lej54Es4Ee-MY4ZdHx6Syg" id="_kgH7sEs4Ee-MY4ZdHx6Syg" label="Z_BAPI_AR_ACC_GETOPENITEMS1" name="Z_BAPI_AR_ACC_GETOPENITEMS1" xmi:id="_lejS0Es4Ee-MY4ZdHx6Syg">
+      <paramData xmi:id="_lejS0Us4Ee-MY4ZdHx6Syg">
+        <inputRoot name="Input" xmi:id="_lejS0ks4Ee-MY4ZdHx6Syg">
+          <children length="4" name="COMPANYCODE" tableResideInTables="false" type="string" xmi:id="_lejS00s4Ee-MY4ZdHx6Syg"/>
+          <children name="KEYDATE" tableResideInTables="false" type="date" xmi:id="_lejS1Es4Ee-MY4ZdHx6Syg"/>
+          <children name="LINEITEMS" type="table" xmi:id="_lejS1Us4Ee-MY4ZdHx6Syg">
+            <children length="3" name="MANDT" tableResideInTables="false" type="string" xmi:id="_lejS1ks4Ee-MY4ZdHx6Syg"/>
+            <children length="4" name="BUKRS" tableResideInTables="false" type="string" xmi:id="_lejS10s4Ee-MY4ZdHx6Syg"/>
+            <children length="10" name="BELNR" tableResideInTables="false" type="string" xmi:id="_lejS2Es4Ee-MY4ZdHx6Syg"/>
+            <children name="BUDAT" tableResideInTables="false" type="date" xmi:id="_lejS2Us4Ee-MY4ZdHx6Syg"/>
+            <children name="BLDAT" tableResideInTables="false" type="date" xmi:id="_lejS2ks4Ee-MY4ZdHx6Syg"/>
+            <children name="ZFBDT" tableResideInTables="false" type="date" xmi:id="_lejS20s4Ee-MY4ZdHx6Syg"/>
+            <children length="10" name="KUNNR" tableResideInTables="false" type="string" xmi:id="_lejS3Es4Ee-MY4ZdHx6Syg"/>
+            <children name="GJAHR" tableResideInTables="false" type="long" xmi:id="_lejS3Us4Ee-MY4ZdHx6Syg"/>
+            <children name="MONAT" tableResideInTables="false" type="long" xmi:id="_lejS3ks4Ee-MY4ZdHx6Syg"/>
+            <children length="1" name="SHKZG" tableResideInTables="false" type="string" xmi:id="_lejS30s4Ee-MY4ZdHx6Syg"/>
+            <children name="DMBTR" tableResideInTables="false" type="decimal" xmi:id="_lejS4Es4Ee-MY4ZdHx6Syg"/>
+            <children length="2" name="BLART" tableResideInTables="false" type="string" xmi:id="_lejS4Us4Ee-MY4ZdHx6Syg"/>
+            <children length="50" name="SGTXT" tableResideInTables="false" type="string" xmi:id="_lejS4ks4Ee-MY4ZdHx6Syg"/>
+            <children length="12" name="XREF2" tableResideInTables="false" type="string" xmi:id="_lejS40s4Ee-MY4ZdHx6Syg"/>
+            <children length="5" name="WAERS" tableResideInTables="false" type="string" xmi:id="_lejS5Es4Ee-MY4ZdHx6Syg"/>
+          </children>
+        </inputRoot>
+        <outputRoot name="Output" xmi:id="_lejS5Us4Ee-MY4ZdHx6Syg">
+          <children name="LINEITEMS" type="table" xmi:id="_lejS5ks4Ee-MY4ZdHx6Syg">
+            <children length="3" name="MANDT" tableResideInTables="false" type="string" xmi:id="_lejS50s4Ee-MY4ZdHx6Syg"/>
+            <children length="4" name="BUKRS" tableResideInTables="false" type="string" xmi:id="_lejS6Es4Ee-MY4ZdHx6Syg"/>
+            <children length="10" name="BELNR" tableResideInTables="false" type="string" xmi:id="_lejS6Us4Ee-MY4ZdHx6Syg"/>
+            <children name="BUDAT" tableResideInTables="false" type="date" xmi:id="_lejS6ks4Ee-MY4ZdHx6Syg"/>
+            <children name="BLDAT" tableResideInTables="false" type="date" xmi:id="_lejS60s4Ee-MY4ZdHx6Syg"/>
+            <children name="ZFBDT" tableResideInTables="false" type="date" xmi:id="_lejS7Es4Ee-MY4ZdHx6Syg"/>
+            <children length="10" name="KUNNR" tableResideInTables="false" type="string" xmi:id="_lejS7Us4Ee-MY4ZdHx6Syg"/>
+            <children name="GJAHR" tableResideInTables="false" type="long" xmi:id="_lejS7ks4Ee-MY4ZdHx6Syg"/>
+            <children name="MONAT" tableResideInTables="false" type="long" xmi:id="_lejS70s4Ee-MY4ZdHx6Syg"/>
+            <children length="1" name="SHKZG" tableResideInTables="false" type="string" xmi:id="_lejS8Es4Ee-MY4ZdHx6Syg"/>
+            <children name="DMBTR" tableResideInTables="false" type="decimal" xmi:id="_lejS8Us4Ee-MY4ZdHx6Syg"/>
+            <children length="2" name="BLART" tableResideInTables="false" type="string" xmi:id="_lejS8ks4Ee-MY4ZdHx6Syg"/>
+            <children length="50" name="SGTXT" tableResideInTables="false" type="string" xmi:id="_lejS80s4Ee-MY4ZdHx6Syg"/>
+            <children length="12" name="XREF2" tableResideInTables="false" type="string" xmi:id="_lejS9Es4Ee-MY4ZdHx6Syg"/>
+            <children length="5" name="WAERS" tableResideInTables="false" type="string" xmi:id="_lejS9Us4Ee-MY4ZdHx6Syg"/>
+          </children>
+        </outputRoot>
+      </paramData>
+    </Funtions>
+  </TalendMetadata:SAPConnection>
+  <orgomg.cwm.foundation.businessinformation:Description body="" modelElement="_lejS0Es4Ee-MY4ZdHx6Syg" xmi:id="_lej54Es4Ee-MY4ZdHx6Syg"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7753c795-ff43-41af-bcf2-871b3aad9f54"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JyNmgOZbd/Ipg7vMdlrlCEOhsNUcFw8PHWydzHze5HvTc3EdsWsJ+TGVtO6yHmKYeb/NK2pWn/Jm&#13;
+/bV5T53m2Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fd3d5b80-da88-42a3-b416-50e386ef9d04"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lxL9qScfoeJZFekNFP8pqujEJWva5PDHTA/nUXcAevgZ/8z1zH2s+iRZH44KdnuKUN0IKFRNOGgP&#13;
+QMzF76m5/w==</DigestValue></Reference></SignedInfo><SignatureValue>ZfHN81a29lVT0qqp0SgEqQTpE0KLzte6/CstAojRM+i2ErbWeUgM2jhaG8F3iti6ZtofwnlaJL+u&#13;
+aygDRTdK2mwOjIOpaMw6o7CWWbO402KTmeVhh7nhoEH4l2a5yAFjaz+cfjqNzHETXSmF52nI77m8&#13;
+qCwI3oMMcOtYdgvxNzrR5d/IsKfM/NRAQ2x45wZJJb+NsYzoAAYiFLw5R1YHghTyjPpqse5HzjdC&#13;
+jeqoR57a0k6ZeIO9cv1qACtD5Ty/Sfglj17LRdPxARGoNO7MfvJwZYyTl2gwhbrvBH2kO5VH3ssY&#13;
+c9FQRu0DJ3g0tn2cWOyctJHTCU1/mqGtc2iavw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -26,4 +74,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_973b11c2-08d7-45ff-b0e3-2a42e41aeccf" Target="#_c6e29f3f-bc42-4851-b221-a3c09460fdc4"><Timestamp>2024-07-26 10:18:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendMetadata:SAPConnection>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fd3d5b80-da88-42a3-b416-50e386ef9d04" Target="#_7753c795-ff43-41af-bcf2-871b3aad9f54"><Timestamp>2024-07-26 10:19:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
