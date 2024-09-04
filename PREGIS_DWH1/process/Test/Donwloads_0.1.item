@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:yXTXx9pqzRSogJaPSi71oX3bJpcyoMqEZjCj28pa"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:sj3TmHnKqsGsaA8VxUuXL8nHyRTtXPfloZ5peQCd"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pdC1SATGkWK//xQuzxALqGp+yxP5gJIfi7zUNcHgHchqi3TGxgWtuyIe"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mQ1kz0G5n4jEmujubSNZ0W2NN+TFwKhg+Frv2Fzf8yDsUKfgdu+CSoVW"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -119,7 +119,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;DDS&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;TalendUser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jo8f+RwgVWIdApercVS4UQ+1snVGE8sGGLO7N2e6z2P9clHqc+Rj+NVcnAI="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2Af7BoDtKVUv0Bm7/sgCXVdecMx3z+QhP60LIRjktlzHhyzxpCj4bsBw40c="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -145,13 +145,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:eawExlEDw9xA0gz8ebC5M/DTQxJ8hYaASThTl03i"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:zSuRYDqZRSWaX8On3CV0QU9lt8sIrHe1yzRPDZey"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Fact_Fatturato_Mensile&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT *&#13;&#10;FROM (&#13;&#10;SELECT DA.[Denominazione Agente storicizzato],DC.[Denominazione Cliente],DM.[Codice materiale],DM.[Descrizione materiale], [Data Fattura], ROUND(SUM(FatturatoNetto),2) AS FatturatoNetto&#13;&#10;,SUM([Quantità fatturata in Unità di Misura]) AS [Quantità fatturata in Unità di Misura]&#13;&#10;FROM (SELECT [Data Fattura],IdCliente,IdMateriale,IdAgente,&#13;&#10;ISNULL([Fatturato Lordo],0) + (ISNULL([Resi da cliente],0) + ISNULL([Sconti su resi],0) +&#13;&#10;&#9;&#9;&#9;&#9;ISNULL([Sconti su vendite],0) + ISNULL([Omaggi su vendite (ZOMA)],0) +&#13;&#10;&#9;&#9;&#9;&#9;ISNULL([Omaggi su vendite (ZOMI)],0) + ISNULL([Fatturato Diverso],0) ) AS FatturatoNetto&#9;&#9;&#13;&#10;&#9;&#9;&#9;&#9;,[Quantità fatturata in Unità di Misura]&#13;&#10;FROM [dbo].[Fact_Fatturato_Mensile]&#13;&#10;) FMM&#13;&#10;&#9;&#9;&#9;INNER JOIN &#13;&#10;&#9;&#9;&#9;&#9;dbo.vw_DimCliente DC ON&#13;&#10;FMM.IdCliente = DC.IdCliente&#13;&#10;&#9;&#9;&#9;INNER JOIN &#13;&#10;&#9;&#9;&#9;&#9;dbo.vw_DimMateriali DM ON&#13;&#10;FMM.IdMateriale = DM.IdMateriale&#13;&#10;&#9;&#9;&#9;INNER JOIN&#13;&#10;&#9;&#9;&#9;&#9;dbo.vw_Dim_Agenti DA ON&#13;&#10;FMM.IdAgente = DA.IdAgente&#13;&#10;WHERE YEAR([Data Fattura]) = 2024 AND FMM.IdAgente IN (SELECT DISTINCT IdAgente FROM dbo.Fact_Fatturato_Mensile WHERE YEAR([Data Fattura]) = 2024 AND &#13;&#10;IdMateriale IN (SELECT IdMateriale FROM dbo.DimMateriali WHERE [Codice materiale] = '02050212'))&#13;&#10;GROUP BY DA.[Denominazione Agente storicizzato],DC.[Denominazione Cliente],DM.[Codice materiale],DM.[Descrizione materiale],[Data Fattura]&#13;&#10;)&#13;&#10;FJB&#13;&#10;WHERE [Denominazione Agente storicizzato] = '0000000030 - MARTINI LUCA'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT *&#13;&#10;FROM (&#13;&#10;SELECT DA.[Denominazione Agente storicizzato],DC.[Denominazione Cliente],DM.[Codice materiale],DM.[Descrizione materiale], [Data Fattura], ROUND(SUM(FatturatoNetto),2) AS FatturatoNetto&#13;&#10;,SUM([Quantità fatturata in Unità di Misura]) AS [Quantità fatturata in Unità di Misura]&#13;&#10;FROM (SELECT [Data Fattura],IdCliente,IdMateriale,IdAgente,&#13;&#10;ISNULL([Fatturato Lordo],0) + (ISNULL([Resi da cliente],0) + ISNULL([Sconti su resi],0) +&#13;&#10;&#9;&#9;&#9;&#9;ISNULL([Sconti su vendite],0) + ISNULL([Omaggi su vendite (ZOMA)],0) +&#13;&#10;&#9;&#9;&#9;&#9;ISNULL([Omaggi su vendite (ZOMI)],0) + ISNULL([Fatturato Diverso],0) ) AS FatturatoNetto&#9;&#9;&#13;&#10;&#9;&#9;&#9;&#9;,[Quantità fatturata in Unità di Misura]&#13;&#10;FROM [dbo].[Fact_Fatturato_Mensile]&#13;&#10;) FMM&#13;&#10;&#9;&#9;&#9;INNER JOIN &#13;&#10;&#9;&#9;&#9;&#9;dbo.vw_DimCliente DC ON&#13;&#10;FMM.IdCliente = DC.IdCliente&#13;&#10;&#9;&#9;&#9;INNER JOIN &#13;&#10;&#9;&#9;&#9;&#9;dbo.vw_DimMateriali DM ON&#13;&#10;FMM.IdMateriale = DM.IdMateriale&#13;&#10;&#9;&#9;&#9;INNER JOIN&#13;&#10;&#9;&#9;&#9;&#9;dbo.vw_Dim_Agenti DA ON&#13;&#10;FMM.IdAgente = DA.IdAgente&#13;&#10;WHERE YEAR([Data Fattura]) = 2024 AND FMM.IdAgente IN (SELECT DISTINCT IdAgente FROM dbo.Fact_Fatturato_Mensile WHERE YEAR([Data Fattura]) = 2024 AND &#13;&#10;IdMateriale IN (SELECT IdMateriale FROM dbo.DimMateriali WHERE [Codice materiale] = '02050212'))&#13;&#10;GROUP BY DA.[Denominazione Agente storicizzato],DC.[Denominazione Cliente],DM.[Codice materiale],DM.[Descrizione materiale],[Data Fattura]&#13;&#10;)&#13;&#10;FJB&#13;&#10;WHERE [Denominazione Agente storicizzato] = '0000000664 - MARGHI MASSIMO'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -192,7 +192,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;E:/Workspace/Pregis_DWH1/Fatturato_2024_MartiniLuca.txt&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;E:/Workspace/Pregis_DWH1/Fatturato_2024_MarghiMassimo.txt&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -245,13 +245,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3b406e46-bde0-4145-af64-bbf488a905c3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>l26JjLBY7OQp6kvGtOrZiXr5xWX7K5CV/Tvwfh2HPGv1EHK14ighorhd51kXuM1NXBouGs7NQasu&#13;
-6QuLlz/Maw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_598dfe36-27d2-4ed5-bdfe-0d3ae050f0db"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oTXzCgkdLkJPJG3j+26CBPzldZlFfkfPZZ51ErR5OogOsm05Rpxl4ZM6RDGG1BaXfqccnGZhD3tP&#13;
-hQ0b6MWKkQ==</DigestValue></Reference></SignedInfo><SignatureValue>b9pdXb5GCA+okT2pE/Y9JqIp7UEs6kI6Hrc5O9bJ7r2zCn2OreODIug6+gtIGSE24uop0zaxFTGp&#13;
-1rLoQB1IzGMg6cnjOp+LVObCFRL7MM7JLVkAIYWxLllUq2ux0Uii5fYSkR7MmNt/FlEJq733a3hb&#13;
-M1eSIyooTR5EkwqhhNMgmKzcFiF+T8Yqg60FFwKNvUYiWT12VxWoPdq8GSVDNGKPJhwjDzayj1EF&#13;
-hCUhYp1+w39CvsD3mTTF1Bjkm8nSwrWm4trKrRop3bDZucWedxp7G6z866W1tRI91xhEh63wn8eZ&#13;
-Mh7Ek7vcjqtlE/F2nxYVKdDpLQ66rUofNveoEw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6a6945f5-66ad-40ad-83d8-bddb9fbcae9a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tV8aRMaptmfsN4pkU7zEKaxXZD2B/WXqBQ5yBk5lFifmKd2Vd8DCiUp2CodWFMo/e3gZZk+DjAJq&#13;
+y1cDpbrUaA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c2c93f19-e68d-4b38-8418-89ef253b66c1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XNnheqN2s1RRkUsmLlyXvZUEnEJglLxSnmLztq2Gt3fAVQyWK5OHD8km38hZOeR5vp8WeYAod+7S&#13;
+TRY36YiAFA==</DigestValue></Reference></SignedInfo><SignatureValue>MOvMnO/jfmAoZWuVVqNJHrcD+a1duNAyUH6M7wB0uJFOAmu9ybRBg8UsCq7CZ64y4g9fNb+8dfK7&#13;
+o4gGAGvWH6nPn8HfeesyQu7jgmlSbrBy830tYwtDx8fLls4naBjYqhqA+PNibOtAr1R0geI7Yddc&#13;
+tfYH2CojNccXk9qr7W50KZWCrczLyLyntT5VX14hiaZ2scwlfOQawWr05qVFMJjtRBnSH/bBgRF6&#13;
+q4SNTmxcToboVC0ibIhZsDVBbhJ+0jJyBLjeo92swR4cIMzU2JlTWS+xDaYuK+U82mz10SgwlDAO&#13;
++N+wymUFoK9WhRVTSDtDge+o4pmZJ37U4esbrA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -273,4 +273,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_598dfe36-27d2-4ed5-bdfe-0d3ae050f0db" Target="#_3b406e46-bde0-4145-af64-bbf488a905c3"><Timestamp>2024-09-04 08:41:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c2c93f19-e68d-4b38-8418-89ef253b66c1" Target="#_6a6945f5-66ad-40ad-83d8-bddb9fbcae9a"><Timestamp>2024-09-04 08:42:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
