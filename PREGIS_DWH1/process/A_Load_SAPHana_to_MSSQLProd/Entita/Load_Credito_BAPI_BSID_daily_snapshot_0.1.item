@@ -45,7 +45,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:hwttByaK8Fh2bFegm2+w9skNII3KaZU7vmzH4M44"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:7h5OwVzP4ObF8aMcH/ujMQGLuaZWOU3wCxOGWL+2"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -80,7 +80,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sFPbnEBKa2UxAKDGUQtjML0lju2Qsu4nYMDHyu1HQcyav2ymixvtjE+0"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NcS2viuKHkDL5OIdRzTEJeJ6FEYB2sorFEs9JqfrnjiZXIvoT5do0M1Y"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -121,13 +121,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HiNckukeANa5Dc2S/m3eEryfeZJcZBOPK7MXFgZ8"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SP22Qhw+BjBiRnpyxYUrLPJB/2evbBL6bAXJWtrf"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT 'S200' AS CompanyCode, CONVERT(CHAR(10), DataFotografia,112) AS DateKey&#13;&#10;FROM Excel.Credito_MappaturaDataFotografia&#13;&#10;WHERE [Data] = CAST(GETDATE() AS date)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT 'S200' AS CompanyCode,CONVERT(CHAR(10), DATEADD(DD,-1,GETDATE()),112) AS DateKey&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -187,7 +187,7 @@
     <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
     <elementParameter field="TEXT" name="CLIENT" value="&quot;200&quot;"/>
     <elementParameter field="TEXT" name="USERID" value="&quot;ztest&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:+CmyGYmbqT3472lqlAqYMSWGe8hTtSGMQypbl6VLKqStTC5fpVE="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:OlZvKcoFHlfA3dT8SFnyAjyQj9gTJtxVM0Fe6BmUsVs38i8xs7w="/>
     <elementParameter field="TEXT" name="LANGUAGE" value="&quot;EN&quot;"/>
     <elementParameter field="TEXT" name="HOSTNAME" value="&quot;192.168.100.152&quot;"/>
     <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;01&quot;"/>
@@ -202,7 +202,6 @@
     <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="TABLE" name="SAP_PROPERTIES"/>
-    <elementParameter field="TEXT" name="LABEL" value="Z_BAPI_AR_ACC_GETOPENITEMS1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="In" name="tSAPBapi_1">
       <column comment="" key="false" length="-1" name="Lineitems" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
@@ -230,14 +229,16 @@
       <column comment="" key="false" length="-1" name="SGTXT" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="XREF2" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="WAERS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ZANCREDITI" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ZANCREDITI2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2">
         <nodes expression="" name="Lineitems" type="id_Document" xpath="row2/Lineitems">
           <children main="true" name="Z_BAPI_AR_ACC_GETOPENITEMS1" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1">
-            <children main="true" name="TABLES" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES">
-              <children main="true" name="LINEITEMS" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS">
-                <children loop="true" main="true" name="item" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item">
+            <children loop="true" main="true" name="TABLES" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES">
+              <children name="LINEITEMS" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS">
+                <children name="item" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item">
                   <children name="MANDT" outgoingConnections="//@node.3/@nodeData/@connections.0" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/MANDT"/>
                   <children name="BUKRS" outgoingConnections="//@node.3/@nodeData/@connections.1" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/BUKRS"/>
                   <children name="BELNR" outgoingConnections="//@node.3/@nodeData/@connections.2" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/BELNR"/>
@@ -253,6 +254,8 @@
                   <children name="SGTXT" outgoingConnections="//@node.3/@nodeData/@connections.12" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/SGTXT"/>
                   <children name="XREF2" outgoingConnections="//@node.3/@nodeData/@connections.13" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/XREF2"/>
                   <children name="WAERS" outgoingConnections="//@node.3/@nodeData/@connections.14" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/WAERS"/>
+                  <children name="ZANCREDITI" outgoingConnections="//@node.3/@nodeData/@connections.15" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/ZANCREDITI"/>
+                  <children name="ZANCREDITI2" outgoingConnections="//@node.3/@nodeData/@connections.16" type="id_String" xpath="row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/ZANCREDITI2"/>
                 </children>
               </children>
             </children>
@@ -275,6 +278,8 @@
         <nodes expression="[row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/SGTXT]" incomingConnections="//@node.3/@nodeData/@connections.12" name="SGTXT" type="id_String" xpath="TABLES/SGTXT"/>
         <nodes expression="[row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/XREF2]" incomingConnections="//@node.3/@nodeData/@connections.13" name="XREF2" type="id_String" xpath="TABLES/XREF2"/>
         <nodes expression="[row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/WAERS]" incomingConnections="//@node.3/@nodeData/@connections.14" name="WAERS" type="id_String" xpath="TABLES/WAERS"/>
+        <nodes expression="[row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/ZANCREDITI]" incomingConnections="//@node.3/@nodeData/@connections.15" name="ZANCREDITI" pattern="" type="id_String" xpath="TABLES/ZANCREDITI"/>
+        <nodes expression="[row2.Lineitems:/Z_BAPI_AR_ACC_GETOPENITEMS1/TABLES/LINEITEMS/item/ZANCREDITI2]" incomingConnections="//@node.3/@nodeData/@connections.16" name="ZANCREDITI2" pattern="" type="id_String" xpath="TABLES/ZANCREDITI2"/>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
       <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
@@ -292,6 +297,8 @@
       <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.12" target="//@node.3/@nodeData/@outputTrees.0/@nodes.12" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.13" target="//@node.3/@nodeData/@outputTrees.0/@nodes.13" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.14" target="//@node.3/@nodeData/@outputTrees.0/@nodes.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.15" target="//@node.3/@nodeData/@outputTrees.0/@nodes.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.16" target="//@node.3/@nodeData/@outputTrees.0/@nodes.16" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="320">
@@ -338,6 +345,10 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="WAERS"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZANCREDITI"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZANCREDITI2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -358,6 +369,8 @@
       <column comment="" key="false" length="-1" name="SGTXT" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="XREF2" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="WAERS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ZANCREDITI" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ZANCREDITI2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="320">
@@ -406,6 +419,8 @@
       <column comment="" key="false" length="-1" name="SGTXT" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="XREF2" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="WAERS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ZANCREDITI" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ZANCREDITI2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
@@ -419,7 +434,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;Excel&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ODS&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;TalendUser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OFtAc9+hiKY2mw50Uw+vuea61x9NZZKi20LIA4Nc28uJA5T7EXLEGf3YX6o="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mN70IN2deRXLewyw5iPjahsueWkLPWhmQne2qYbOl8k7+OA0FkzUe+2JAdE="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -436,6 +451,7 @@
   </node>
   <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;E:/Workspace/Pregis_DWH1/SAPSnapshot/BSID_Snapshot.txt&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;E:/Workspace/Pregis_DWH1/delete_folder&quot;"/>
     <elementParameter field="TEXT" name="PATH" show="false" value="&quot;E:/Workspace/Pregis_DWH1/delete_folder or delete_file&quot;"/>
@@ -597,7 +613,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:twVPfTGS22h2QCXivi+L8PPuliE+La0TZ8nHKBh1"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:VXaTgYzvkpRbQdflePEI9mVHMeE3lWDRpDJpk22C"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;SAP_BSIDSnaphot_Land&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -753,7 +769,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:m8fAG/LPwy/fxoXEO3Io6C5glXh7VLyWoTlEShUd"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cLittAIL22LnUJGLhQ7RxnLAG2zivu737+EXPtGR"/>
     <elementParameter field="TEXT" name="SP_NAME" value="&quot;usp_Load_SAP_BSIDSnaphot&quot;"/>
     <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RETURN" show="false" value=""/>
@@ -793,9 +809,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tFileDelete_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileDelete_1" offsetLabelX="0" offsetLabelY="0" source="tFileDelete_1" target="tDBInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tDBOutput_1">
@@ -830,13 +848,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_23fc0cac-97e8-45e2-8aec-bdbed44e92cd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZheSx2xwH5MT1C1y++QcA/X1XSYC7eluII1lo3TTlVsxRS6Wk5FD02WwXJaPVAm6Pd8hftjGqOjM&#13;
-rYTzPs82RA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_980240af-ee97-426a-b3cd-64a358cc75f4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UTa6leufhPKe7Em7KcahFpsUsbQLLufQkcC2U+lYg1CXg+QECSjbLH/krVDvlQ2cCUM+24WDuf1D&#13;
-tb/SJOHzOw==</DigestValue></Reference></SignedInfo><SignatureValue>Fxed6vIKsnUIvAKxK9FZiWb2vVebP2stfVqBSCSr/fR5f4DDiN4IiIORIco+tc7kyrcV9e2N6DZO&#13;
-IH9eJllmxyge5ELZGWQLN18S09uFsQFQ0v9UIUB6pp2F24cAhKNqu/U/kmUVjeg0LYIhnQ5JPnn4&#13;
-Xr2rP9rm/r4tAXyF/GnTd4cpSmz3oU0GBw3tc85n9yhlMw7Vdb2iPJ0kKbDfIPOK0prsEAd1O/WG&#13;
-DyMyu6Xpso56uoYgKHL8H1HWcklgkPVTdySR5SFQyhX2r4OTICyqG4YGjsg9qzzpwRcOU/rCKfpw&#13;
-sT/GwxEQJ/nOlELVsf/tZ/ul7pcXjkZCx42/fA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_01aca749-b32a-443f-8ebc-c3fab9f94d50"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cRpolfqODOELXnCTdC5f05QXs5dTC52Ig694ROYpgxqGz2XGHSIdRpm1cvSkDiLFnPplEY8kxBGr&#13;
+HgXjuaDrFw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cad92aa0-28d7-43db-8e45-981f58bf868b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ABZ3uLv3e/L2+QR9I2nZ8t++Bjvp1MNbB0KOG024DN6P7FIPKiuhoviVaYGEUrzqlOVxuU9ifvn2&#13;
+Fz0NY4Ccgg==</DigestValue></Reference></SignedInfo><SignatureValue>eYjy4dvFMqwVNje6UPaVhaZosDkTLa7HQ0LuEJPChLp/FZ+W+TDl+JycMXAaEU86t+LTzwOhIYau&#13;
+INJG6d0m5DwwAeCowY8DTCcw+bHrE9CJC48jKJ5BJjAQooUgltkFiKytEZonuZ1hgnkZMXGLBJoi&#13;
+AHZ/FFepnbRVlLvK5jlA4PG3tPV+85TXfsnXxxRjpDBfxjjHgcaGMkSxoEILr7RdFJKKlBjAlOCN&#13;
+3GA24r1TvnDih55UYt7FrTWYloA9d05kjc+3rfOsvX6Qc7DlYtAqmCIK9so+QQ2jhd5w4qRrCBzm&#13;
+lP1K3W0SEysHYyt5+2NvRVmCQo5ekiNcVX/BDg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -858,4 +876,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_980240af-ee97-426a-b3cd-64a358cc75f4" Target="#_23fc0cac-97e8-45e2-8aec-bdbed44e92cd"><Timestamp>2024-09-19 08:28:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cad92aa0-28d7-43db-8e45-981f58bf868b" Target="#_01aca749-b32a-443f-8ebc-c3fab9f94d50"><Timestamp>2024-09-19 12:08:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
