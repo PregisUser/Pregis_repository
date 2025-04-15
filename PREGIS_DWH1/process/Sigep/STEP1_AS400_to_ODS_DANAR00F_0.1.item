@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:cy0PBC4JNXh85SLO5BSNu8PFKbVy1og7PrcDRVVE"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:vdcH5XRuR8Hd3oeU2zapTl0R/UdqCMfXJmptsrNW"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SBnmo5eG0TJvY87cfXeZZOHuK2gDEa8vrsReLqqYcymSF8O4haFxlziK"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xgPm2oATGSmFAUSJQbO+uuCwCt4ftGRH8NDg35kL2oI4jKAwHKK27WeY"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -117,7 +117,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;SIGEP_PRED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="AS400"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ODBCTAL&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:G8tE8BoyiSqqTRRsx8o2+mARG1pA2erozxQe5/8S1oz1ZQrw0OFkEg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KOxjcS4sFkQdIlI3QIvejPYmruHzHQB/CCAwAGbSKxCXulH6evHKtg=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -137,7 +137,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;SIGEP_PRED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="AS400"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;PRESIGEPSU&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:sgJe5Q9nAVby4buCWW59CrBGRTjXdc1zv0/FHqwDTLaE"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nilxz3siM6qxLez31LRuMAe9FTHm0FhwwiSclyAUo40w"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DANAR00F&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -285,7 +285,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="PROGRAMMA_AGGIORNAMENTO"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="LABEL" value="__DANAR00F__"/>
     <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_1">
@@ -358,7 +358,237 @@
       <column comment="" defaultValue="" key="false" length="20" name="PROGRAMMA_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_XZ-6oPAlEe-NsaL43QGnig-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="DANAR00F">
+      <column comment="" key="false" length="1" name="STATO_ARTICOLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="CODICE_ARTICOLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="DESCRIZIONE_ARTICOLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="DEPOSITO_GESTIONE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="CODICE_CLIENTE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="GRUPPO_MERCEOLOGICO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AREA_MERCEOLOGICA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TIPO_GESTIONE_DATA_SCADENZA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="CODICE_GIORNI_DATA_SCADENZA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="PESO_UNITARIO" nullable="false" originalLength="-1" pattern="" precision="6" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="UNITA_MISURA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="PEZZI_PER_IMBALLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="IMBALLI_PER_BANCALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="TIPO_LISTA_PRELIEVO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="DATA_NASCITA_PRODOTTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CODICE_VOLUMETRICO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CODICE_FATTURAZIONE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="VOLUME" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LARGHEZZA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="ALTEZZA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LUNGHEZZA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="MODULO_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="QUANTITA_STRATO_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="FATTORE_SOVRAPPONIBILITA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="VALORE_1" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="VALORE_2" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="VALORE_3" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="VALORE_4" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="VALORE_5" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="VALORE_6" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="VALORE_7" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="VALORE_8" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="VALORE_9" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="VALORE_10" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="DATA_ULTIMO_MOVIMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CODICE_ALTERNATIVO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="UNITA_MISURA_FISCALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="CONTENUTO_FISCALE" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="TIPO_REGISTRO_FISCALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="GESTIONE_TRACCIABILITA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="SCARTO_SOVRAPPONIBILITA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCORTA_MINIMA_INTERNA" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="GIORNI_RIFORNIMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="LOTTO_MINIMO_RIORDINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="TIPO_PERIODO_RIORDINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CODICE_STRATIFICAZIONE_BANCALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="SOTTOIMBALLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="COEFFICIENTE_ACCATASTABILITA" nullable="false" originalLength="-1" pattern="" precision="3" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="PESO_LORDO_IMBALLO" nullable="false" originalLength="-1" pattern="" precision="3" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CAMPO_ALFABETICO_1" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CAMPO_ALFABETICO_2" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CAMPO_ALFABETICO_3" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CAMPO_ALFABETICO_4" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CAMPO_ALFABETICO_5" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="GESTITA_QUARANTENA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="GIORNI_MINIMI_QUARANTENA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="TIPO_PREPARAZIONE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="TIPO_RICEVIMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="TIPO_PROCESSO_LOGISTICO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="CHECK_DIGIT_VOICE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="CODICE_IVA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="CLASSE_RAGGRUPPATORE_DDT" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="DATA_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="ORA_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="UTENTE_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PROGRAMMA_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Caricamento" nullable="true" originalLength="-1" pattern="yyyy-MM-dd HH:mm:ss" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="DANAR00F" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.STATO_ARTICOLO " name="STATO_ARTICOLO" type="id_String"/>
+        <mapperTableEntries expression="row1.CODICE_ARTICOLO " name="CODICE_ARTICOLO" type="id_Float"/>
+        <mapperTableEntries expression="row1.DESCRIZIONE_ARTICOLO " name="DESCRIZIONE_ARTICOLO" type="id_String"/>
+        <mapperTableEntries expression="row1.DEPOSITO_GESTIONE " name="DEPOSITO_GESTIONE" type="id_String"/>
+        <mapperTableEntries expression="row1.CODICE_CLIENTE " name="CODICE_CLIENTE" type="id_Float"/>
+        <mapperTableEntries expression="row1.GRUPPO_MERCEOLOGICO " name="GRUPPO_MERCEOLOGICO" type="id_String"/>
+        <mapperTableEntries expression="row1.AREA_MERCEOLOGICA " name="AREA_MERCEOLOGICA" type="id_String"/>
+        <mapperTableEntries expression="row1.TIPO_GESTIONE_DATA_SCADENZA " name="TIPO_GESTIONE_DATA_SCADENZA" type="id_String"/>
+        <mapperTableEntries expression="row1.CODICE_GIORNI_DATA_SCADENZA " name="CODICE_GIORNI_DATA_SCADENZA" type="id_String"/>
+        <mapperTableEntries expression="row1.PESO_UNITARIO " name="PESO_UNITARIO" type="id_Float"/>
+        <mapperTableEntries expression="row1.UNITA_MISURA " name="UNITA_MISURA" type="id_String"/>
+        <mapperTableEntries expression="row1.PEZZI_PER_IMBALLO " name="PEZZI_PER_IMBALLO" type="id_Float"/>
+        <mapperTableEntries expression="row1.IMBALLI_PER_BANCALE " name="IMBALLI_PER_BANCALE" type="id_Float"/>
+        <mapperTableEntries expression="row1.TIPO_LISTA_PRELIEVO " name="TIPO_LISTA_PRELIEVO" type="id_String"/>
+        <mapperTableEntries expression="row1.DATA_NASCITA_PRODOTTO " name="DATA_NASCITA_PRODOTTO" type="id_Float"/>
+        <mapperTableEntries expression="row1.CODICE_VOLUMETRICO " name="CODICE_VOLUMETRICO" type="id_String"/>
+        <mapperTableEntries expression="row1.CODICE_FATTURAZIONE " name="CODICE_FATTURAZIONE" type="id_String"/>
+        <mapperTableEntries expression="row1.VOLUME " name="VOLUME" type="id_Float"/>
+        <mapperTableEntries expression="row1.LARGHEZZA " name="LARGHEZZA" type="id_Float"/>
+        <mapperTableEntries expression="row1.ALTEZZA " name="ALTEZZA" type="id_Float"/>
+        <mapperTableEntries expression="row1.LUNGHEZZA " name="LUNGHEZZA" type="id_Float"/>
+        <mapperTableEntries expression="row1.MODULO_PALLET " name="MODULO_PALLET" type="id_String"/>
+        <mapperTableEntries expression="row1.QUANTITA_STRATO_PALLET " name="QUANTITA_STRATO_PALLET" type="id_Float"/>
+        <mapperTableEntries expression="row1.FATTORE_SOVRAPPONIBILITA " name="FATTORE_SOVRAPPONIBILITA" type="id_Float"/>
+        <mapperTableEntries expression="row1.VALORE_1 " name="VALORE_1" type="id_Float"/>
+        <mapperTableEntries expression="row1.VALORE_2 " name="VALORE_2" type="id_Float"/>
+        <mapperTableEntries expression="row1.VALORE_3 " name="VALORE_3" type="id_Float"/>
+        <mapperTableEntries expression="row1.VALORE_4 " name="VALORE_4" type="id_Float"/>
+        <mapperTableEntries expression="row1.VALORE_5 " name="VALORE_5" type="id_Float"/>
+        <mapperTableEntries expression="row1.VALORE_6 " name="VALORE_6" type="id_Float"/>
+        <mapperTableEntries expression="row1.VALORE_7 " name="VALORE_7" type="id_Float"/>
+        <mapperTableEntries expression="row1.VALORE_8 " name="VALORE_8" type="id_Float"/>
+        <mapperTableEntries expression="row1.VALORE_9 " name="VALORE_9" type="id_Float"/>
+        <mapperTableEntries expression="row1.VALORE_10 " name="VALORE_10" type="id_Float"/>
+        <mapperTableEntries expression="row1.DATA_ULTIMO_MOVIMENTO " name="DATA_ULTIMO_MOVIMENTO" type="id_Float"/>
+        <mapperTableEntries expression="row1.CODICE_ALTERNATIVO " name="CODICE_ALTERNATIVO" type="id_String"/>
+        <mapperTableEntries expression="row1.UNITA_MISURA_FISCALE " name="UNITA_MISURA_FISCALE" type="id_String"/>
+        <mapperTableEntries expression="row1.CONTENUTO_FISCALE " name="CONTENUTO_FISCALE" type="id_Float"/>
+        <mapperTableEntries expression="row1.TIPO_REGISTRO_FISCALE " name="TIPO_REGISTRO_FISCALE" type="id_String"/>
+        <mapperTableEntries expression="row1.GESTIONE_TRACCIABILITA " name="GESTIONE_TRACCIABILITA" type="id_String"/>
+        <mapperTableEntries expression="row1.SCARTO_SOVRAPPONIBILITA " name="SCARTO_SOVRAPPONIBILITA" type="id_Float"/>
+        <mapperTableEntries expression="row1.SCORTA_MINIMA_INTERNA " name="SCORTA_MINIMA_INTERNA" type="id_Float"/>
+        <mapperTableEntries expression="row1.GIORNI_RIFORNIMENTO " name="GIORNI_RIFORNIMENTO" type="id_Float"/>
+        <mapperTableEntries expression="row1.LOTTO_MINIMO_RIORDINO " name="LOTTO_MINIMO_RIORDINO" type="id_Float"/>
+        <mapperTableEntries expression="row1.TIPO_PERIODO_RIORDINO " name="TIPO_PERIODO_RIORDINO" type="id_String"/>
+        <mapperTableEntries expression="row1.CODICE_STRATIFICAZIONE_BANCALE " name="CODICE_STRATIFICAZIONE_BANCALE" type="id_String"/>
+        <mapperTableEntries expression="row1.SOTTOIMBALLO " name="SOTTOIMBALLO" type="id_Float"/>
+        <mapperTableEntries expression="row1.COEFFICIENTE_ACCATASTABILITA " name="COEFFICIENTE_ACCATASTABILITA" type="id_Float"/>
+        <mapperTableEntries expression="row1.PESO_LORDO_IMBALLO " name="PESO_LORDO_IMBALLO" type="id_Float"/>
+        <mapperTableEntries expression="row1.CAMPO_ALFABETICO_1 " name="CAMPO_ALFABETICO_1" type="id_String"/>
+        <mapperTableEntries expression="row1.CAMPO_ALFABETICO_2 " name="CAMPO_ALFABETICO_2" type="id_String"/>
+        <mapperTableEntries expression="row1.CAMPO_ALFABETICO_3 " name="CAMPO_ALFABETICO_3" type="id_String"/>
+        <mapperTableEntries expression="row1.CAMPO_ALFABETICO_4 " name="CAMPO_ALFABETICO_4" type="id_String"/>
+        <mapperTableEntries expression="row1.CAMPO_ALFABETICO_5 " name="CAMPO_ALFABETICO_5" type="id_String"/>
+        <mapperTableEntries expression="row1.GESTITA_QUARANTENA " name="GESTITA_QUARANTENA" type="id_String"/>
+        <mapperTableEntries expression="row1.GIORNI_MINIMI_QUARANTENA " name="GIORNI_MINIMI_QUARANTENA" type="id_Float"/>
+        <mapperTableEntries expression="row1.TIPO_PREPARAZIONE " name="TIPO_PREPARAZIONE" type="id_String"/>
+        <mapperTableEntries expression="row1.TIPO_RICEVIMENTO " name="TIPO_RICEVIMENTO" type="id_String"/>
+        <mapperTableEntries expression="row1.TIPO_PROCESSO_LOGISTICO " name="TIPO_PROCESSO_LOGISTICO" type="id_String"/>
+        <mapperTableEntries expression="row1.CHECK_DIGIT_VOICE " name="CHECK_DIGIT_VOICE" type="id_Float"/>
+        <mapperTableEntries expression="row1.CODICE_IVA " name="CODICE_IVA" type="id_String"/>
+        <mapperTableEntries expression="row1.CLASSE_RAGGRUPPATORE_DDT " name="CLASSE_RAGGRUPPATORE_DDT" type="id_String"/>
+        <mapperTableEntries expression="row1.DATA_AGGIORNAMENTO " name="DATA_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries expression="row1.ORA_AGGIORNAMENTO " name="ORA_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_AGGIORNAMENTO " name="NUMERO_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries expression="row1.UTENTE_AGGIORNAMENTO " name="UTENTE_AGGIORNAMENTO" type="id_String"/>
+        <mapperTableEntries expression="row1.PROGRAMMA_AGGIORNAMENTO " name="PROGRAMMA_AGGIORNAMENTO" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate()" name="Data_Caricamento" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="STATO_ARTICOLO" type="id_String"/>
+        <mapperTableEntries name="CODICE_ARTICOLO" type="id_Float"/>
+        <mapperTableEntries name="DESCRIZIONE_ARTICOLO" type="id_String"/>
+        <mapperTableEntries name="DEPOSITO_GESTIONE" type="id_String"/>
+        <mapperTableEntries name="CODICE_CLIENTE" type="id_Float"/>
+        <mapperTableEntries name="GRUPPO_MERCEOLOGICO" type="id_String"/>
+        <mapperTableEntries name="AREA_MERCEOLOGICA" type="id_String"/>
+        <mapperTableEntries name="TIPO_GESTIONE_DATA_SCADENZA" type="id_String"/>
+        <mapperTableEntries name="CODICE_GIORNI_DATA_SCADENZA" type="id_String"/>
+        <mapperTableEntries name="PESO_UNITARIO" type="id_Float"/>
+        <mapperTableEntries name="UNITA_MISURA" type="id_String"/>
+        <mapperTableEntries name="PEZZI_PER_IMBALLO" type="id_Float"/>
+        <mapperTableEntries name="IMBALLI_PER_BANCALE" type="id_Float"/>
+        <mapperTableEntries name="TIPO_LISTA_PRELIEVO" type="id_String"/>
+        <mapperTableEntries name="DATA_NASCITA_PRODOTTO" type="id_Float"/>
+        <mapperTableEntries name="CODICE_VOLUMETRICO" type="id_String"/>
+        <mapperTableEntries name="CODICE_FATTURAZIONE" type="id_String"/>
+        <mapperTableEntries name="VOLUME" type="id_Float"/>
+        <mapperTableEntries name="LARGHEZZA" type="id_Float"/>
+        <mapperTableEntries name="ALTEZZA" type="id_Float"/>
+        <mapperTableEntries name="LUNGHEZZA" type="id_Float"/>
+        <mapperTableEntries name="MODULO_PALLET" type="id_String"/>
+        <mapperTableEntries name="QUANTITA_STRATO_PALLET" type="id_Float"/>
+        <mapperTableEntries name="FATTORE_SOVRAPPONIBILITA" type="id_Float"/>
+        <mapperTableEntries name="VALORE_1" type="id_Float"/>
+        <mapperTableEntries name="VALORE_2" type="id_Float"/>
+        <mapperTableEntries name="VALORE_3" type="id_Float"/>
+        <mapperTableEntries name="VALORE_4" type="id_Float"/>
+        <mapperTableEntries name="VALORE_5" type="id_Float"/>
+        <mapperTableEntries name="VALORE_6" type="id_Float"/>
+        <mapperTableEntries name="VALORE_7" type="id_Float"/>
+        <mapperTableEntries name="VALORE_8" type="id_Float"/>
+        <mapperTableEntries name="VALORE_9" type="id_Float"/>
+        <mapperTableEntries name="VALORE_10" type="id_Float"/>
+        <mapperTableEntries name="DATA_ULTIMO_MOVIMENTO" type="id_Float"/>
+        <mapperTableEntries name="CODICE_ALTERNATIVO" type="id_String"/>
+        <mapperTableEntries name="UNITA_MISURA_FISCALE" type="id_String"/>
+        <mapperTableEntries name="CONTENUTO_FISCALE" type="id_Float"/>
+        <mapperTableEntries name="TIPO_REGISTRO_FISCALE" type="id_String"/>
+        <mapperTableEntries name="GESTIONE_TRACCIABILITA" type="id_String"/>
+        <mapperTableEntries name="SCARTO_SOVRAPPONIBILITA" type="id_Float"/>
+        <mapperTableEntries name="SCORTA_MINIMA_INTERNA" type="id_Float"/>
+        <mapperTableEntries name="GIORNI_RIFORNIMENTO" type="id_Float"/>
+        <mapperTableEntries name="LOTTO_MINIMO_RIORDINO" type="id_Float"/>
+        <mapperTableEntries name="TIPO_PERIODO_RIORDINO" type="id_String"/>
+        <mapperTableEntries name="CODICE_STRATIFICAZIONE_BANCALE" type="id_String"/>
+        <mapperTableEntries name="SOTTOIMBALLO" type="id_Float"/>
+        <mapperTableEntries name="COEFFICIENTE_ACCATASTABILITA" type="id_Float"/>
+        <mapperTableEntries name="PESO_LORDO_IMBALLO" type="id_Float"/>
+        <mapperTableEntries name="CAMPO_ALFABETICO_1" type="id_String"/>
+        <mapperTableEntries name="CAMPO_ALFABETICO_2" type="id_String"/>
+        <mapperTableEntries name="CAMPO_ALFABETICO_3" type="id_String"/>
+        <mapperTableEntries name="CAMPO_ALFABETICO_4" type="id_String"/>
+        <mapperTableEntries name="CAMPO_ALFABETICO_5" type="id_String"/>
+        <mapperTableEntries name="GESTITA_QUARANTENA" type="id_String"/>
+        <mapperTableEntries name="GIORNI_MINIMI_QUARANTENA" type="id_Float"/>
+        <mapperTableEntries name="TIPO_PREPARAZIONE" type="id_String"/>
+        <mapperTableEntries name="TIPO_RICEVIMENTO" type="id_String"/>
+        <mapperTableEntries name="TIPO_PROCESSO_LOGISTICO" type="id_String"/>
+        <mapperTableEntries name="CHECK_DIGIT_VOICE" type="id_Float"/>
+        <mapperTableEntries name="CODICE_IVA" type="id_String"/>
+        <mapperTableEntries name="CLASSE_RAGGRUPPATORE_DDT" type="id_String"/>
+        <mapperTableEntries name="DATA_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries name="ORA_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries name="UTENTE_AGGIORNAMENTO" type="id_String"/>
+        <mapperTableEntries name="PROGRAMMA_AGGIORNAMENTO" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
@@ -369,9 +599,9 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9Nz6IFgWG+gLmtkw0gzJvUCaUi9PysuWUYlRiFz/"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hQ4frBqhdXOiUiYBQpi6YcNtcP9TXpFpjpWU4Xi5"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DANAR00F&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
@@ -735,7 +965,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
@@ -890,7 +1120,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;WMS&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ODS&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;TalendUser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:swSD7ZlC0uZizyXXGLpUvqhXTYYxNDUjtR3UMcWoZYPnZSe5A7Gba5ZehXE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4f28DZV18MqMdwVW2MHA7NRZ6gErX96en8pA7SQQ9fZHaKTBerIG1LOEdvg="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -918,12 +1148,16 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBConnection_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBCommit_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="FLOW" label="DANAR00F" lineStyle="0" metaname="DANAR00F" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DANAR00F"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
@@ -948,13 +1182,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_24f241c6-8968-48fe-917c-b14ee2d70180"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aYTvd8n/zrkSFHIKmk9Y+myaeDKfi64HJRjhf783iEuJG79b2Bh1UnH/KO4WtzSJ+iY7dyItEnOK&#13;
-MDyfT4KsvQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_08f73a15-cea0-46f5-885b-8806f473fd1e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ky932ozVXKu8m5UZAOskVOEkDeRg8evQOa8eVLLOBgAktA0DmWkRpK1S2gKHCgO3R1tyDJlsb5H6&#13;
-/byZbL6aeg==</DigestValue></Reference></SignedInfo><SignatureValue>pChcNb/bStI0SJZ6lSFcyn2unuI4aalJdI+fCrtlYds0xrI7nypeD0xOFU7/AB1H2TdqKTRrYqyu&#13;
-nrdVoUKzcsj/HuYagyT8dh4/z+/qwmcEZQoE1v9bM2Z4hfNk1uH1kORtOHJ6A6gBfpbZIoHWYXDg&#13;
-ZzYdpW3u1WteVnjIBXJAVS3l59zjDUwr0ZFXd252PBeC3HAjLJuW4F7ip0HY5ggK4iCZxAtFOrc2&#13;
-//hzMJY/EEf7ENdcod1iGakH5mm62HgIGAknO+dgaPdiWv5w+tXVGmNFj/hWzAMGSGdMffXfdFfm&#13;
-X+yynhHB/pkdLHC60Do+5hiUP5B6Wn505teAIQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9e6c04f4-055a-4723-a78d-161d312cbb29"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UY76O/0ZxgmVMDnWv6R9t+O5u+/hgh3KRvbV7c7lfPO6qsfhTPzY/UBtTYwMXeTmipfUtanoPmpM&#13;
+3SKpes6O6A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ec8939bf-eaa8-4fbb-8472-e234db91f8f0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ARc+eZ9PmidXPO+HmZ8dCALCUk5pbyODH75TDagmvXRN1GlBacy3WrP3PRp7627ILfSKXQs4WR7s&#13;
+xAUZSCePtA==</DigestValue></Reference></SignedInfo><SignatureValue>IplRtGMyYW7YpkZ9Z78CuCNiTN71oaF8ALlGek9nhOpdJs/r6MR61hRhJx+ZtwM0VmUa0eEwyZhk&#13;
+xZPzx8N8AYSOUhrc+1WSPTwciP767WJ4ydz6CraB8CqOyjcn4JPOrUKSHBxCco3jMAi47XBFjKxm&#13;
+bYpHXdv7YBghjretNjluN67SMm5giLbKdlEiAcrurmcZe46vjR5OcnNlrdXOT8FghIuG5rXVspP9&#13;
+f2hKC+ZGsN34Ar+AcI3/o6ciMeHlkYglCtToDhsF/6TqnLH0eUGQuMKZr2Qph8FBy+4+7izLtYuo&#13;
+26HnmKZyZkpUCPunwkIFVatLR3u1EoU6c7okwg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -976,4 +1210,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_08f73a15-cea0-46f5-885b-8806f473fd1e" Target="#_24f241c6-8968-48fe-917c-b14ee2d70180"><Timestamp>2025-02-21 09:15:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ec8939bf-eaa8-4fbb-8472-e234db91f8f0" Target="#_9e6c04f4-055a-4723-a78d-161d312cbb29"><Timestamp>2025-04-15 09:10:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
