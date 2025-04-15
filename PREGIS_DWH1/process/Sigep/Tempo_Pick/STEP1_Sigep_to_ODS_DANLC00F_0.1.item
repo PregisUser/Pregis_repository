@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:9qCIVledgL8LW/7XVESXnbnhvCyjuvfhDpD+4sGK"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;E:/Workspace/Pregis_DWH1/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;talend_administrator&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:09kMU29LN4YOF4DnCWMJ9T55eYYpHb5dCPmA5p51wIj2OrcY6NWJQO91"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;Meter&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_WVvSYMCWEeyX69HJLuOu2Q" name="DataOperation"/>
+    <routinesParameter id="_WWCNUMCWEeyX69HJLuOu2Q" name="Mathematical"/>
+    <routinesParameter id="_WWVIQMCWEeyX69HJLuOu2Q" name="Numeric"/>
+    <routinesParameter id="_WWe5RsCWEeyX69HJLuOu2Q" name="Relational"/>
+    <routinesParameter id="_WTi6AMCWEeyX69HJLuOu2Q" name="SQLike"/>
+    <routinesParameter id="_WWx0MMCWEeyX69HJLuOu2Q" name="StringHandling"/>
+    <routinesParameter id="_WW7lMMCWEeyX69HJLuOu2Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_WXYRIMCWEeyX69HJLuOu2Q" name="TalendDate"/>
+    <routinesParameter id="_WX-HAMCWEeyX69HJLuOu2Q" name="TalendStringUtil"/>
+    <routinesParameter id="_WX09EMCWEeyX69HJLuOu2Q" name="TalendString"/>
+  </parameters>
+  <node componentName="tAS400Connection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_FDpGoBkQEfCHxuoRoCB8Fw"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="jt400-9.8.jar"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.100.91&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;SIGEP_PRED&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="AS400"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;PRESIGEPSU&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ewWkpNQF3rzLI2JJSeTFWslA/AoyNuXH/E7pUhvAYkqMNAQ="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;prompt=false&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AS400_SIGEP_Admin"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_JLIh0C7vEe-c18XOD0oaQw"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.254.10&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;WMS&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ODS&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;TalendUser&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6cxmR7Gisd6PYCAubW8a89KL9aSsK5DEwnNEdsOlWXIIHUcRUp+jcExltpI="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="MSSQL_PROD_ODS_WMS"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tAS400Input" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="jt400-9.8.jar"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="AS400"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:sRVsHyzXWb2geDZKj7g5wliWJBA6kKNbPP9+B9N6"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DMGLR00F&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM DMGLR00F&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="as400_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;prompt=false&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANNO_GENERAZIONE_LISTA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_GENERAZIONE_LISTA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_GENERAZIONE_LISTA_PADRE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_RIGA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODICE_CLIENTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_LISTA_ARTICOLO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_LISTA_DESTINATARIO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_SOTTOLISTA_DESTINATARIO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_TRICICLO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_MISSIONE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_RIGA_MISSIONE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODICE_MAGAZZINO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CORSIA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COLONNA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PIANO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODICE_CAUSALE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODICE_DESTINATARIO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODICE_ARTICOLO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODICE_ALTERNATIVO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIZIONE_ARTICOLO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITA_PREVISTA_UMI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITA_PRELEVATA_UMI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITA_PRELEVATA_UMC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITA_EVASA_UMI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITA_EVASA_UMC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PEZZI_PER_IMBALLO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOTTOIMBALLO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMBALLI_PER_BANCALE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_PEZZI_TOTALI_RIGA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_COLLI_TOTALI_RIGA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PESO_TOTALE_RIGA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PESO_MEDIO_RIGA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PESO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VOLUME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_PALLET_INTERI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_COLLI_INTERI_NON_PALLET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_PEZZI_SFUSI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANNO_MOVIMENTO_MAGAZZINO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_MOVIMENTO_MAGAZZINO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RIGA_MOVIMENTO_MAGAZZINO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODICE_OPERATORE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODICE_TERMINALINO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STATO_RIGA_LISTA_PRELIEVO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIPO_GESTIONE_SCORTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANNO_PALLET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PREFISSO_PALLET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROGRESSIVO_PALLET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUFFISSO_PALLET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RIFERIMENTO_PARTITA_ESTERNA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_PREPARAZIONE_RADIO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORA_PREPARAZIONE_RADIO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COEFFICIENTE_ACCATASTABILITA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANNO_PALLET_ORIGINALE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PREFISSO_PALLET_ORIGINALE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROGRESSIVO_PALLET_ORIGINALE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUFFISSO_PALLET_ORIGINALE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANNO_UDI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PREFISSO_UDI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROGRESSIVO_UDI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUFFISSO_UDI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODICE_ANOMALIA_PICKING"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLAG_USO_FUTURO_02"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLAG_USO_FUTURO_03"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLAG_USO_FUTURO_04"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLAG_USO_FUTURO_05"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITA_PEZZI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITA_COLLI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_AGGIORNAMENTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORA_AGGIORNAMENTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMERO_AGGIORNAMENTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UTENTE_AGGIORNAMENTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROGRAMMA_AGGIORNAMENTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" defaultValue="" key="false" length="4" name="ANNO_GENERAZIONE_LISTA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_GENERAZIONE_LISTA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_GENERAZIONE_LISTA_PADRE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_RIGA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="CODICE_CLIENTE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_LISTA_ARTICOLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_LISTA_DESTINATARIO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_SOTTOLISTA_DESTINATARIO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="NUMERO_TRICICLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_MISSIONE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_RIGA_MISSIONE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="CODICE_MAGAZZINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="CORSIA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COLONNA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="PIANO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="CODICE_CAUSALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="CODICE_DESTINATARIO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="CODICE_ARTICOLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="CODICE_ALTERNATIVO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="40" name="DESCRIZIONE_ARTICOLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QUANTITA_PREVISTA_UMI" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QUANTITA_PRELEVATA_UMI" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QUANTITA_PRELEVATA_UMC" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QUANTITA_EVASA_UMI" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QUANTITA_EVASA_UMC" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="PEZZI_PER_IMBALLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="SOTTOIMBALLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="IMBALLI_PER_BANCALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_PEZZI_TOTALI_RIGA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="NUMERO_COLLI_TOTALI_RIGA" nullable="false" originalLength="-1" pattern="" precision="3" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="PESO_TOTALE_RIGA" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="PESO_MEDIO_RIGA" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="PESO" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="VOLUME" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_PALLET_INTERI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_COLLI_INTERI_NON_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_PEZZI_SFUSI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="ANNO_MOVIMENTO_MAGAZZINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_MOVIMENTO_MAGAZZINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="RIGA_MOVIMENTO_MAGAZZINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="CODICE_OPERATORE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="CODICE_TERMINALINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="STATO_RIGA_LISTA_PRELIEVO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TIPO_GESTIONE_SCORTE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="ANNO_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="PREFISSO_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="PROGRESSIVO_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="SUFFISSO_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="RIFERIMENTO_PARTITA_ESTERNA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="DATA_PREPARAZIONE_RADIO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="ORA_PREPARAZIONE_RADIO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="COEFFICIENTE_ACCATASTABILITA" nullable="false" originalLength="-1" pattern="" precision="3" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="ANNO_PALLET_ORIGINALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="PREFISSO_PALLET_ORIGINALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="PROGRESSIVO_PALLET_ORIGINALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="SUFFISSO_PALLET_ORIGINALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="ANNO_UDI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="PREFISSO_UDI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="PROGRESSIVO_UDI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="SUFFISSO_UDI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CODICE_ANOMALIA_PICKING" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="FLAG_USO_FUTURO_02" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="FLAG_USO_FUTURO_03" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="FLAG_USO_FUTURO_04" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="FLAG_USO_FUTURO_05" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="QUANTITA_PEZZI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="QUANTITA_COLLI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="DATA_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="ORA_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="UTENTE_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="PROGRAMMA_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_uJqMMBnVEfCHxuoRoCB8Fw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="DMGLR00F">
+      <column comment="" defaultValue="" key="false" length="4" name="ANNO_GENERAZIONE_LISTA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_GENERAZIONE_LISTA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_GENERAZIONE_LISTA_PADRE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_RIGA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="CODICE_CLIENTE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_LISTA_ARTICOLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_LISTA_DESTINATARIO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_SOTTOLISTA_DESTINATARIO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="NUMERO_TRICICLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_MISSIONE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_RIGA_MISSIONE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CODICE_MAGAZZINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="CORSIA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COLONNA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="PIANO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CODICE_CAUSALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="CODICE_DESTINATARIO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="CODICE_ARTICOLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CODICE_ALTERNATIVO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="DESCRIZIONE_ARTICOLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QUANTITA_PREVISTA_UMI" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QUANTITA_PRELEVATA_UMI" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QUANTITA_PRELEVATA_UMC" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QUANTITA_EVASA_UMI" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QUANTITA_EVASA_UMC" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="PEZZI_PER_IMBALLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="SOTTOIMBALLO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="IMBALLI_PER_BANCALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_PEZZI_TOTALI_RIGA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="NUMERO_COLLI_TOTALI_RIGA" nullable="false" originalLength="-1" pattern="" precision="3" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="PESO_TOTALE_RIGA" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="PESO_MEDIO_RIGA" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="PESO" nullable="false" originalLength="-1" pattern="" precision="4" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="VOLUME" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_PALLET_INTERI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_COLLI_INTERI_NON_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="NUMERO_PEZZI_SFUSI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="ANNO_MOVIMENTO_MAGAZZINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_MOVIMENTO_MAGAZZINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="RIGA_MOVIMENTO_MAGAZZINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CODICE_OPERATORE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="CODICE_TERMINALINO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="STATO_RIGA_LISTA_PRELIEVO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TIPO_GESTIONE_SCORTE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="ANNO_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PREFISSO_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="PROGRESSIVO_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SUFFISSO_PALLET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="RIFERIMENTO_PARTITA_ESTERNA" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="DATA_PREPARAZIONE_RADIO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="ORA_PREPARAZIONE_RADIO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="COEFFICIENTE_ACCATASTABILITA" nullable="false" originalLength="-1" pattern="" precision="3" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="ANNO_PALLET_ORIGINALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PREFISSO_PALLET_ORIGINALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="PROGRESSIVO_PALLET_ORIGINALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SUFFISSO_PALLET_ORIGINALE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="ANNO_UDI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PREFISSO_UDI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="PROGRESSIVO_UDI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SUFFISSO_UDI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CODICE_ANOMALIA_PICKING" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="FLAG_USO_FUTURO_02" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="FLAG_USO_FUTURO_03" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="FLAG_USO_FUTURO_04" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="FLAG_USO_FUTURO_05" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="QUANTITA_PEZZI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="QUANTITA_COLLI" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="DATA_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="ORA_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="NUMERO_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="UTENTE_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PROGRAMMA_AGGIORNAMENTO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Caricamento" nullable="true" originalLength="-1" pattern="yyyy-MM-dd HH:mm:ss" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="DMGLR00F" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.ANNO_GENERAZIONE_LISTA " name="ANNO_GENERAZIONE_LISTA" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_GENERAZIONE_LISTA " name="NUMERO_GENERAZIONE_LISTA" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_GENERAZIONE_LISTA_PADRE " name="NUMERO_GENERAZIONE_LISTA_PADRE" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_RIGA " name="NUMERO_RIGA" type="id_Float"/>
+        <mapperTableEntries expression="row1.CODICE_CLIENTE " name="CODICE_CLIENTE" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_LISTA_ARTICOLO " name="NUMERO_LISTA_ARTICOLO" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_LISTA_DESTINATARIO " name="NUMERO_LISTA_DESTINATARIO" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_SOTTOLISTA_DESTINATARIO " name="NUMERO_SOTTOLISTA_DESTINATARIO" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_TRICICLO " name="NUMERO_TRICICLO" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_MISSIONE " name="NUMERO_MISSIONE" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_RIGA_MISSIONE " name="NUMERO_RIGA_MISSIONE" type="id_Float"/>
+        <mapperTableEntries expression="row1.CODICE_MAGAZZINO " name="CODICE_MAGAZZINO" type="id_String"/>
+        <mapperTableEntries expression="row1.CORSIA " name="CORSIA" type="id_String"/>
+        <mapperTableEntries expression="row1.COLONNA " name="COLONNA" type="id_Float"/>
+        <mapperTableEntries expression="row1.PIANO " name="PIANO" type="id_Float"/>
+        <mapperTableEntries expression="row1.CODICE_CAUSALE " name="CODICE_CAUSALE" type="id_String"/>
+        <mapperTableEntries expression="row1.CODICE_DESTINATARIO " name="CODICE_DESTINATARIO" type="id_Float"/>
+        <mapperTableEntries expression="row1.CODICE_ARTICOLO " name="CODICE_ARTICOLO" type="id_Float"/>
+        <mapperTableEntries expression="row1.CODICE_ALTERNATIVO " name="CODICE_ALTERNATIVO" type="id_String"/>
+        <mapperTableEntries expression="row1.DESCRIZIONE_ARTICOLO " name="DESCRIZIONE_ARTICOLO" type="id_String"/>
+        <mapperTableEntries expression="row1.QUANTITA_PREVISTA_UMI " name="QUANTITA_PREVISTA_UMI" type="id_Float"/>
+        <mapperTableEntries expression="row1.QUANTITA_PRELEVATA_UMI " name="QUANTITA_PRELEVATA_UMI" type="id_Float"/>
+        <mapperTableEntries expression="row1.QUANTITA_PRELEVATA_UMC " name="QUANTITA_PRELEVATA_UMC" type="id_Float"/>
+        <mapperTableEntries expression="row1.QUANTITA_EVASA_UMI " name="QUANTITA_EVASA_UMI" type="id_Float"/>
+        <mapperTableEntries expression="row1.QUANTITA_EVASA_UMC " name="QUANTITA_EVASA_UMC" type="id_Float"/>
+        <mapperTableEntries expression="row1.PEZZI_PER_IMBALLO " name="PEZZI_PER_IMBALLO" type="id_Float"/>
+        <mapperTableEntries expression="row1.SOTTOIMBALLO " name="SOTTOIMBALLO" type="id_Float"/>
+        <mapperTableEntries expression="row1.IMBALLI_PER_BANCALE " name="IMBALLI_PER_BANCALE" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_PEZZI_TOTALI_RIGA " name="NUMERO_PEZZI_TOTALI_RIGA" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_COLLI_TOTALI_RIGA " name="NUMERO_COLLI_TOTALI_RIGA" type="id_Float"/>
+        <mapperTableEntries expression="row1.PESO_TOTALE_RIGA " name="PESO_TOTALE_RIGA" type="id_Float"/>
+        <mapperTableEntries expression="row1.PESO_MEDIO_RIGA " name="PESO_MEDIO_RIGA" type="id_Float"/>
+        <mapperTableEntries expression="row1.PESO " name="PESO" type="id_Float"/>
+        <mapperTableEntries expression="row1.VOLUME " name="VOLUME" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_PALLET_INTERI " name="NUMERO_PALLET_INTERI" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_COLLI_INTERI_NON_PALLET " name="NUMERO_COLLI_INTERI_NON_PALLET" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_PEZZI_SFUSI " name="NUMERO_PEZZI_SFUSI" type="id_Float"/>
+        <mapperTableEntries expression="row1.ANNO_MOVIMENTO_MAGAZZINO " name="ANNO_MOVIMENTO_MAGAZZINO" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_MOVIMENTO_MAGAZZINO " name="NUMERO_MOVIMENTO_MAGAZZINO" type="id_Float"/>
+        <mapperTableEntries expression="row1.RIGA_MOVIMENTO_MAGAZZINO " name="RIGA_MOVIMENTO_MAGAZZINO" type="id_Float"/>
+        <mapperTableEntries expression="row1.CODICE_OPERATORE " name="CODICE_OPERATORE" type="id_String"/>
+        <mapperTableEntries expression="row1.CODICE_TERMINALINO " name="CODICE_TERMINALINO" type="id_String"/>
+        <mapperTableEntries expression="row1.STATO_RIGA_LISTA_PRELIEVO " name="STATO_RIGA_LISTA_PRELIEVO" type="id_String"/>
+        <mapperTableEntries expression="row1.TIPO_GESTIONE_SCORTE " name="TIPO_GESTIONE_SCORTE" type="id_String"/>
+        <mapperTableEntries expression="row1.ANNO_PALLET " name="ANNO_PALLET" type="id_Float"/>
+        <mapperTableEntries expression="row1.PREFISSO_PALLET " name="PREFISSO_PALLET" type="id_String"/>
+        <mapperTableEntries expression="row1.PROGRESSIVO_PALLET " name="PROGRESSIVO_PALLET" type="id_Float"/>
+        <mapperTableEntries expression="row1.SUFFISSO_PALLET " name="SUFFISSO_PALLET" type="id_String"/>
+        <mapperTableEntries expression="row1.RIFERIMENTO_PARTITA_ESTERNA " name="RIFERIMENTO_PARTITA_ESTERNA" type="id_String"/>
+        <mapperTableEntries expression="row1.DATA_PREPARAZIONE_RADIO " name="DATA_PREPARAZIONE_RADIO" type="id_Float"/>
+        <mapperTableEntries expression="row1.ORA_PREPARAZIONE_RADIO " name="ORA_PREPARAZIONE_RADIO" type="id_Float"/>
+        <mapperTableEntries expression="row1.COEFFICIENTE_ACCATASTABILITA " name="COEFFICIENTE_ACCATASTABILITA" type="id_Float"/>
+        <mapperTableEntries expression="row1.ANNO_PALLET_ORIGINALE " name="ANNO_PALLET_ORIGINALE" type="id_Float"/>
+        <mapperTableEntries expression="row1.PREFISSO_PALLET_ORIGINALE " name="PREFISSO_PALLET_ORIGINALE" type="id_String"/>
+        <mapperTableEntries expression="row1.PROGRESSIVO_PALLET_ORIGINALE " name="PROGRESSIVO_PALLET_ORIGINALE" type="id_Float"/>
+        <mapperTableEntries expression="row1.SUFFISSO_PALLET_ORIGINALE " name="SUFFISSO_PALLET_ORIGINALE" type="id_String"/>
+        <mapperTableEntries expression="row1.ANNO_UDI " name="ANNO_UDI" type="id_Float"/>
+        <mapperTableEntries expression="row1.PREFISSO_UDI " name="PREFISSO_UDI" type="id_String"/>
+        <mapperTableEntries expression="row1.PROGRESSIVO_UDI " name="PROGRESSIVO_UDI" type="id_Float"/>
+        <mapperTableEntries expression="row1.SUFFISSO_UDI " name="SUFFISSO_UDI" type="id_String"/>
+        <mapperTableEntries expression="row1.CODICE_ANOMALIA_PICKING " name="CODICE_ANOMALIA_PICKING" type="id_String"/>
+        <mapperTableEntries expression="row1.FLAG_USO_FUTURO_02 " name="FLAG_USO_FUTURO_02" type="id_String"/>
+        <mapperTableEntries expression="row1.FLAG_USO_FUTURO_03 " name="FLAG_USO_FUTURO_03" type="id_String"/>
+        <mapperTableEntries expression="row1.FLAG_USO_FUTURO_04 " name="FLAG_USO_FUTURO_04" type="id_String"/>
+        <mapperTableEntries expression="row1.FLAG_USO_FUTURO_05 " name="FLAG_USO_FUTURO_05" type="id_String"/>
+        <mapperTableEntries expression="row1.QUANTITA_PEZZI " name="QUANTITA_PEZZI" type="id_Float"/>
+        <mapperTableEntries expression="row1.QUANTITA_COLLI " name="QUANTITA_COLLI" type="id_Float"/>
+        <mapperTableEntries expression="row1.DATA_AGGIORNAMENTO " name="DATA_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries expression="row1.ORA_AGGIORNAMENTO " name="ORA_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries expression="row1.NUMERO_AGGIORNAMENTO " name="NUMERO_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries expression="row1.UTENTE_AGGIORNAMENTO " name="UTENTE_AGGIORNAMENTO" type="id_String"/>
+        <mapperTableEntries expression="row1.PROGRAMMA_AGGIORNAMENTO " name="PROGRAMMA_AGGIORNAMENTO" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate()" name="Data_Caricamento" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="ANNO_GENERAZIONE_LISTA" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_GENERAZIONE_LISTA" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_GENERAZIONE_LISTA_PADRE" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_RIGA" type="id_Float"/>
+        <mapperTableEntries name="CODICE_CLIENTE" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_LISTA_ARTICOLO" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_LISTA_DESTINATARIO" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_SOTTOLISTA_DESTINATARIO" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_TRICICLO" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_MISSIONE" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_RIGA_MISSIONE" type="id_Float"/>
+        <mapperTableEntries name="CODICE_MAGAZZINO" type="id_String"/>
+        <mapperTableEntries name="CORSIA" type="id_String"/>
+        <mapperTableEntries name="COLONNA" type="id_Float"/>
+        <mapperTableEntries name="PIANO" type="id_Float"/>
+        <mapperTableEntries name="CODICE_CAUSALE" type="id_String"/>
+        <mapperTableEntries name="CODICE_DESTINATARIO" type="id_Float"/>
+        <mapperTableEntries name="CODICE_ARTICOLO" type="id_Float"/>
+        <mapperTableEntries name="CODICE_ALTERNATIVO" type="id_String"/>
+        <mapperTableEntries name="DESCRIZIONE_ARTICOLO" type="id_String"/>
+        <mapperTableEntries name="QUANTITA_PREVISTA_UMI" type="id_Float"/>
+        <mapperTableEntries name="QUANTITA_PRELEVATA_UMI" type="id_Float"/>
+        <mapperTableEntries name="QUANTITA_PRELEVATA_UMC" type="id_Float"/>
+        <mapperTableEntries name="QUANTITA_EVASA_UMI" type="id_Float"/>
+        <mapperTableEntries name="QUANTITA_EVASA_UMC" type="id_Float"/>
+        <mapperTableEntries name="PEZZI_PER_IMBALLO" type="id_Float"/>
+        <mapperTableEntries name="SOTTOIMBALLO" type="id_Float"/>
+        <mapperTableEntries name="IMBALLI_PER_BANCALE" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_PEZZI_TOTALI_RIGA" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_COLLI_TOTALI_RIGA" type="id_Float"/>
+        <mapperTableEntries name="PESO_TOTALE_RIGA" type="id_Float"/>
+        <mapperTableEntries name="PESO_MEDIO_RIGA" type="id_Float"/>
+        <mapperTableEntries name="PESO" type="id_Float"/>
+        <mapperTableEntries name="VOLUME" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_PALLET_INTERI" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_COLLI_INTERI_NON_PALLET" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_PEZZI_SFUSI" type="id_Float"/>
+        <mapperTableEntries name="ANNO_MOVIMENTO_MAGAZZINO" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_MOVIMENTO_MAGAZZINO" type="id_Float"/>
+        <mapperTableEntries name="RIGA_MOVIMENTO_MAGAZZINO" type="id_Float"/>
+        <mapperTableEntries name="CODICE_OPERATORE" type="id_String"/>
+        <mapperTableEntries name="CODICE_TERMINALINO" type="id_String"/>
+        <mapperTableEntries name="STATO_RIGA_LISTA_PRELIEVO" type="id_String"/>
+        <mapperTableEntries name="TIPO_GESTIONE_SCORTE" type="id_String"/>
+        <mapperTableEntries name="ANNO_PALLET" type="id_Float"/>
+        <mapperTableEntries name="PREFISSO_PALLET" type="id_String"/>
+        <mapperTableEntries name="PROGRESSIVO_PALLET" type="id_Float"/>
+        <mapperTableEntries name="SUFFISSO_PALLET" type="id_String"/>
+        <mapperTableEntries name="RIFERIMENTO_PARTITA_ESTERNA" type="id_String"/>
+        <mapperTableEntries name="DATA_PREPARAZIONE_RADIO" type="id_Float"/>
+        <mapperTableEntries name="ORA_PREPARAZIONE_RADIO" type="id_Float"/>
+        <mapperTableEntries name="COEFFICIENTE_ACCATASTABILITA" type="id_Float"/>
+        <mapperTableEntries name="ANNO_PALLET_ORIGINALE" type="id_Float"/>
+        <mapperTableEntries name="PREFISSO_PALLET_ORIGINALE" type="id_String"/>
+        <mapperTableEntries name="PROGRESSIVO_PALLET_ORIGINALE" type="id_Float"/>
+        <mapperTableEntries name="SUFFISSO_PALLET_ORIGINALE" type="id_String"/>
+        <mapperTableEntries name="ANNO_UDI" type="id_Float"/>
+        <mapperTableEntries name="PREFISSO_UDI" type="id_String"/>
+        <mapperTableEntries name="PROGRESSIVO_UDI" type="id_Float"/>
+        <mapperTableEntries name="SUFFISSO_UDI" type="id_String"/>
+        <mapperTableEntries name="CODICE_ANOMALIA_PICKING" type="id_String"/>
+        <mapperTableEntries name="FLAG_USO_FUTURO_02" type="id_String"/>
+        <mapperTableEntries name="FLAG_USO_FUTURO_03" type="id_String"/>
+        <mapperTableEntries name="FLAG_USO_FUTURO_04" type="id_String"/>
+        <mapperTableEntries name="FLAG_USO_FUTURO_05" type="id_String"/>
+        <mapperTableEntries name="QUANTITA_PEZZI" type="id_Float"/>
+        <mapperTableEntries name="QUANTITA_COLLI" type="id_Float"/>
+        <mapperTableEntries name="DATA_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries name="ORA_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries name="NUMERO_AGGIORNAMENTO" type="id_Float"/>
+        <mapperTableEntries name="UTENTE_AGGIORNAMENTO" type="id_String"/>
+        <mapperTableEntries name="PROGRAMMA_AGGIORNAMENTO" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:XpmIHbTMS6gXFXMXZvwJdPBTy4uYnJ/dIE+fPQXC"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DMGLR00F&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="Data_Caricamento"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Caricamento"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="false" length="-1" name="Data_Caricamento" nullable="true" originalLength="-1" pattern="yyyy-MM-dd HH:mm:ss" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Data_Caricamento" nullable="true" originalLength="-1" pattern="yyyy-MM-dd HH:mm:ss" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBCommit_1"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="FLOW" label="DMGLR00F" lineStyle="0" metaname="DMGLR00F" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DMGLR00F"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_155677a3-690f-49a1-930e-cfa8afc59dec"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KS4pUWQBKeIXe2Fmc/hUMlm1SosEV6V5qBEah7ebhPCOn8pJPD4rddnnvg0AcJeRKCfVZffhEpRs&#13;
+4g/jsFfEQw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1c7984d4-c796-44da-b0b4-da7b9ea31cc6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0Ww0qHyUK9wu4Qq3Ei6yzvzqlhw1eRdhytelT3nCJZeg/GWAN1NO+aYsOMFLRYDteHUjEPMIUTXr&#13;
+ROoLwb2Fvg==</DigestValue></Reference></SignedInfo><SignatureValue>Oj8IQz9EFXfnHXoJo8f4NPTITIqvLGMfH36qRn5qo7Tse0EIoBfY6/I0L8azeHzAY/hZlKcxDhBw&#13;
+HgfRHmF9a9YjqwScAhBY6B42F17G/0R4QdVJFQ4vEn3BO64GNOCVdWpN72+5oELXk7OZ9tWcwvXH&#13;
+qEV33GNJGZQhMwSzqNHmx+PFfDLXHpj3paBCxXyelb15tAmUcSN2HIJ1nmwXli1/xO+bko1iugNv&#13;
+f9ofT+WOxfE56TDROaLlSfShBjzbcumugiSNaRuhvQGOHrUIxPOWoNfO0luayRSWpZIeMQKdevGc&#13;
+HNBBeNnYJ2Tuo7GwKGVOFqCsyvTBZLZ87bXe+A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1c7984d4-c796-44da-b0b4-da7b9ea31cc6" Target="#_155677a3-690f-49a1-930e-cfa8afc59dec"><Timestamp>2025-04-15 09:37:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
