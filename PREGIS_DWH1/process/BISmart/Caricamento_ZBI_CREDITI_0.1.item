@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:lmSips42fOP7uffKzpdIUCyyZP3PPmBSaQyQ+v+V"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:P1XgDJWMMVzImxASEo8i9BQZbv4UUACxWwczX0Xp"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gaUjwjlIQ9/ltKaJ64nB1l1c1+rqFUrnC+wutIuH8EPSL1S/aSWtZ0yX"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pt3xEtuFrmUqwEnSIgDS8GfeJ3pUKe7cWzyp3E1DoMIg0xFo9dUp90wK"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -117,7 +117,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;30015&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;SAPABAP1&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sVMEIs7wMH59L3d0RUlXlXvA4GQJbs3mQq2oP++GL2Fczfc7uGO6zeM="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2sC5MRDjTjmcPJFWqZEiUsafGL6JLLhJJKzOKwF8w11ULIv88F45rdk="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;currentschema=SAPABAP1&quot;"/>
@@ -138,7 +138,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;BISMART_DEMO&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;Pregis&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;azureadm&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TXAd6q580wClFQLlNJxSDPyT/bHANthSVytDoT4sk+aQm7Yc6Eh+AYfew3JLEnGJh4bLcCM="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:J8OiSwi/ICoq4o5VdYwOkgbznlfbFR2J+YU1NAJGIhpbP3LbtOnRhlg3RoA8CIitOJOdZps="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -152,6 +152,146 @@
     <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
+  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHana"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;30015&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/6D4a/2zOKztvJZpMf1UJJSFI5b/qJ+392a1Ulu5"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_5DUH0MZAEeyyZZQHbxodHA - INSEGNA"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT KNA1.KUNNR,   CONCAT(&#13;&#10;                CONCAT( adrc.sort1, ' ' ),&#13;&#10;                adrc.sort2&#13;&#10;              ) AS INSEGNA&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;FROM KNA1&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9; LEFT JOIN&#13;&#10;&#9;&#9;   &#9;&#9;&#9;(SELECT  &#13;&#10;&#9;&#9;   &#9;&#9;&#9;&#9;ADDRNUMBER, SORT1, SORT2   &#13;&#10;&#9;&#9;   &#9;&#9;&#9; FROM &#13;&#10;&#9;&#9;   &#9;&#9;&#9;&#9;ADRC &#13;&#10;&#9;&#9;   &#9;&#9;&#9; WHERE &#13;&#10;&#9;&#9;   &#9;&#9;&#9;&#9;CLIENT = '200') ADRC ON KNA1.ADRNR = ADRC.ADDRNUMBER&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="KUNNR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSEGNA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="10" name="KUNNR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="INSEGNA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8FIoYv03A58iA0LcRqlPTKwZemfN/LtGbbBcUXEm"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;INSEGNA&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="KUNNR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSEGNA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_3">
+      <column comment="" key="false" length="10" name="KUNNR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="INSEGNA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="10" name="KUNNR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="INSEGNA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:6LjavKR62voGF7IgNNvl4PZLG5C9/KH46Dwn+zpg"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_kGX3IE7YEfGZ8IkswlCWXg - UPDATE_ZBI_CREDITI"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;UPDATE \&quot;Pregis\&quot;.\&quot;ZBI_CREDITI\&quot; AS CRD&#13;&#10;SET \&quot;INSEGNA\&quot; = KUN.\&quot;INSEGNA\&quot;&#13;&#10;FROM \&quot;Pregis\&quot;.\&quot;INSEGNA\&quot; AS KUN&#13;&#10;WHERE CRD.\&quot;Codice_Cliente\&quot; = KUN.\&quot;KUNNR\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
@@ -163,8 +303,8 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;30015&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;SAPABAP1&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:PhJtfRjoczpMEXR908u3syHAatgTriSQll2yX4ulTDROVh5YfRHCRog="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Pregis_ZBI_CREDITI&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:m9k86pAJnsYPegX3JCL0Q7k4n7+h7gqWNEUzWn3lLXsVNjNzaw78w4I="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_5DUH0MZAEeyyZZQHbxodHA - ZBI_CREDITI"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
@@ -356,98 +496,98 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="SORT1"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="SAPHana_prod"/>
+    <elementParameter field="TEXT" name="LABEL" value="ZBI_CREDITI"/>
     <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_1">
-      <column comment="" key="false" length="3" name="MANDT" nullable="false" originalDbColumnName="Mandante" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="KUNNR" nullable="false" originalDbColumnName="Codice_Cliente" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="35" name="NAME1" nullable="false" originalDbColumnName="Ragione_Sociale" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="KATR8" nullable="false" originalDbColumnName="Nome_Gruppo" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="ZZCAN_VEND" nullable="false" originalDbColumnName="Canale_Vendita" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="KLIMK" nullable="false" originalDbColumnName="Limite_fido_del_cliente" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="WAERS" nullable="false" originalDbColumnName="Valuta" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="SBGRP" nullable="false" originalDbColumnName="Gr_resp_gestione_crediti" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="35" name="NOME_AGE" nullable="false" originalDbColumnName="Nome_Agente" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="COD_AGE" nullable="false" originalDbColumnName="Codice_Agente" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_30" nullable="false" originalDbColumnName="Scad.30gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_3060" nullable="false" originalDbColumnName="Scad.30/60gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_6090" nullable="false" originalDbColumnName="Scad.60/90gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_90120" nullable="false" originalDbColumnName="Scad.90/120gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_O120" nullable="false" originalDbColumnName="Scad.Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="TOT_ESPOSIZIONE" nullable="false" originalDbColumnName="Tot_Esposizione" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="GAV" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCADUTO" nullable="false" originalDbColumnName="Tot_Scaduto" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ETSCAC" nullable="false" originalDbColumnName="Accordi" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ETSCCA" nullable="false" originalDbColumnName="Cambiali" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="RIBA" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="RID" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="PDRSC" nullable="false" originalDbColumnName="PDR_Totali" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO" nullable="false" originalDbColumnName="DSO_Cliente_Medio" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="MEINS" nullable="false" originalDbColumnName="Unita_Misura" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="KLPRZ" nullable="false" originalDbColumnName="Esaurimento%" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="CTLPC" nullable="false" originalDbColumnName="Management_Fido" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="TEXT_KNKK_CTLPC" nullable="false" originalDbColumnName="Classe_Rischio" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="ERDAT" nullable="false" originalDbColumnName="Data_Attivazione_Cliente" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="CCOMM" nullable="false" originalDbColumnName="Coordinatore_Commerciale" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="265" name="TDLINE" nullable="false" originalDbColumnName="Note_FD32" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="CODICEEVASIONE" nullable="false" originalDbColumnName="Codice_Evasione" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ETASAS" nullable="false" originalDbColumnName="Rimesse_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="19" name="TOT_DDT" nullable="false" originalDbColumnName="Ordini" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="CMWAE" nullable="false" originalDbColumnName="Valuta_2" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO1" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="TOT_IMP_FIN" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO2" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO3" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO4" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO5" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO6" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO7" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO8" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO9" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO10" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO11" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO12" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="PARTITAIVA" nullable="false" originalDbColumnName="Partita_Iva" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_PREC" nullable="false" originalDbColumnName="Fatturato_AP" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_CORSO" nullable="false" originalDbColumnName="Fatturato_AC" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="COND_PAG" nullable="false" originalDbColumnName="Codizioni_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="DESC_COND_PAG" nullable="false" originalDbColumnName="Descrizione_Condizione_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="GRUPP" nullable="false" originalDbColumnName="Gruppo_Crediti_Cliente" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="STATO" nullable="false" originalDbColumnName="Stato" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="TEXT_KNA1_KATR8" nullable="false" originalDbColumnName="Nome_Gruppo_2" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="SBDAT" nullable="false" originalDbColumnName="Data_di_Riferimento" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOTASCADERE" nullable="false" originalDbColumnName="Totale_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30" nullable="false" originalDbColumnName="Accordi_a_Scadere_30gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS6090" nullable="false" originalDbColumnName="Accordi_a_Scadere_60/90gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS90" nullable="false" originalDbColumnName="Accordi_a_Scadere_90/120gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS120" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS" nullable="false" originalDbColumnName="Accordi_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15" nullable="false" originalDbColumnName="Scad.15gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="MAXESPO" nullable="false" originalDbColumnName="Max_Esposizione_12mesi" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="AUFSD" nullable="false" originalDbColumnName="Codice_Blocco_Centrale_Ordine" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="TEXT_KNA1_AUFSD" nullable="false" originalDbColumnName="Blocco_Centrale_Ordine" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMP" nullable="false" originalDbColumnName="Fido_Impegno_finanziario" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSOB" nullable="false" originalDbColumnName="DSO_Cliente_Medio_2" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_CORSOB" nullable="false" originalDbColumnName="Fatturato_AC_2" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_PRECB" nullable="false" originalDbColumnName="Fatturato_AP_2" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="35" name="NAME1B" nullable="false" originalDbColumnName="Ragione_Sociale_2" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="KLIMKB" nullable="false" originalDbColumnName="Fido" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCADO" nullable="false" originalDbColumnName="Scaduto_Oltre15gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCADUTOB" nullable="false" originalDbColumnName="Scaduto" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15B" nullable="false" originalDbColumnName="Scaduto_Oltre15gg_2" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="SITUAZIONE" nullable="false" originalDbColumnName="Situazione_Credito" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="SITUAZIONEB" nullable="false" originalDbColumnName="Situazione_Credito_2" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMPB" nullable="false" originalDbColumnName="Fido_Impegno_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060B" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg_2" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30B" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre.30gg" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ALTRIB" nullable="false" originalDbColumnName="Altri_Accordi_Cambiali_PRD" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="DESC_COND_PAGB" nullable="false" originalDbColumnName="Descr_Condizione_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOT_IMP_FINB" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="ZDATUM" nullable="false" originalDbColumnName="Data_Ultimo_Aggiornamento" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="COD_CH_ACC" nullable="false" originalDbColumnName="Codice_Channel_Account" originalLength="10" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="35" name="NOME_CH_ACC" nullable="false" originalDbColumnName="Channel_Account" originalLength="35" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="MANDT" nullable="false" originalDbColumnName="Mandante" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="KUNNR" nullable="false" originalDbColumnName="Codice_Cliente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="NAME1" nullable="false" originalDbColumnName="Ragione_Sociale" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="KATR8" nullable="false" originalDbColumnName="Nome_Gruppo" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="ZZCAN_VEND" nullable="false" originalDbColumnName="Canale_Vendita" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="KLIMK" nullable="false" originalDbColumnName="Limite_fido_del_cliente" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="WAERS" nullable="false" originalDbColumnName="Valuta" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="SBGRP" nullable="false" originalDbColumnName="Gr_resp_gestione_crediti" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="NOME_AGE" nullable="false" originalDbColumnName="Nome_Agente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="COD_AGE" nullable="false" originalDbColumnName="Codice_Agente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_30" nullable="false" originalDbColumnName="Scad.30gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_3060" nullable="false" originalDbColumnName="Scad.30/60gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_6090" nullable="false" originalDbColumnName="Scad.60/90gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_90120" nullable="false" originalDbColumnName="Scad.90/120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_O120" nullable="false" originalDbColumnName="Scad.Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="TOT_ESPOSIZIONE" nullable="false" originalDbColumnName="Tot_Esposizione" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="GAV" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCADUTO" nullable="false" originalDbColumnName="Tot_Scaduto" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ETSCAC" nullable="false" originalDbColumnName="Accordi" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ETSCCA" nullable="false" originalDbColumnName="Cambiali" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="RIBA" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="RID" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="PDRSC" nullable="false" originalDbColumnName="PDR_Totali" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO" nullable="false" originalDbColumnName="DSO_Cliente_Medio" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="MEINS" nullable="false" originalDbColumnName="Unita_Misura" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="KLPRZ" nullable="false" originalDbColumnName="Esaurimento%" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CTLPC" nullable="false" originalDbColumnName="Management_Fido" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="TEXT_KNKK_CTLPC" nullable="false" originalDbColumnName="Classe_Rischio" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ERDAT" nullable="false" originalDbColumnName="Data_Attivazione_Cliente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CCOMM" nullable="false" originalDbColumnName="Coordinatore_Commerciale" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="265" name="TDLINE" nullable="false" originalDbColumnName="Note_FD32" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CODICEEVASIONE" nullable="false" originalDbColumnName="Codice_Evasione" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ETASAS" nullable="false" originalDbColumnName="Rimesse_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TOT_DDT" nullable="false" originalDbColumnName="Ordini" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="CMWAE" nullable="false" originalDbColumnName="Valuta_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO1" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="TOT_IMP_FIN" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO2" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO3" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO4" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO5" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO6" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO7" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO8" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO9" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO10" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO11" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO12" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PARTITAIVA" nullable="false" originalDbColumnName="Partita_Iva" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_PREC" nullable="false" originalDbColumnName="Fatturato_AP" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_CORSO" nullable="false" originalDbColumnName="Fatturato_AC" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="COND_PAG" nullable="false" originalDbColumnName="Codizioni_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="DESC_COND_PAG" nullable="false" originalDbColumnName="Descrizione_Condizione_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="GRUPP" nullable="false" originalDbColumnName="Gruppo_Crediti_Cliente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="STATO" nullable="false" originalDbColumnName="Stato" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="TEXT_KNA1_KATR8" nullable="false" originalDbColumnName="Nome_Gruppo_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="SBDAT" nullable="false" originalDbColumnName="Data_di_Riferimento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOTASCADERE" nullable="false" originalDbColumnName="Totale_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30" nullable="false" originalDbColumnName="Accordi_a_Scadere_30gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS6090" nullable="false" originalDbColumnName="Accordi_a_Scadere_60/90gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS90" nullable="false" originalDbColumnName="Accordi_a_Scadere_90/120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS120" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS" nullable="false" originalDbColumnName="Accordi_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15" nullable="false" originalDbColumnName="Scad.15gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAXESPO" nullable="false" originalDbColumnName="Max_Esposizione_12mesi" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AUFSD" nullable="false" originalDbColumnName="Codice_Blocco_Centrale_Ordine" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="TEXT_KNA1_AUFSD" nullable="false" originalDbColumnName="Blocco_Centrale_Ordine" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMP" nullable="false" originalDbColumnName="Fido_Impegno_finanziario" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSOB" nullable="false" originalDbColumnName="DSO_Cliente_Medio_2" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_CORSOB" nullable="false" originalDbColumnName="Fatturato_AC_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_PRECB" nullable="false" originalDbColumnName="Fatturato_AP_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="NAME1B" nullable="false" originalDbColumnName="Ragione_Sociale_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="KLIMKB" nullable="false" originalDbColumnName="Fido" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCADO" nullable="false" originalDbColumnName="Scaduto_Oltre15gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCADUTOB" nullable="false" originalDbColumnName="Scaduto" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15B" nullable="false" originalDbColumnName="Scaduto_Oltre15gg_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SITUAZIONE" nullable="false" originalDbColumnName="Situazione_Credito" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SITUAZIONEB" nullable="false" originalDbColumnName="Situazione_Credito_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMPB" nullable="false" originalDbColumnName="Fido_Impegno_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060B" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30B" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre.30gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ALTRIB" nullable="false" originalDbColumnName="Altri_Accordi_Cambiali_PRD" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="DESC_COND_PAGB" nullable="false" originalDbColumnName="Descr_Condizione_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOT_IMP_FINB" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ZDATUM" nullable="false" originalDbColumnName="Data_Ultimo_Aggiornamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="COD_CH_ACC" nullable="false" originalDbColumnName="Codice_Channel_Account" originalLength="10" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="NOME_CH_ACC" nullable="false" originalDbColumnName="Channel_Account" originalLength="35" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="SORT1" nullable="true" originalLength="255" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
@@ -462,7 +602,7 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rWHbn0F/QD4gjeQjEQqHH8HwL9RUkmf7JZdD3IBt"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Wcy0RCzAiHhL5xypZ3Nhk0kni9cUOMoq417CkiBp"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ZBI_CREDITI&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -944,86 +1084,86 @@
       <column comment="" key="false" length="35" name="NAME1" nullable="false" originalDbColumnName="Ragione_Sociale" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="KATR8" nullable="false" originalDbColumnName="Nome_Gruppo" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="ZZCAN_VEND" nullable="false" originalDbColumnName="Canale_Vendita" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="KLIMK" nullable="false" originalDbColumnName="Limite_fido_del_cliente" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="KLIMK" nullable="false" originalDbColumnName="Limite_fido_del_cliente" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="WAERS" nullable="false" originalDbColumnName="Valuta" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="SBGRP" nullable="false" originalDbColumnName="Gr_resp_gestione_crediti" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="35" name="NOME_AGE" nullable="false" originalDbColumnName="Nome_Agente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="COD_AGE" nullable="false" originalDbColumnName="Codice_Agente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_30" nullable="false" originalDbColumnName="Scad.30gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_3060" nullable="false" originalDbColumnName="Scad.30/60gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_6090" nullable="false" originalDbColumnName="Scad.60/90gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_90120" nullable="false" originalDbColumnName="Scad.90/120gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_O120" nullable="false" originalDbColumnName="Scad.Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="TOT_ESPOSIZIONE" nullable="false" originalDbColumnName="Tot_Esposizione" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_30" nullable="false" originalDbColumnName="Scad.30gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_3060" nullable="false" originalDbColumnName="Scad.30/60gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_6090" nullable="false" originalDbColumnName="Scad.60/90gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_90120" nullable="false" originalDbColumnName="Scad.90/120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_O120" nullable="false" originalDbColumnName="Scad.Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="TOT_ESPOSIZIONE" nullable="false" originalDbColumnName="Tot_Esposizione" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="GAV" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCADUTO" nullable="false" originalDbColumnName="Tot_Scaduto" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ETSCAC" nullable="false" originalDbColumnName="Accordi" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ETSCCA" nullable="false" originalDbColumnName="Cambiali" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="RIBA" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="RID" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="PDRSC" nullable="false" originalDbColumnName="PDR_Totali" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO" nullable="false" originalDbColumnName="DSO_Cliente_Medio" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCADUTO" nullable="false" originalDbColumnName="Tot_Scaduto" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ETSCAC" nullable="false" originalDbColumnName="Accordi" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ETSCCA" nullable="false" originalDbColumnName="Cambiali" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="RIBA" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="RID" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="PDRSC" nullable="false" originalDbColumnName="PDR_Totali" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO" nullable="false" originalDbColumnName="DSO_Cliente_Medio" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="MEINS" nullable="false" originalDbColumnName="Unita_Misura" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="KLPRZ" nullable="false" originalDbColumnName="Esaurimento%" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="KLPRZ" nullable="false" originalDbColumnName="Esaurimento%" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="CTLPC" nullable="false" originalDbColumnName="Management_Fido" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="TEXT_KNKK_CTLPC" nullable="false" originalDbColumnName="Classe_Rischio" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="ERDAT" nullable="false" originalDbColumnName="Data_Attivazione_Cliente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CCOMM" nullable="false" originalDbColumnName="Coordinatore_Commerciale" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="265" name="TDLINE" nullable="false" originalDbColumnName="Note_FD32" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CODICEEVASIONE" nullable="false" originalDbColumnName="Codice_Evasione" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ETASAS" nullable="false" originalDbColumnName="Rimesse_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="19" name="TOT_DDT" nullable="false" originalDbColumnName="Ordini" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ETASAS" nullable="false" originalDbColumnName="Rimesse_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TOT_DDT" nullable="false" originalDbColumnName="Ordini" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="CMWAE" nullable="false" originalDbColumnName="Valuta_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO1" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="TOT_IMP_FIN" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO2" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO3" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO4" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO5" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO6" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO7" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO8" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO9" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO10" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO11" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO12" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO1" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="TOT_IMP_FIN" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO2" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO3" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO4" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO5" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO6" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO7" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO8" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO9" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO10" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO11" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO12" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PARTITAIVA" nullable="false" originalDbColumnName="Partita_Iva" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_PREC" nullable="false" originalDbColumnName="Fatturato_AP" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_CORSO" nullable="false" originalDbColumnName="Fatturato_AC" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_PREC" nullable="false" originalDbColumnName="Fatturato_AP" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_CORSO" nullable="false" originalDbColumnName="Fatturato_AC" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="COND_PAG" nullable="false" originalDbColumnName="Codizioni_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="DESC_COND_PAG" nullable="false" originalDbColumnName="Descrizione_Condizione_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="GRUPP" nullable="false" originalDbColumnName="Gruppo_Crediti_Cliente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="STATO" nullable="false" originalDbColumnName="Stato" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="TEXT_KNA1_KATR8" nullable="false" originalDbColumnName="Nome_Gruppo_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="SBDAT" nullable="false" originalDbColumnName="Data_di_Riferimento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOTASCADERE" nullable="false" originalDbColumnName="Totale_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30" nullable="false" originalDbColumnName="Accordi_a_Scadere_30gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS6090" nullable="false" originalDbColumnName="Accordi_a_Scadere_60/90gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS90" nullable="false" originalDbColumnName="Accordi_a_Scadere_90/120gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS120" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS" nullable="false" originalDbColumnName="Accordi_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15" nullable="false" originalDbColumnName="Scad.15gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="MAXESPO" nullable="false" originalDbColumnName="Max_Esposizione_12mesi" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOTASCADERE" nullable="false" originalDbColumnName="Totale_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30" nullable="false" originalDbColumnName="Accordi_a_Scadere_30gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS6090" nullable="false" originalDbColumnName="Accordi_a_Scadere_60/90gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS90" nullable="false" originalDbColumnName="Accordi_a_Scadere_90/120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS120" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS" nullable="false" originalDbColumnName="Accordi_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15" nullable="false" originalDbColumnName="Scad.15gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAXESPO" nullable="false" originalDbColumnName="Max_Esposizione_12mesi" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="AUFSD" nullable="false" originalDbColumnName="Codice_Blocco_Centrale_Ordine" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="TEXT_KNA1_AUFSD" nullable="false" originalDbColumnName="Blocco_Centrale_Ordine" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMP" nullable="false" originalDbColumnName="Fido_Impegno_finanziario" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSOB" nullable="false" originalDbColumnName="DSO_Cliente_Medio_2" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_CORSOB" nullable="false" originalDbColumnName="Fatturato_AC_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_PRECB" nullable="false" originalDbColumnName="Fatturato_AP_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMP" nullable="false" originalDbColumnName="Fido_Impegno_finanziario" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSOB" nullable="false" originalDbColumnName="DSO_Cliente_Medio_2" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_CORSOB" nullable="false" originalDbColumnName="Fatturato_AC_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_PRECB" nullable="false" originalDbColumnName="Fatturato_AP_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="35" name="NAME1B" nullable="false" originalDbColumnName="Ragione_Sociale_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="KLIMKB" nullable="false" originalDbColumnName="Fido" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCADO" nullable="false" originalDbColumnName="Scaduto_Oltre15gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCADUTOB" nullable="false" originalDbColumnName="Scaduto" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15B" nullable="false" originalDbColumnName="Scaduto_Oltre15gg_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="KLIMKB" nullable="false" originalDbColumnName="Fido" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCADO" nullable="false" originalDbColumnName="Scaduto_Oltre15gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCADUTOB" nullable="false" originalDbColumnName="Scaduto" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15B" nullable="false" originalDbColumnName="Scaduto_Oltre15gg_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="SITUAZIONE" nullable="false" originalDbColumnName="Situazione_Credito" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="SITUAZIONEB" nullable="false" originalDbColumnName="Situazione_Credito_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMPB" nullable="false" originalDbColumnName="Fido_Impegno_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060B" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30B" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre.30gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ALTRIB" nullable="false" originalDbColumnName="Altri_Accordi_Cambiali_PRD" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMPB" nullable="false" originalDbColumnName="Fido_Impegno_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060B" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30B" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre.30gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ALTRIB" nullable="false" originalDbColumnName="Altri_Accordi_Cambiali_PRD" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="DESC_COND_PAGB" nullable="false" originalDbColumnName="Descr_Condizione_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOT_IMP_FINB" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOT_IMP_FINB" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="ZDATUM" nullable="false" originalDbColumnName="Data_Ultimo_Aggiornamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="COD_CH_ACC" nullable="false" originalDbColumnName="Codice_Channel_Account" originalLength="10" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="35" name="NOME_CH_ACC" nullable="false" originalDbColumnName="Channel_Account" originalLength="35" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1035,86 +1175,86 @@
       <column comment="" key="false" length="35" name="NAME1" nullable="false" originalDbColumnName="Ragione_Sociale" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="KATR8" nullable="false" originalDbColumnName="Nome_Gruppo" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="ZZCAN_VEND" nullable="false" originalDbColumnName="Canale_Vendita" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="KLIMK" nullable="false" originalDbColumnName="Limite_fido_del_cliente" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="KLIMK" nullable="false" originalDbColumnName="Limite_fido_del_cliente" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="WAERS" nullable="false" originalDbColumnName="Valuta" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="SBGRP" nullable="false" originalDbColumnName="Gr_resp_gestione_crediti" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="35" name="NOME_AGE" nullable="false" originalDbColumnName="Nome_Agente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="COD_AGE" nullable="false" originalDbColumnName="Codice_Agente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_30" nullable="false" originalDbColumnName="Scad.30gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_3060" nullable="false" originalDbColumnName="Scad.30/60gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_6090" nullable="false" originalDbColumnName="Scad.60/90gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_90120" nullable="false" originalDbColumnName="Scad.90/120gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_O120" nullable="false" originalDbColumnName="Scad.Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="TOT_ESPOSIZIONE" nullable="false" originalDbColumnName="Tot_Esposizione" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_30" nullable="false" originalDbColumnName="Scad.30gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_3060" nullable="false" originalDbColumnName="Scad.30/60gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_6090" nullable="false" originalDbColumnName="Scad.60/90gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_90120" nullable="false" originalDbColumnName="Scad.90/120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_O120" nullable="false" originalDbColumnName="Scad.Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="TOT_ESPOSIZIONE" nullable="false" originalDbColumnName="Tot_Esposizione" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="GAV" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCADUTO" nullable="false" originalDbColumnName="Tot_Scaduto" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ETSCAC" nullable="false" originalDbColumnName="Accordi" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ETSCCA" nullable="false" originalDbColumnName="Cambiali" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="RIBA" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="RID" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="PDRSC" nullable="false" originalDbColumnName="PDR_Totali" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO" nullable="false" originalDbColumnName="DSO_Cliente_Medio" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCADUTO" nullable="false" originalDbColumnName="Tot_Scaduto" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ETSCAC" nullable="false" originalDbColumnName="Accordi" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ETSCCA" nullable="false" originalDbColumnName="Cambiali" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="RIBA" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="RID" nullable="false" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="PDRSC" nullable="false" originalDbColumnName="PDR_Totali" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO" nullable="false" originalDbColumnName="DSO_Cliente_Medio" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="MEINS" nullable="false" originalDbColumnName="Unita_Misura" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="KLPRZ" nullable="false" originalDbColumnName="Esaurimento%" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="KLPRZ" nullable="false" originalDbColumnName="Esaurimento%" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="CTLPC" nullable="false" originalDbColumnName="Management_Fido" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="TEXT_KNKK_CTLPC" nullable="false" originalDbColumnName="Classe_Rischio" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="ERDAT" nullable="false" originalDbColumnName="Data_Attivazione_Cliente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CCOMM" nullable="false" originalDbColumnName="Coordinatore_Commerciale" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="265" name="TDLINE" nullable="false" originalDbColumnName="Note_FD32" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CODICEEVASIONE" nullable="false" originalDbColumnName="Codice_Evasione" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ETASAS" nullable="false" originalDbColumnName="Rimesse_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="19" name="TOT_DDT" nullable="false" originalDbColumnName="Ordini" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ETASAS" nullable="false" originalDbColumnName="Rimesse_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TOT_DDT" nullable="false" originalDbColumnName="Ordini" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="CMWAE" nullable="false" originalDbColumnName="Valuta_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO1" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="TOT_IMP_FIN" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO2" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO3" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO4" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO5" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO6" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO7" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO8" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO9" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO10" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO11" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSO12" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO1" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="TOT_IMP_FIN" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO2" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO3" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO4" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO5" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO6" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO7" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO8" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO9" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO10" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO11" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSO12" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PARTITAIVA" nullable="false" originalDbColumnName="Partita_Iva" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_PREC" nullable="false" originalDbColumnName="Fatturato_AP" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_CORSO" nullable="false" originalDbColumnName="Fatturato_AC" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_PREC" nullable="false" originalDbColumnName="Fatturato_AP" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="FATT_ANNO_CORSO" nullable="false" originalDbColumnName="Fatturato_AC" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="COND_PAG" nullable="false" originalDbColumnName="Codizioni_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="DESC_COND_PAG" nullable="false" originalDbColumnName="Descrizione_Condizione_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="GRUPP" nullable="false" originalDbColumnName="Gruppo_Crediti_Cliente" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="STATO" nullable="false" originalDbColumnName="Stato" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="TEXT_KNA1_KATR8" nullable="false" originalDbColumnName="Nome_Gruppo_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="SBDAT" nullable="false" originalDbColumnName="Data_di_Riferimento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOTASCADERE" nullable="false" originalDbColumnName="Totale_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30" nullable="false" originalDbColumnName="Accordi_a_Scadere_30gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS6090" nullable="false" originalDbColumnName="Accordi_a_Scadere_60/90gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS90" nullable="false" originalDbColumnName="Accordi_a_Scadere_90/120gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS120" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS" nullable="false" originalDbColumnName="Accordi_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15" nullable="false" originalDbColumnName="Scad.15gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="MAXESPO" nullable="false" originalDbColumnName="Max_Esposizione_12mesi" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOTASCADERE" nullable="false" originalDbColumnName="Totale_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30" nullable="false" originalDbColumnName="Accordi_a_Scadere_30gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS6090" nullable="false" originalDbColumnName="Accordi_a_Scadere_60/90gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS90" nullable="false" originalDbColumnName="Accordi_a_Scadere_90/120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS120" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre_120gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS" nullable="false" originalDbColumnName="Accordi_a_Scadere" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15" nullable="false" originalDbColumnName="Scad.15gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="MAXESPO" nullable="false" originalDbColumnName="Max_Esposizione_12mesi" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="AUFSD" nullable="false" originalDbColumnName="Codice_Blocco_Centrale_Ordine" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="TEXT_KNA1_AUFSD" nullable="false" originalDbColumnName="Blocco_Centrale_Ordine" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMP" nullable="false" originalDbColumnName="Fido_Impegno_finanziario" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DSOB" nullable="false" originalDbColumnName="DSO_Cliente_Medio_2" originalLength="-1" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_CORSOB" nullable="false" originalDbColumnName="Fatturato_AC_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_PRECB" nullable="false" originalDbColumnName="Fatturato_AP_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMP" nullable="false" originalDbColumnName="Fido_Impegno_finanziario" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DSOB" nullable="false" originalDbColumnName="DSO_Cliente_Medio_2" originalLength="-1" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_CORSOB" nullable="false" originalDbColumnName="Fatturato_AC_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="FATT_ANNO_PRECB" nullable="false" originalDbColumnName="Fatturato_AP_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="35" name="NAME1B" nullable="false" originalDbColumnName="Ragione_Sociale_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="KLIMKB" nullable="false" originalDbColumnName="Fido" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCADO" nullable="false" originalDbColumnName="Scaduto_Oltre15gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCADUTOB" nullable="false" originalDbColumnName="Scaduto" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15B" nullable="false" originalDbColumnName="Scaduto_Oltre15gg_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="KLIMKB" nullable="false" originalDbColumnName="Fido" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCADO" nullable="false" originalDbColumnName="Scaduto_Oltre15gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCADUTOB" nullable="false" originalDbColumnName="Scaduto" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="SCAD_15B" nullable="false" originalDbColumnName="Scaduto_Oltre15gg_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="SITUAZIONE" nullable="false" originalDbColumnName="Situazione_Credito" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="SITUAZIONEB" nullable="false" originalDbColumnName="Situazione_Credito_2" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMPB" nullable="false" originalDbColumnName="Fido_Impegno_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060B" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30B" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre.30gg" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="ALTRIB" nullable="false" originalDbColumnName="Altri_Accordi_Cambiali_PRD" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOTFIDOIMPB" nullable="false" originalDbColumnName="Fido_Impegno_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS3060B" nullable="false" originalDbColumnName="Accordi_a_Scadere_30/60gg_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ACCSAS30B" nullable="false" originalDbColumnName="Accordi_a_Scadere_Oltre.30gg" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="ALTRIB" nullable="false" originalDbColumnName="Altri_Accordi_Cambiali_PRD" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="DESC_COND_PAGB" nullable="false" originalDbColumnName="Descr_Condizione_Pagamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="13" name="TOT_IMP_FINB" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="TOT_IMP_FINB" nullable="false" originalDbColumnName="Tot.Imponibile_Finanziario_2" originalLength="-1" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="ZDATUM" nullable="false" originalDbColumnName="Data_Ultimo_Aggiornamento" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="COD_CH_ACC" nullable="false" originalDbColumnName="Codice_Channel_Account" originalLength="10" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="35" name="NOME_CH_ACC" nullable="false" originalDbColumnName="Channel_Account" originalLength="35" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1123,164 +1263,11 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSAPHanaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="SAPHana"/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;30015&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ob49BN4wUM7e3+l0jEaAeyCi9+/rjXqZFjVzDO6Z"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_5DUH0MZAEeyyZZQHbxodHA - INSEGNA"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT KNA1.KUNNR,   CONCAT(&#13;&#10;                CONCAT( adrc.sort1, ' ' ),&#13;&#10;                adrc.sort2&#13;&#10;              ) AS INSEGNA&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;FROM KNA1&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9; LEFT JOIN&#13;&#10;&#9;&#9;   &#9;&#9;&#9;(SELECT  &#13;&#10;&#9;&#9;   &#9;&#9;&#9;&#9;ADDRNUMBER, SORT1, SORT2   &#13;&#10;&#9;&#9;   &#9;&#9;&#9; FROM &#13;&#10;&#9;&#9;   &#9;&#9;&#9;&#9;ADRC &#13;&#10;&#9;&#9;   &#9;&#9;&#9; WHERE &#13;&#10;&#9;&#9;   &#9;&#9;&#9;&#9;CLIENT = '200') ADRC ON KNA1.ADRNR = ADRC.ADDRNUMBER&quot;"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="saphana_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="KUNNR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INSEGNA"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBInput_2">
-      <column comment="" key="false" length="10" name="KUNNR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="41" name="INSEGNA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="V9_X"/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:JXjROkodiizCNBvtqA99Fi/gzxtAwgvjby4nWgiX"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;INSEGNA&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
-    <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
-    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
-    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
-    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
-    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="SAVE_POINT" show="false" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
-    <elementParameter field="TABLE" name="ADD_COLS"/>
-    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="KUNNR"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INSEGNA"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBOutput_3">
-      <column comment="" key="false" length="10" name="KUNNR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="41" name="INSEGNA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="10" name="KUNNR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="41" name="INSEGNA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="544">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="V9_X"/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
-    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:1vQm+VvjTGfsKASnu1+65yWl6QrAEVwAs2vei+1U"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_kGX3IE7YEfGZ8IkswlCWXg - UPDATE_ZBI_CREDITI"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;UPDATE \&quot;Pregis\&quot;.\&quot;ZBI_CREDITI\&quot; AS CRD&#13;&#10;SET \&quot;INSEGNA\&quot; = KUN.\&quot;INSEGNA\&quot;&#13;&#10;FROM \&quot;Pregis\&quot;.\&quot;INSEGNA\&quot; AS KUN&#13;&#10;WHERE CRD.\&quot;Codice_Cliente\&quot; = KUN.\&quot;KUNNR\&quot;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
-    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
-    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBRow_1"/>
-    <metadata connector="REJECT" name="REJECT">
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBConnection_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
-  </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBOutput_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="SORT1"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBInput_2">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tDBOutput_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1290,6 +1277,10 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tDBRow_1">
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
@@ -1302,11 +1293,6 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
@@ -1316,13 +1302,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2c9b3e09-e1d2-4024-9994-4c1891d749fb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pyFeI7riCySz0eyuF9a0jAntMyvr/1WNISQDfC3CnUC8QA9GoTY5RtCYpfl6jI00WcR8pN0t4OiR&#13;
-yAjJrtLz/Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_80d97399-1b83-445f-9669-bbdb635e8cb8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2J5MmqZs7vZ7MK3/Y7R4klQt6sSvxy90ds50yS0a9IBPu+1Hkq+9nLf1WMweZXxspNrG4+w3uYEy&#13;
-QHP+CiIlQw==</DigestValue></Reference></SignedInfo><SignatureValue>CFieay6v4KU2Dy4Zr7Bi4pB67YY+LtonMnxpdidpLsKNt2O05+YB1dC8jlIiV61RWP+elZPIduiK&#13;
-KNfCF5JnevvTc2WKsQokcaULkwl+whIjjkYFwbJe9AphLvFk3qzqhguqxkwRKVp9yrE0mos3uZ/n&#13;
-qHU5apKv6bscgfQPOLcg7vKSySUX5Ch+K9xyPPXwI0CaVMWsYCadU75XyL86SomYtswxUh93E271&#13;
-YIfJXSzDQ+vPxQmheJmO+Q1RMsTLsX847uPq7/BTmgeRRV/F+zDB7tHv8IftFQ4cu/wjERR42nD4&#13;
-mn9VcvCkkULM5ILZEW/UHmGRRJY7c5fRzq7WLw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_abdfc63e-06bf-43f4-a440-5ade118d06c1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yPG2AqEmLe0Mde3HbSvtAhikVh+hkLlUy/mMxcUa5Y/jJ4hYB4L9YEiTwCyscuJ9I53C8p6pdx2T&#13;
+ooEamgzTsQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bfaa26e3-7c42-4587-a228-7c200126c163"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fjdR56aj4jgPYwrCOJ9ilc0/RIXTu+sLLyqxoGZV57Dr3KNe46z6RH31Mo0O/ZkHMBCvFVylf9jX&#13;
+99W4P7A/Pw==</DigestValue></Reference></SignedInfo><SignatureValue>Aw1Rk6hrghC/zjoWoHu9T2l/bjWRvViowtceJnBJ9llb3unKX12AgHoGFIVmVOMmcsY3iBVLve5J&#13;
+a4z+ggXUdSLZFAHrVaF34soStaCNldZ3Rms+kByghq1ZiESevp59wCsO9fz4g1HOHtjDq3Q+ojBi&#13;
+4EA/Fgwh03aI1/UaxGhlwsbBFXZtPikoizkQlyNx32uYDillfEviVsfrJ6FgeLZrbkQliSCoQhap&#13;
+7dK26KRNRTjzWwwdmXw4DAjsmjD6CfjbIjY+aV7w3KhmnMbcayfvbLBLtJtiaVeCSppmjwE2z3v9&#13;
+K2zUNlGKfwh36n6m6Y83zJ/4dHeESn016FIV2Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1344,4 +1335,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_80d97399-1b83-445f-9669-bbdb635e8cb8" Target="#_2c9b3e09-e1d2-4024-9994-4c1891d749fb"><Timestamp>2026-06-08 15:08:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bfaa26e3-7c42-4587-a228-7c200126c163" Target="#_abdfc63e-06bf-43f4-a440-5ade118d06c1"><Timestamp>2026-06-08 15:18:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
