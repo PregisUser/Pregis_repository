@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:OThSH+ircUM5tekmkyF8Q9bfdI+G+0Hvb1+oXfgP"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:pbZ82gFIZQLYZllJKKrp0WUIhEicr3+lNrGIEy1U"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:y/IVUbSPjmir/MYEagzd2JvJWfPZg7TMUSA7E6kAOa55+NbppKblIytw"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zaOclOfLK9uPy0n2UdtfAV4qzpIblkkM9WZPONZI2OiE2sZBOpfREnGE"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Logs&quot;"/>
@@ -119,7 +119,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;Excel&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ODS&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;TalendUser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:i7NMcUSRejhn0V9DBTkFUO1pBR/aaBRTe5bh6+RTAwI5XQPwyxSLIzDWPeQ="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oCd7T7FCnbOMNr4kv3e0qv8wk5dk+OlhzxrxC4Mr/r7QAF+pI5wKO2/XStw="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -132,6 +132,7 @@
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="MSSQL_PROD_ODS_excel"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
@@ -140,7 +141,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ySc4cCM-Ee-c18XOD0oaQw"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;E:/ExcelFiles/RettificheFatturato/RettificheFatturato.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:i5pUYTeRmdHXvcgHHoCF2p4OK7tUo3R0vyNQBvR/"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:tnUjLvBqjoWUhyhkTw7yVbR0bsSvupmlEdE2YB/F"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;Sheet1&quot;"/>
@@ -458,6 +459,7 @@
     <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
     <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="RettificheFatturato"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
       <column comment="" key="false" length="-1" name="IdCliente" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -487,7 +489,7 @@
       <column comment="" key="false" length="-1" name="Omaggi_su_vendite__ZOMI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Fatturato_Diverso" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="Premi_su_vendite" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Quantita_fatturata_in_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="Quantita_fatturata_in_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Quantita_fatturata_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Kg_lordo_fatturato" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Quantita_resi_in_unita_di_misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Double" usefulColumn="true"/>
@@ -546,7 +548,7 @@
       <column comment="" key="false" length="-1" name="Omaggi_su_vendite__ZOMI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Fatturato_Diverso" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="Premi_su_vendite" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Quantita_fatturata_in_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="Quantita_fatturata_in_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Quantita_fatturata_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Kg_lordo_fatturato" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Quantita_resi_in_unita_di_misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Double" usefulColumn="true"/>
@@ -591,7 +593,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:EWwf9q+0CrhhA/yBrhrjMvnpLPNcUKbebAdiJVSQ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:QMuivHBz7iyy2W6kAuVnB6OFMn4nNjsuBU5gxS/F"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RettificheFatturato&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -908,6 +910,7 @@
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tDBOutput_1">
       <column comment="" key="false" length="-1" name="IdCliente" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -937,7 +940,7 @@
       <column comment="" key="false" length="-1" name="Omaggi_su_vendite__ZOMI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Fatturato_Diverso" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="Premi_su_vendite" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Quantita_fatturata_in_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="Quantita_fatturata_in_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Quantita_fatturata_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Kg_lordo_fatturato" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Quantita_resi_in_unita_di_misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
@@ -996,7 +999,7 @@
       <column comment="" key="false" length="-1" name="Omaggi_su_vendite__ZOMI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Fatturato_Diverso" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="Premi_su_vendite" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Quantita_fatturata_in_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="Quantita_fatturata_in_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Quantita_fatturata_Unita_di_Misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Kg_lordo_fatturato" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="Quantita_resi_in_unita_di_misura" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
@@ -1064,13 +1067,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cdb66f14-2f83-46e4-85ff-5441ef7019e4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uDi+BATLT5EQoRkLT6QP0K9b1326eE9exjCL9GaeqZ6tZ5IkTXTO+3sPpcq6Q8xWW06RrfegrmCJ&#13;
-z/yks0c2tw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_813048a8-c1f8-4af7-a028-07b237720c9e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9lKrzOgw3yZQw2Rl7kytwJG2uuBGxOu+lMf437kbZOirijKoSEAKS4d08e8vKwkYi7wiCRCgL1Yb&#13;
-VUmilHx+4Q==</DigestValue></Reference></SignedInfo><SignatureValue>NgdBZIhDKQ4zvLfTrrkt7wuPCexSgD1NmwLhHJOWxjdQnwfo1c214qcc00J/g0K+VAdd0g4fPTek&#13;
-8dJf0BzTRODKsQBXDHrzgUGB2OJyTZFoVLB5lay73SsY2O6aD4/d4amAfaQVc6bCNcPJx87Q7D6A&#13;
-2fPZnDKvTOF+yTNC/vEXJeo1leIm4MtrQRrU4+J0Hhc0aAy3cYCLFPWlG/hEgIDLVlT32udg8otb&#13;
-us224lQvQ3J1qT9U4HpnffYEhppueMi4nB3yjdPCNFEO0+68jim8DKdvfHv3ZHKHOxRqrkmD8eAq&#13;
-Ik9dwjaUdRCe5g0MQ1+2lhVOuiytoRzQ57WBTg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_223fb748-ff1f-4248-891a-971c110126b5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>r7ZOn0xbooJ+nw63jRclLmnQIUitB4X04aHJosgSU0Wrda2TLUveyPXDn85mB1tI4Oc3zeVJewSV&#13;
+bet6T28lOQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9dbf4fac-2568-48c5-af4f-2e822d8a2c86"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JvgBkPV2srKdP7xre/oJUieLcNMKk8TFqz61B6dI1LApZMqD7HIh4JiQPH6eThfA3+SawbNNfrNk&#13;
+nQbrHkaTLA==</DigestValue></Reference></SignedInfo><SignatureValue>VWjaqAR1umOIta2kt5w+ah40MK35eB0AM3rfaI78rxtOwixs1QgL4eHaPTQ1CacBRm4mNeLi/50d&#13;
+POEtRHX/EfapDlEuLMJkCHr0NJNIyimDnVxqm9JHZnvKoBOrmFUgw2q85NCTatQov5+vw3Sp5ppo&#13;
+/9bOEm/F08x1+gceCXG9qLeZwuix520NNsbyQzueK1ftUMjU/JIWFQK/oV2QFmU93myHtYQq1tSI&#13;
+E773O8HytJmDXH+rTQObhgbjPdY276OlHobX4ugd1KmvoijOUiGU9CuiPPP00XWHsA03L+rE42a+&#13;
+WKvjE8oPlXtwg/FGM+kooZhX167zmn18Yxw++A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1092,4 +1095,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_813048a8-c1f8-4af7-a028-07b237720c9e" Target="#_cdb66f14-2f83-46e4-85ff-5441ef7019e4"><Timestamp>2024-07-04 13:43:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9dbf4fac-2568-48c5-af4f-2e822d8a2c86" Target="#_223fb748-ff1f-4248-891a-971c110126b5"><Timestamp>2026-10-05 12:46:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
